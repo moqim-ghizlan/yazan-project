@@ -1,0 +1,552 @@
+<!DOCTYPE html >
+<html lang="ar" dir="rtl">
+<head>
+    <link rel="icon" href="https://g.top4top.io/p_1951l48qy1.png" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أسلوب كتابة الكود</title>
+    <style>
+        .titleb{
+            color: #8d9399; font-size: 24px;
+        }
+strong{ color:darkblue;}
+b{ color:darkred;}
+        .border{
+border:5px solid black;
+background-color:lightblue; 
+text-align:center; 
+font-size:25px;
+                  }
+                  .title1{
+           font-size:24px;
+           color:darkred;
+           font-weight: bold;
+           text-align: center;
+           /*العناوين الرئيسية*/
+        }
+        .title2{
+         font-weight: bold;
+         font-size:22px;
+         color:darkblue;
+         /*العناوين الفرعية*/
+        }
+        *{
+            font-size: 20px;
+        }
+        .bacp{
+            display: inline; background-color: rgb(137, 137, 245); padding:3px; 
+        }
+        .contcode pre{
+            direction: ltr;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+         .contcode{
+             text-align: left;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 20px;
+            border: 2px saddlebrown solid;
+        }
+        #code{
+            text-align: left;
+        }
+        #apage{
+            background-color: rgb(133, 129, 129) ;
+        }
+        body{  
+            margin-top: 0;
+        }
+        #titlecont{
+            display: block;
+            text-align: center;
+        }
+        #cont{
+            text-align: right;
+            position:absolute;
+            top: 11%;
+            left: 17%;
+            height: 197%;
+            width: 81%;
+        }
+        #list{
+            background-color:white;
+            z-index: 100;
+            position: fixed; 
+            width: 100%;
+        }
+        #out{
+            background-color: white;
+            width: 17.4%;
+            height: 380px;
+            border: 2px rgb(161, 160, 160) solid;
+            position: fixed;
+            left: 82%;
+            top: 44%;
+        }
+        #button:hover{
+            color: white;
+            background-color: #007bff; 
+        }
+        #button{
+            position: fixed;
+            bottom: 47.5%;
+            left: 82%;
+            width: 18%;
+            height: 30px;
+            top: 275px;   
+        }
+        #input::placeholder{
+            text-align: center;
+        }
+        #input{
+            width: 17.5%;
+            height: 200px;
+            position: fixed;
+            bottom: 52%;
+            left: 82%;
+            top: 10%;
+            display: block;
+        }
+        #titbox{
+            text-align: center;
+        }
+        #box a:hover{
+            background-color: rgb(133, 129, 129);
+        }
+        #box a{
+            margin-top: 1px;
+            padding: 3px;
+            text-decoration: none;
+            margin-right: 5px;
+            display: block;
+            color: #2f3f50;
+        }
+        #box{
+            background-color: white;  
+            position: fixed;
+            margin-top: 5px;
+            margin-left: 4px;
+            text-align: right;
+            border: 2px #007bff solid;
+            width: 15%;
+            height: 89.5%;
+            top: 9%;
+            right: 84%;
+            float: left;
+        }
+        #but:hover{
+            color:  #007bff;
+            background-color:white;            
+        }
+        #but{
+            color: white;
+            background-color: #007bff;
+        }
+        #boxh{
+        background-color: rgb(133, 129, 129);
+    }
+        #search{
+           width: 12.5%;
+        }
+        nav{
+            text-align: center;
+        }
+        .a:hover{
+            background-color: white;
+            color:   #007bff;
+        }
+        #title{
+            padding-right: 12%;
+            font-size: 22px;
+            text-align: left;
+            padding-left: 18px;
+        }
+        .aa{
+            line-height: 50px;
+           text-align: center;
+           text-decoration: none;
+          /* padding: 0.55% 7.9%;*/
+           padding: 7px 108px;
+           background-color:  #007bff; 
+           color: white;
+        }
+       .a{
+        line-height: 50px;
+           text-align: center;
+           text-decoration: none;
+           /*padding: 0.6% 7.7%;*/
+           padding: 8px 100px;
+           background-color:  #007bff; 
+           color: white;
+       }
+       @media screen and (min-width: 1285px) and (max-width:1365px){
+        .titleb{ font-size: 23.5px;}
+           *{font-size: 19.5px;}     
+        .a{padding: 7px 97px;}
+       .aa{padding: 6px 100px;}
+       #title{padding-right: 11%; font-size: 21.5px;}
+       .title1{font-size:23.5px;}
+        .title2{font-size:21.5px;}
+        .not{font-size: 21.5px;}
+       }
+       @media screen and (min-width: 1204px) and (max-width:1284px){
+        .titleb{ font-size: 23px;}
+        *{font-size: 19px;}
+        .a{padding: 6px 90px;}
+       .aa{padding: 6px 100px;}
+       #title{padding-right: 10%; font-size: 21px;}
+       .title1{font-size:23px;}
+        .title2{font-size:21px;}
+        .not{font-size: 21px;}
+      }
+       @media screen and (min-width: 1123px) and (max-width:1203px){
+        .titleb{ font-size: 23.5px;}
+        *{font-size: 18.5px;}
+        .a{padding: 6px 83px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 9%; font-size: 20.5px;}
+       .title1{font-size:22.5px;}
+        .title2{font-size:20.5px;}
+        .not{font-size: 20.5px;}
+       }
+       @media screen and (min-width: 1042px) and (max-width:1122px){
+        .titleb{ font-size: 23px;}
+        *{font-size: 18px;}
+        .a{padding: 6px 77px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 8%; font-size: 20px;}
+       .title1{font-size:22px;}
+        .title2{font-size:20px;}
+        .not{font-size: 20px;}
+       }
+       @media screen and (min-width: 961px) and (max-width:1041px){
+        .titleb{ font-size: 22.5px;}
+        *{font-size: 17.5px;}
+        .a{padding: 6px 69px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 7%; font-size: 19.5px;}
+       .title1{font-size:21.5px;}
+        .title2{font-size:19.5px;}
+        .not{font-size: 19.5px;}
+       }
+       @media screen and (min-width: 880px) and (max-width:960px){
+        .titleb{ font-size: 22px;}
+        *{font-size: 17px;}
+        .a{padding: 6px 61px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 6%; font-size: 19px;}
+       .title1{font-size:21px;}
+        .title2{font-size:19px;}
+        .not{font-size: 19px;}
+       }
+       @media screen and (min-width: 799px) and (max-width:879px){
+        .titleb{ font-size: 21.5px;}
+        *{font-size: 16.5px;}
+        .a{padding: 6px 53px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 5%; font-size: 18.5px;}
+       .title1{font-size:20.5px;}
+        .title2{font-size:18.5px;}
+        .not{font-size: 18.5px;}
+       }
+       @media screen and (min-width: 718px) and (max-width:798px){
+        .titleb{ font-size: 21px;}
+        *{font-size: 16px;}
+        .a{padding: 6px 43px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 4%; font-size: 18px;}
+       .title1{font-size:20px;}
+        .title2{font-size:18px;}
+        .not{font-size: 18px;}
+       }
+       @media screen and (min-width: 637px) and (max-width:717px){
+        .titleb{ font-size: 20.5px;}
+        *{font-size: 15.5px;}
+        .a{padding: 6px 35px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 3%; font-size: 17.5px;}
+       .title1{font-size:19.5px;}
+       .title2{font-size:17.5px;}
+        .not{font-size: 17.5px;}
+       /**/
+        }
+       @media screen and (min-width: 556px) and (max-width:636px){
+        .titleb{ font-size: 20px;}
+        *{font-size: 15px;}
+        .a{padding: 6px 25px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 3%; font-size: 17px;}
+       .title1{font-size:19px;}
+        .title2{font-size:17px;}
+        .not{font-size: 17px;}
+       }
+       @media screen and (min-width: 475px) and (max-width:555px){
+        .titleb{ font-size: 19.5px;}
+        *{font-size: 14.5px;}
+        .a{padding: 6px 18px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 2%; font-size: 16.5px;}
+       .title1{font-size:18.5px;}
+        .title2{font-size:16.5px;}
+        .not{font-size: 16.5px;}
+       }
+       @media screen and (min-width: 394px) and (max-width:474px){
+        .titleb{ font-size: 19px;}
+        *{font-size: 14px;}
+        .a{padding: 6px 9px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 1%; font-size: 16px;}
+       .title1{font-size:18px;}
+        .title2{font-size:16px;}
+        .not{font-size: 16px;}
+       }
+       @media screen and (min-width: 313px) and (max-width:393px){
+        .titleb{ font-size: 18.5px;}
+        *{font-size: 13.5px;}
+        .a{padding: 6px 1px;}
+       .aa{padding:6px 1px;}
+       #title{padding-right: 0.5%; font-size: 15.5px;}
+       .title1{font-size:17.5px;}
+        .title2{font-size:15.5px;}
+        .not{font-size: 15.5px;}
+       }
+</style>
+</head>
+<body>
+    <nav id="list" dir="ltr">
+        <a href="https://stutcc.blogspot.com" class="aa" id="title"><b class="titleb">S</b>tu<b class="titleb">T</b>cc</a>
+        <a href="https://stutcc-html-introduction.blogspot.com" class="a">html</a>
+        <a href="https://stutcc-Shortcuts.blogspot.com" class="a">موقع الاختصارات</a>
+        <a href="https://stutcc-python-test.blogspot.com" class="a">اختبار</a>       
+        <input type="text" placeholder="search" id="search">
+        <button type="submit" id="but">search</button> 
+    </nav >
+    <nav id="box" dir="rtl">
+        <p id="titbox">بايثون</p>
+        <a href="https://stutcc-python.blogspot.com">نظرة عامة</a>
+        <a href="https://stutcc-python-syntaxs.blogspot.com" id="boxh">أسلوب كتابة الكود</a>
+        <a href="https://stutcc-python-variablesTypes.blogspot.com">أنواع المتغيرات</a>
+        <a href="https://stutcc-python-operators.blogspot.com">العوامل</a>
+        <a href="https://stutcc-python-conditions.blogspot.com">الشروط</a>
+        <a href="https://stutcc-python-loops.blogspot.com">الحلقات</a>
+        <a href="https://stutcc-python-numbers.blogspot.com">التعامل مع الأعداد</a>
+        <a href="https://stutcc-python-strings.blogspot.com">التعامل مع النصوص</a>
+        <a href="https://stutcc-python-lists.blogspot.com">الكلاس list </a>
+        <a href="https://stutcc-python-tuples.blogspot.com">الكلاس tuple</a>
+    </nav>
+    <div id="cont">
+        <p id="titlecont" class="title1">أسلوب كتابة الكود في بايثون</p>
+        <ul><li><p class="title2">مبادئ كتابة الكود في بايثون</p></li></ul>
+        في البداية عليك معرفة أن كل ما ستتعلمه في هذا الدرس عبارة عن شرح نظري لأساليب كتابة الكود.
+إذاَ في هذا الدرس ستتعلم كيف تكتب كود بايثون بشكل صحيح يفهمه الكمبيوتر و يفهمه أي شخص يحاول قراءة الكود الذي ستقوم أنت بكتابته مستقبلاً عند بناء تطبيقاتك الخاصة.
+<b id="titlecont" style="text-align:right;"> Case Sensitivity </b>    
+<b> Case Sensitivity </b> تعني أن لغة البرمجة تميز بين الأحرف الكبيرة و الأحرف الصغيرة.
+
+بايثون تعامل الأسماء التي نستخدمها بتأني سواء كنا نضع هذه الأسماء للمتغيرات, الدوال, الكلاسات, الكائنات إلخ.
+مثال: <b> note </b> و <b> Note </b> ليسوا شيئاً واحداً.
+<p id="titlecont" style="text-align:right;" class="title2">إسم الكلاس</p>
+دائماً إبدأ إسم الكلاس بحرف كبير و في حال كان إسم الكلاس يتألف من أكثر من كلمة, إجعل أول حرف من كل كلمة كبيراً.
+
+<nav class="contcode" id="contout" style="text-align: right;" >
+    <b id="titlecont" style="text-align:right;"> امثلة: </b>
+    <ul>
+        <li>في حال كان إسم الكلاس يتألف من كلمة واحدة.</li>
+<p id="1" style="text-align: left; color:darkred;"></p>
+        <li>في حال كان إسم الكلاس يتألف من أكثر من كلمة.</li>
+        <p id="2" style="text-align: left; color:darkred;"></p>
+    </ul>
+</nav>
+<b id="titlecont" style="text-align:right;" class="title2">إسم المتغير </b>
+إستخدم الأحرف الصغيرة عند وضع أسماء للمتغيرات و في حال كان إسم المتغير يتألف من أكثر من كلمة قم بوضع <b>("_") </b> بين كل كلمتين.
+
+<nav class="contcode" id="contout" style="text-align: right;">
+    <b id="titlecont" style="text-align:right;">  امثلة: </b>
+    <ul>
+        <li>في حال كان إسم المتغير يتألف من كلمة واحدة.</li>
+<p id="3" style="text-align: left; color:darkred;"></p>
+        <li>في حال كان إسم المتغير يتألف من أكثر من كلمة.</li>
+        <p id="4" style="text-align: left; color:darkred;"></p>
+    </ul>
+</nav>
+<b id="titlecont" style="text-align:right;" class="title2">إسم الدالة</b>
+إستخدم الأحرف الصغيرة عند وضع أسماء للدوال و في حال كان إسم الدالة يتألف من أكثر من كلمة قم بوضع <b> ("_")</b> بين كل كلمتين.
+
+<nav class="contcode" id="contout" style="text-align: right;">
+    <b id="titlecont" style="text-align:right;"> امثلة: </b>
+    <ul>
+        <li>في حال كان إسم الدالة يتألف من كلمة واحدة.</li>
+<p id="5" style="text-align: left; color:darkred;"></p>
+        <li>في حال كان إسم الدالة يتألف من أكثر من كلمة.</li>
+        <p id="6" style="text-align: left; color:darkred;"></p>
+    </ul>
+</nav>
+<b id="titlecont" style="text-align:right;" class="title2"> التعليقات</b>
+نستخدم التعليقات لنضع ملاحظات حول الكود الذي كتبناه فقط لكي لا ننسى كيف برمجنا الكود في حال أردنا مراجعته أو التعديل عليه بعد وقت طويل.
+التعليقات لا تؤثر إطلاقاً على الكود المكتوب الموضوع في البرنامج و يمكن وضع عدد غير محدود من التعليقات.
+<p>لتضع تعليق, ضع الرمز <b>#</b> ثم أكتب بعده ما شئت.</p>
+<p class="border"><b>تذكر</b>: أنت لست مجبراً على وضع تعليقات في برامجك. و لكننا ننصحك بوضع تعليقات دائماً حتى تساعدك في فهم الكود الذي كتبته.</p> <br/>
+
+<nav class="contcode" id="contout" style="text-align:left;">
+    <b id="titlecont" style="text-align:right;">امثلة: </b>
+    <ul>
+    <p id="7"></p>
+    <p id="8"></p>
+    </ul>   
+</nav>
+<p class="border"><b>ملاحظة</b>: يمكن وضع تعليقات بطرق أخرى في بايثون, لكن مطوري لغة بايثون في موقعهم الرسمي ينصحوا بإعتماد هذا الأسلوب فقط في وضع التعليقات.</p>
+<b id="titlecont" style="text-align:right;" class="title2"> كتابة أكثر من أمر واحد على نفس السطر</b>
+إفتراضياً, بايثون تعتبر أن كل أمر يكتب على سطر واحد.
+إذا أردت كتابة أكثر من أمر على نفس السطر قم بوضع فاصلة منقوطة ;; بين كل أمرين و هكذا سيفهم مترجم لغة بايثون أن السطر عليه أكثر من أمر.
+<nav class="contcode" id="contout" style="text-align:right;">
+    <b id="titlecont" style="text-align:right;"> امثلة: </b>
+    هنا قمنا بوضع ثلاث أوامر على سطر واحد. فعلياً, كل أمر هنا عبارة عن تعريف متغير و إعطائه قيمة.
+    <ul>
+    <p id="9" style="text-align: left; color:darkred;"></p>
+    </ul>   
+</nav>
+<b id="titlecont" style="text-align:right;" class="title2"> كتابة أمر واحد على أكثر من سطر</b> 
+إذا أردت كتابة أمر واحد على أكثر من سطر قم بوضع الرمز <b> \\ </b>في نهاية كل سطر و هكذا سيفهم مترجم لغة بايثون أن الأمر يتألف من أكثر من سطر.
+
+
+<nav class="contcode" id="contout" style="text-align:right;">
+    <b id="titlecont" style="text-align:right;"> المثال الأول: </b>
+    <pre  style="text-align: left;"> <b> # </b>هنا قمنا بتعريف ثلاث متغيرات
+       <strong> item_1 = 10 </strong>
+        <strong> item_2 = 20 </strong>
+        <strong> item_3 = 30 </strong>
+        <b> # </b> الثلاث أسطر التالية عبارة عن أمر واحد
+       <b>  # total </b> و وضع الناتج في المتغير <b> item_3 </b> و <b> item_2 </b> و <b> item_1 </b> إذا هنا سيتم جمع قيم المتغيرات
+      <strong>  total = item_1 + \ </strong>
+              <strong>  item_2 + \ </strong>
+                <strong> item_3 </strong>
+        <b> # total </b>هنا قمنا بعرض قيمة المتغير
+      <strong>  print("total contains:", total) </strong> </pre></nav>
+       <p class="title2"> سنحصل على النتيجة التالية عند التشغيل. </p>
+        <nav  class="contcode" id="contout" style="text-align:left;"> <p id="11"></p></nav>
+        <p class="border"><b>ملاحظة</b>: الجمل التي تحتوي على الرموز <b> [][] </b> أو <b> ()() </b> أو <b> {}{}</b> يمكن كتابتها مباشرةً على عدة أسطر. أي لا تحتاج <b> \\</b> في نهاية كل سطر</p>
+        <nav class="contcode" id="contout" style="text-align:right;">
+            <b id="titlecont" style="text-align:right;">المثال الثاني: </b>
+            هنا قمنا بتعريف مصفوفة من النصوص.
+            <pre style="text-align: left;">
+<b> # </b> الأربعة أسطر التالية عبارة عن أمر واحد
+<strong> seasons = ['Autumn',
+          'Winter',
+          'Spring',
+          'Summer'] </strong>
+<b> # seasons </b> هنا قمنا بعرض القيم المخزنة في المصفوفة
+               <strong> print("Seasons contains:", seasons) </strong></pre>
+            <pre  style="text-align: left;"></pre></nav>
+          <p class="title2">  سنحصل على النتيجة التالية عند التشغيل.</p>
+            <nav  class="contcode" id="contout" style="text-align:left;"> <p id="12"></p></nav>
+            <p id="titlecont" style="text-align:right;" class="title2">  لأحرف المستخدمة في وضع الأسماء في بايثون </p> 
+<p>أي إسم نضعه لمتغير, دالة, كلاس, كائن إلخ.. يسمى <b> identifier </b> في البرمجة.</p>
+<p>في بايثون كل عنصر نريد إنشاؤه علينا إعطاؤه إسم خاص, أي علينا تحديد الـ <b> identifier</b> له.</p>
+<p>إذاً يتم التمييز بين العناصر في بايثون من خلال أسمائهم, أي من خلال الـ <b> Identifiers </b>.</p>
+<strong >قواعد إلزامية عند إعطاء الأسماء</strong>
+<ol><li>الـ <b> Identifiers </b> يجب أن يبدأوا بحرف كبير بين <b> A-Z </b> أو حرف صغير بين <b> a-z </b> أو الشحطة <b> _ </b>.</li>
+<li>يمنع إستخدام أي كلمة من الكلمات المحجوزة <b> ( Keywords ) </b>.</li>
+<li>لا تنسى أن بايثون تطبق مبدأ الـ <b> Case Sensitive </b>.</li></ol>
+<strong>ركز على أول حرف فقط</strong>
+<p>أمثلة للأسماء التي يسمح باستخدامها: <b> Harmash </b> , <b> name </b> ,<b>  _number </b> </p>
+<p>أمثلة للأسماء التي يمنع استخدامها: 1 <b> st</b> , <b> -cash </b> , <b> @user </b> </p>
+<strong>الكلمات المحجوزة في بايثون</strong>
+جميع الكلمات التالية محجوزة للغة بايثون, أي لا يمكن إستخدامها كـ <b> Identifiers </b>.
+<nav  class="contcode" id="contout" style="text-align:left;"> <pre>
+<strong> assert </strong>
+<strong> break </strong>
+<strong> class </strong>
+<strong> continuedef  </strong>
+<strong> del </strong>
+<strong> elif </strong>
+<strong> else </strong>
+<strong> exceptexec </strong>
+<strong> False </strong>
+<strong> finally </strong>
+<strong> for </strong>
+<strong> fromglobal </strong>
+<strong> if </strong>
+<strong> import </strong>
+<strong> in  </strong>
+<strong> islambda </strong>
+<strong> None </strong>
+<strong> nonlocal </strong>
+<strong> not </strong>
+<strong> orpass </strong>
+<strong> print </strong>
+<strong> raise </strong>
+<strong> return </strong>
+<strong> Truetry </strong>
+<strong> while </strong>
+<strong> with </strong>
+<strong> yield </strong>
+</pre>
+
+</nav>
+<strong>قواعد ترتيب الكود في بايثون</strong> <br/>
+في البداية إذا كنت تستخدم برنامج <b> PyCharm </b> فإنه سيقوم بتنبيهك إذا خالفت أي قاعدة من قواعد كتابة الكود الإجبارية في بايثون.
+<p class="title2">قواعد كتابة الكود في بايثون هي التالية:</p>
+<ol>
+    <li>لا تقم بإضافة أي مسافة فارغة باستخدام الزر <b> TAB </b> لأن المسافة التي يعطيها هذا الزر غير مسموح إستخدامها في لغة بايثون.</li>
+    <li>إستخدم 4 مسافات فارغة <b> Space </b> عند وضع الكود بشكل متداخل.</li>
+    <li>ضع سطر فارغ على الأقل بين السطر الذي تم فيه تعريف الكلاس و الدوال المعرفة بداخله.</li>
+    <li>ضع سطر فارغ على الأقل بين كل دالتين</li>
+    <li>ضع سطر فارغ بين كل إثنين بلوك تضيفهما بداخل الدوال.</li>
+    <li>ضع مسافة فارغة حول جمل التحكم و جمل الشرط.</li>
+    <li>عند وضع التعليقات يفضل إستخدام الرمز  <b> #</b> في بداية كل سطر حتى و إن كان التعليق يتألف من عدة أسطر.</li>
+    <li>عدد الأحرف القصوى التي يمكن وضعها في كل سطر هو 79 حرف.</li>
+    <strong>مصطلحات تقنية</strong>
+   <ul><li><p> <b> بلوك:</b> عبارة عن مجموعة أوامر متسلسلة منطقياً و موضوعة في مكان محدد و لا يوجد بينها أسطر فارغة.</p></li>
+       <li> <p> <b> Indentations:</b> عبارة عن المسافات الفارغة التي يتم إضافتها لترتيب و تنسيق كل بلوك يتم إضافته.</p></li></ul> 
+</ol>
+<strong>أمثلة حول طريقة كتابة الكود في بايثون</strong> <br/>
+الهدف من المثال التالي إظهار كيف يجب ترتيب كود البايثون و ليس معرفة طريقة عمله.
+<nav  class="contcode" id="contout" style="text-align:left;">
+<p style="text-align: right;"><b>المثال الأول:</b></p>
+<pre> <b> # </b>قيمته 14  <b> note </b> هنا قمنا بتعريف متغير إسمه
+    <strong> note = 14 </strong>
+     
+   <b>  # </b> أكبر أو تساوي 10 سيتم تنفيذ أمر الطباعة الموضوع بداخلها <b> note </b> هنا وضعنا شرط يعني أنه إذا كانت قيمة المتغير
+   <strong> if note >= 10:
+        print("Congratulations.. you passed the test!") </strong>
+     
+   <b> # </b> أكبر أو تساوي 10 سيتم تنفيذ أمر الطباعة الموضوع بداخلها <b> note </b> هنا لنا أنه إذا لم تكن قيمة المتغير
+   <strong> else:
+        print("Sorry.. you failed the test!") </strong> </pre>
+</nav>
+<p class="title2"> سنحصل على النتيجة التالية عند التشغيل. </p>
+<nav  class="contcode" id="contout" style="text-align:left;">!Congratulations.. you passed the test</nav>
+في حال كنت تنوي وضع كل الكود السابق بداخل كلاس, يجب أن تضيف 4 مسافات فارغة قبل كل سطر.
+<p class="border"><b>تذكر</b>: الهدف من المثال التالي إظهار كيف يجب ترتيب كود البايثون و ليس معرفة طريقة عمله.</p>
+<nav  class="contcode" id="contout" style="text-align:left;">
+    <p style="text-align: right;"><b> المثال الثاني:</b></p>
+    <pre><b> # Test </b> هنا قمنا بتعريف كلاس إسمه
+       <strong> class Test: </strong>
+         
+           <b> # </b> قيمته 14 <b> note </b> هنا قمنا بتعريف متغير إسمه
+            <strong> note = 14 </strong>
+         
+            <b> # </b> أكبر أو تساوي 10 سيتم تنفيذ أمر الطباعة الموضوع بداخلها <b> note  </b> هنا وضعنا شرط يعني أنه إذا كانت قيمة المتغير
+            <strong> if note >= 10:
+                print("Congratulations.. you passed the test!") </strong>
+         
+            <b> # </b> أكبر أو تساوي 10 سيتم تنفيذ أمر الطباعة الموضوع بداخلها <b> note </b> هنا كأننا قلنا أنه إذا لم تكن قيمة المتغير
+           <strong> else:
+                print("Sorry.. you failed the test!") </strong> </pre>
+    </nav>
+   <p class="title2"> سنحصل على النتيجة التالية عند التشغيل. </p>
+    <nav  class="contcode" id="contout" style="text-align:left;">!Congratulations.. you passed the test</nav>
+</div>
+    <script>
+      document.getElementById("1").appendChild(document.createTextNode(":class First"));
+      document.getElementById("2").appendChild(document.createTextNode(":class FirstPythonClass"));
+      document.getElementById("3").appendChild(document.createTextNode("average = 10"));
+      document.getElementById("4").appendChild(document.createTextNode("total_score = 20"));
+      document.getElementById("5").appendChild(document.createTextNode(":()def display"));
+      document.getElementById("6").appendChild(document.createTextNode(":()def display_user_info"));
+      document.getElementById("7").appendChild(document.createTextNode("     هذا تعليق يتألف من سطر واحد و هو لا يؤثر أبداً على الكود الموضوع#"));
+      document.getElementById("8").appendChild(document.createTextNode("  هذا تعليق آخر.. كما تلاحظ, يمكنك وضع العدد الذي تريده من التعليقات#"));
+      document.getElementById("9").appendChild(document.createTextNode("x = 1; y = 2; z = 3"));
+      document.getElementById("11").appendChild(document.createTextNode("total contains: 60"));
+      document.getElementById("12").appendChild(document.createTextNode("Seasons contains: ['Autumn', 'Winter', 'Spring', 'Summer']"));
+    </script>
+</body>
+</html>

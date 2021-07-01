@@ -1,0 +1,528 @@
+<!DOCTYPE html >
+<html lang="ar" dir="rtl">
+<head>
+    <link rel="icon" href="https://g.top4top.io/p_1951l48qy1.png" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>script</title>
+    <style>
+        .rtl{direction:rtl}
+      .right{text-align:right}
+      .ar{font-family:droid_arabic_naskh_regular;line-height:32px}
+      .left{text-align:left}
+      .inline{display:inline-block}
+      .responsive-table{overflow-x:auto}
+      .responsive-table .en{font-family:Helvetica,Arial,Sans-Serif;line-height:24px}
+      .responsive-table .ar{font-family:droid_arabic_naskh_regular;line-height:32px}
+      .responsive-table table{border-collapse:collapse;border-spacing:0;width:100%}
+      .responsive-table table th{background-color:#ccc;padding:10px;border:1px solid #bbb;vertical-align:middle}
+      .responsive-table table td{padding:10px;border:1px solid #bbb}
+      .responsive-table table tr:nth-child(even){background-color:#fff}
+      .responsive-table table tr:nth-child(odd){background-color:#f1f1f1}
+      strong{color: darkblue;}
+      b{color: darkred;}
+      .titleb{
+          color: #8d9399; font-size: 24px;
+      }
+      .not{
+          border:4px solid black; 
+          background-color:lightblue; 
+          text-align:center;            
+          font-size: 22px;
+          /*الملاحضات والمعلومات*/
+      }
+       .title1{
+         font-size:24px;
+         color:darkred;
+         font-weight: bold;
+         text-align: center;
+         /*العناوين الرئيسية*/
+      }
+      .title2{
+       font-weight: bold;
+       font-size:22px;
+       color:darkblue;
+       /*العناوين الفرعية*/
+      }
+      *{
+          font-size: 20px;
+      }
+      .bacp{
+          display: inline; background-color: rgb(137, 137, 245); padding:3px; 
+      }
+      .contcode pre{
+          direction: ltr;
+          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+       .contcode{
+           text-align: left;
+          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          margin-top: 20px;
+          border: 2px saddlebrown solid;
+      }
+      #code{
+          text-align: left;
+      }
+      #apage{
+          background-color: rgb(133, 129, 129) ;
+      }
+      body{  
+          margin-top: 0;
+      }
+      #titlecont{
+          display: block;
+          text-align: center;
+      }
+      #cont{
+          text-align: right;
+          position:absolute;
+          top: 11%;
+          left: 17%;
+          height: 197%;
+          width: 64.7%;
+      }
+      #list{
+          background-color:white;
+          z-index: 100;
+          position: fixed; 
+          width: 100%;
+      }
+      #out{
+          background-color: white;
+          width: 17.4%;
+          height: 380px;
+          border: 2px rgb(161, 160, 160) solid;
+          position: fixed;
+          left: 82%;
+          top: 44%;
+      }
+      #button:hover{
+          color: white;
+          background-color: #007bff; 
+      }
+      #button{
+          position: fixed;
+          bottom: 47.5%;
+          left: 82%;
+          width: 18%;
+          height: 30px;
+          top: 275px;   
+      }
+      #input::placeholder{
+          text-align: center;
+      }
+      #input{
+          width: 17.5%;
+          height: 200px;
+
+          position: fixed;
+          bottom: 52%;
+          left: 82%;
+          top: 10%;
+          display: block;
+      }
+      #titbox{
+          text-align: center;
+      }
+      #boxh{
+          background-color: rgb(133, 129, 129);
+      }
+      #box a:hover{
+          background-color: rgb(133, 129, 129);
+      }
+      #box a{
+          margin-top: 1px;
+          padding: 3px;
+          text-decoration: none;
+          margin-left: 5px;
+          display: block;
+          color: #2f3f50;
+      }
+      #box{
+          background-color: white;
+          overflow-y:scroll;   
+          position: fixed;
+          margin-top: 5px;
+          margin-left: 4px;
+          text-align: left;
+          border: 2px #007bff solid;
+          width: 15%;
+          height: 89.5%;
+          top: 9%;
+          right: 84%;
+          float: left;
+      }
+      #but:hover{
+          color:  #007bff;
+          background-color:white;            
+      }
+      #but{
+          color: white;
+          background-color: #007bff;
+      }
+      #search{
+         width: 11%;
+      }
+      nav{
+          text-align: center;
+      }
+      .a:hover{
+          background-color: white;
+          color:   #007bff;
+      }
+      #title{
+          padding-right: 12%;
+          font-size: 22px;
+      }
+      .aa{
+          line-height: 50px;
+         text-align: center;
+         text-decoration: none;
+         padding: 0.6% 4.8%;
+         background-color:  #007bff; 
+         color: white;
+      }
+     .a{
+      line-height: 50px;
+         text-align: center;
+         text-decoration: none;
+         padding: 0.6% 4.6%;
+         background-color:  #007bff; 
+         color: white;
+     }
+     @media screen and (min-width: 1265px) and (max-width:1365px){
+      .titleb{ font-size: 23.5px;}
+         *{font-size: 19.5px;}     
+      .a{padding: 0.55% 4.5%;}
+     .aa{padding: 0.55% 4.7%;}
+     #title{padding-right: 11%; font-size: 21.5px;}
+     .title1{font-size:23.5px;}
+      .title2{font-size:21.5px;}
+      .not{font-size: 21.5px;}
+     }
+     @media screen and (min-width: 1165px) and (max-width:1265px){
+      .titleb{ font-size: 23px;}
+      *{font-size: 19px;}
+      .a{padding: 0.5% 4.2%;}
+     .aa{padding: 0.5% 4.4%;}
+     #title{padding-right: 10%; font-size: 21px;}
+     .title1{font-size:23px;}
+      .title2{font-size:21px;}
+      .not{font-size: 21px;}
+    }
+     @media screen and (min-width: 1065px) and (max-width:1165px){
+      .titleb{ font-size: 23.5px;}
+      *{font-size: 18.5px;}
+      .a{padding: 0.45% 4.2%;}
+     .aa{padding: 0.45% 4.4%;}
+     #title{padding-right: 9%; font-size: 20.5px;}
+     .title1{font-size:22.5px;}
+      .title2{font-size:20.5px;}
+      .not{font-size: 20.5px;}
+     }
+     @media screen and (min-width: 965px) and (max-width:1065px){
+      .titleb{ font-size: 23px;}
+      *{font-size: 18px;}
+      .a{padding: 0.4% 3.8%;}
+     .aa{padding: 0.4% 4%;}
+     #title{padding-right: 8%; font-size: 20px;}
+     .title1{font-size:22px;}
+      .title2{font-size:20px;}
+      .not{font-size: 20px;}
+     }
+     @media screen and (min-width: 865px) and (max-width:965px){
+      .titleb{ font-size: 22.5px;}
+      *{font-size: 17.5px;}
+      .a{padding: 0.35% 3.6%;}
+     .aa{padding: 0.35% 3.5%;}
+     #title{padding-right: 7%; font-size: 19.5px;}
+     .title1{font-size:21.5px;}
+      .title2{font-size:19.5px;}
+      .not{font-size: 19.5px;}
+     }
+     @media screen and (min-width: 765px) and (max-width:865px){
+      .titleb{ font-size: 22px;}
+      *{font-size: 17px;}
+      .a{padding: 0.3% 3%;}
+     .aa{padding: 0.3% 2.9%;}
+     #title{padding-right: 6%; font-size: 19px;}
+     .title1{font-size:21px;}
+      .title2{font-size:19px;}
+      .not{font-size: 19px;}
+     }
+     @media screen and (min-width: 665px) and (max-width:765px){
+      .titleb{ font-size: 21.5px;}
+      *{font-size: 16.5px;}
+      .a{padding: 0.25% 2.5%;}
+     .aa{padding: 0.25% 2.4%;}
+     #title{padding-right: 5%; font-size: 18.5px;}
+     .title1{font-size:20.5px;}
+      .title2{font-size:18.5px;}
+      .not{font-size: 18.5px;}
+     }
+     @media screen and (min-width: 565px) and (max-width:665px){
+      .titleb{ font-size: 21px;}
+      *{font-size: 16px;}
+      .a{padding: 0.2% 1.6%;}
+     .aa{padding: 0.2% 1.5%;}
+     #title{padding-right: 4%; font-size: 18px;}
+     .title1{font-size:20px;}
+      .title2{font-size:18px;}
+      .not{font-size: 18px;}
+     }
+     @media screen and (min-width: 465px) and (max-width:565px){
+      .titleb{ font-size: 20.5px;}
+      *{font-size: 15.5px;}
+      .a{padding: 0.15% 0.7%;}
+     .aa{padding: 0.15% 0.8%;}
+     #title{padding-right: 3%; font-size: 17.5px;}
+     .title1{font-size:19.5px;}
+     .title2{font-size:17.5px;}
+      .not{font-size: 17.5px;}
+     /**/
+      }
+     @media screen and (min-width: 365px) and (max-width:465px){
+      .titleb{ font-size: 20px;}
+      *{font-size: 15px;}
+      .a{padding: 0.1% 0.5%;}
+     .aa{padding: 0.1% 3.6%;}
+     #title{padding-right: 3%; font-size: 17px;}
+     .title1{font-size:19px;}
+      .title2{font-size:17px;}
+      .not{font-size: 17px;}
+     }
+     @media screen and (min-width: 265px) and (max-width:365px){
+      .titleb{ font-size: 19.5px;}
+      *{font-size: 14.5px;}
+      .a{padding: 0.05% 0.3%;}
+     .aa{padding: 0.05% 0.4%;}
+     #title{padding-right: 2%; font-size: 16.5px;}
+     .title1{font-size:18.5px;}
+      .title2{font-size:16.5px;}
+      .not{font-size: 16.5px;}
+     }
+     @media screen and (min-width: 165px) and (max-width:265px){
+      .titleb{ font-size: 19px;}
+      *{font-size: 14px;}
+      .a{padding: 0.05% 0.1%;}
+     .aa{padding: 0.05% 0.2%;}
+     #title{padding-right: 1%; font-size: 16px;}
+     .title1{font-size:18px;}
+      .title2{font-size:16px;}
+      .not{font-size: 16px;}
+     }
+     @media screen and (min-width: 65px) and (max-width:165px){
+      .titleb{ font-size: 18.5px;}
+      *{font-size: 13.5px;}
+      .a{padding: 0.05% 0.05%;}
+     .aa{padding: 0.05% 0.1%;}
+     #title{padding-right: 0.5%; font-size: 15.5px;}
+     .title1{font-size:17.5px;}
+      .title2{font-size:15.5px;}
+      .not{font-size: 15.5px;}
+     }
+  </style>
+</head>
+<body>
+    <nav id="list" dir="ltr">
+        <a href="https://stutcc.blogspot.com" class="aa" id="title"><b class="titleb">S</b>tu<b class="titleb">T</b>cc</a>
+        <a href="https://stutcc-html-editor.blogspot.com" class="a">محرر الاكواد</a>
+        <a href="https://stutcc-Shortcuts.blogspot.com" class="a">موقع الاختصارات</a>
+        <a href="https://stutcc-html-test.blogspot.com" class="a">اختبار</a>       
+        <a href="https://stutcc-python.blogspot.com" class="a">بايثون</a>
+        <input type="text" placeholder="search" id="search">
+        <button type="submit" id="but">search</button> 
+    </nav >
+    <nav id="box" dir="ltr">
+        <p id="titbox">Tags</p>
+        <a href="https://stutcc-html-introduction.blogspot.com" class="abox">introduction</a>
+        <a href="https://stutcc-html-html.blogspot.com" class="abox">html</a>
+        <a href="https://stutcc-html-head.blogspot.com" class="abox">head</a>
+        <a href="https://stutcc-html-body.blogspot.com" class="abox">body</a>
+        <a href="https://stutcc-html-link.blogspot.com" class="abox" >link</a>
+        <a href="https://stutcc-html-textFormatting.blogspot.com" class="abox" >text formatting</a>
+        <a href="https://stutcc-html-p.blogspot.com" class="abox" >paragraph(p)</a>
+        <a href="https://stutcc-html-titles.blogspot.com" class="abox" >titles</a>
+        <a href="https://stutcc-html-abbr.blogspot.com" class="abox" >abbr</a>
+        <a href="https://stutcc-html-a.blogspot.com" class="abox" >a</a>
+        <a href="https://stutcc-html-img.blogspot.com" class="abox" >img</a>
+        <a href="https://stutcc-html-picture.blogspot.com" class="abox" >picture</a>
+        <a href="https://stutcc-html-video.blogspot.com" class="abox" >video</a>
+        <a href="https://stutcc-html-style.blogspot.com" class="abox" >style</a>
+        <a href="https://stutcc-html-script.blogspot.com" class="abox" id="boxh">script</a>
+        <a href="https://stutcc-html-forms.blogspot.com" class="abox" >forms</a>
+        <a href="https://stutcc-html-button.blogspot.com" class="abox" >button</a>
+        <a href="https://stutcc-html-ol.blogspot.com" class="abox" >ordered list(ol)</a>
+        <a href="https://stutcc-html-ul.blogspot.com" class="abox" >unordered list(ul)</a>
+        <a href="https://stutcc-html-tables.blogspot.com" class="abox" >tables</a>
+        <a href="https://stutcc-html-colgroup.blogspot.com" class="abox" >colgroup</a>
+        <a href="https://stutcc-html-div.blogspot.com" class="abox" >div</a>
+        <a href="https://stutcc-html-nav.blogspot.com" class="abox" >nav</a>
+        <a href="https://stutcc-html-article.blogspot.com" class="abox" >article</a>
+        <a href="https://stutcc-html-header.blogspot.com" class="abox" >header</a>
+        <a href="https://stutcc-html-thead.blogspot.com" class="abox" >thead</a>
+        <a href="https://stutcc-html-tfoot.blogspot.com" class="abox" >tfoot</a>
+        <a href="https://stutcc-html-aside.blogspot.com" class="abox" >aside</a>
+        <a href="https://stutcc-html-cite.blogspot.com" class="abox" >cite</a>
+        <a href="https://stutcc-html-address.blogspot.com" class="abox" >address</a>
+        <a href="https://stutcc-html-area.blogspot.com" class="abox" >area</a>
+        <a href="https://stutcc-html-label.blogspot.com" class="abox" >label</a>
+        <a href="https://stutcc-html-param.blogspot.com" class="abox" >param</a>
+        <a href="https://stutcc-html-iframe.blogspot.com" class="abox" >iframe</a>
+        <a href="https://stutcc-html-data.blogspot.com" class="abox" >data</a>
+        <a href="https://stutcc-html-main.blogspot.com" class="abox" >main</a>
+        <a href="https://stutcc-html-output.blogspot.com" class="abox" >output</a>
+        <a href="https://stutcc-html-kbd.blogspot.com" class="abox" >kbd</a>
+        <a href="https://stutcc-html-bdi.blogspot.com" class="abox" >bdi</a>
+        <a href="https://stutcc-html-bdo.blogspot.com" class="abox" >bdo</a>
+        <a href="https://stutcc-html-object.blogspot.com" class="abox" >object</a>
+    </nav>
+    <textarea id="input" placeholder="اكتب الكود هنا ضمن وسم ال <body>" dir="ltr"></textarea>
+    <button type="submit" id="button" onclick="input();">النتيجة</button>
+    <div id="out"></div>
+    <div id =cont>
+        <p id="title6" class="title1"></p>
+        <ul><li><b class="title2">تعريفه:</b></li></ul>
+        <p id="contx1"><p id="contx2" style="display:inline;"><p style="display: inline;">و يمكن كتابته في ملف خارجي إمتداده <b>js</b></p></p></p>
+        <p id="contx3" style="display: inline;"></p>
+        <ul><li><b class="title2">خصائصه:</b></li></ul>
+        <p>نود الإشارة إلى أننا سنذكر الخصائص المهمة و المستخدمة فعلياً و نتجاهل أي خصائص لا يوصى باستخدامها.</p>
+        <ol><li><strong>الخاصية</strong><b>async</b>:</li>
+        <p>يمكن إضافتها للوسم لجعل كود الجافا السكربت الموضوع فيه يتنفذ بشكل موازي للسكربتات الأخرى الموضوعة في الصفحة.
+            نقصد بذلك أن السكربتات الموضوعة في الصفحة سيتم تنفيذها في وقت واحد و ليس وراء بعضها بنفس الترتيب الذي تم وضعها فيه.</p>
+            <li><strong>الخاصية</strong><b>crossorigin</b>:</li>
+        <p>نضيفها للوسم في حال أردنا تضمين ملف جافا سكربت موجود في موقع آخر لتحديد ما هي المعلومات التي سيتم إرسالها مع طلب الحصول على الملف من ذاك الموقع.</p>
+        <p>يجب تمرير إحدى القيم التالية المهيئة مسبقاً كقيمة للخاصية<b> (crossorigin) </b>لتحديد ما هي المعلومات التي سيتم إرسالها مع الطلب الذي يقضي بجلب الملف.</p>
+        <div class="responsive-table">
+            <table class="rtl right ar">
+                <tr>
+                    <th style="width:145px;">القيمة</th>
+                    <th>معناها</th>
+                </tr>
+                <tr>
+                    <td class="left"><code>anonymous</code></td>
+                    <td>في حال وضع هذا القيمة فهذا يعني أن الملف الذي يتم طلبه لن يتم طلب إحضار معلومات <span class="inline">الـ <span class="word">cors</span></span> معه.</td>
+                </tr>
+                <tr>
+                    <td class="left"><code>use-credentials</code></td>
+                    <td>في حال وضع هذا القيمة فهذا يعني أنه لن يتم طلب إحضار أي معلومات إضافية مع الملف المطلوب.</td>
+                </tr>
+            </table>
+        </div></br>
+        <li><strong>الخاصية</strong><b>defer</b>:</li>
+        <p>في حال كان السكربت موضوع في ملف خارجي يمكن إضافتها للوسم لجعله ينفذه بعد الإنتهاء من تحميل كل محتوى الصفحة.</p>
+        <li><strong>الخاصية</strong><b>integrity</b>:</li>
+        <p>يتيح للمتصفح إمكانية منع تنفيذ السكربت الموجود بداخل الملف الذي تم تضمينه في حال تم التلاعب به.
+            يجب تمرير قيمة تسمى<b>(Hash Code)</b> لها خاصة بالملف لأنها ما يستخدمه المتصفح عند التأكد من أن الملف لم يتم التلاعب به.</p>
+            <li><strong>الخاصية</strong><b>referrerpolicy</b>:</li>
+        <p>يمكن إضافتها للوسم بهدف تحديد المعلومات التي سيتم إرسالها مع طلب إحضار الملف.</p>
+        <p>يجب تمرير إحدى القيم التالية المهيئة مسبقاً كقيمة للخاصية<b> (rel)</b> لتحديد ما هي المعلومات التي سيتم إرسالها مع الطلب. </p>
+        <div class="responsive-table">
+            <table class="rtl right ar">
+                <tr>
+                    <th style="width:225px;">القيمة</th>
+                    <th>معناها</th>
+                </tr>
+                <tr>
+                    <td class="left"><code>no-referrer</code></td>
+                    <td>لعدم إرسال أي معلومة مع طلب إحضار الملف.</td>
+                </tr>
+                <tr>
+                    <td class="left"><code>no-referrer-when-downgrade</code></td>
+                    <td>لعدم إرسال أي معلومة في <span class="word">Header</span> طلب إحضار الملف <span class="inline">( أي</span> المعلومات التي ترسلها الصفحة للموقع و لا تظهر في <span class="inline">الرابط )</span> إذا كان الموقع الذي سيتلقى الطلب لا يستخدم البروتوكل <code>https</code> و هذا هو الحال الإفتراضي.</td>
+                </tr>
+                <tr>
+                    <td class="left"><code>origin</code></td>
+                    <td>لإرسال المعلومات التالية فقط مع طلب إحضار الملف <span class="inline">( <code>scheme</code></span> - <code>host</code> - <span class="inline"><code>port</code> ).</span></td>
+                </tr>
+                <tr>
+                    <td class="left"><code>origin-when-cross-origin</code></td>
+                    <td>لإرسال المعلومات التالية مع طلب إحضار الملف <span class="inline">( <code>scheme</code></span> - <code>host</code> - <span class="inline"><code>port</code> )</span> بالإضافة إلى المسار <span class="inline">( <code>path</code> )</span> في حال كان الرابط موجود في نفس الموقع.</td>
+                </tr>
+                <tr>
+                    <td class="left"><code>unsafe-url</code></td>
+                    <td>لإرسال المعلومات التالية فقط مع طلب إحضار الملف <span class="inline">( <code>origin</code></span> - <code>path</code> )</span> أي بدون أي معلومة حساسة مثل إسم المستخدم و كلمة مروره.</td>
+                </tr>
+            </table>
+        </div></br>
+        <li><strong>الخاصية</strong><b>الخاصية</b>:</li>
+        <p>في حال كان كود الجافا سكربت موضوع بداخل ملف خاص, نضيفها للوسم و نمرر مسار الملف كقيمة لها حتى تضمينه في الصفحة.</p>
+        <li><strong>الخاصية</strong><b>type</b>:</li>
+        <p>يمكنك إضافتها للوسم لتحديد إصدار لغة جافا سكربت الذي تم اعتماده عند كتابة الكود بأسلوب <b>(MIME)</b>.
+            للإشارة إلى أن إصدار الكود الموضوع في الوسم معدّ بالطريقة التقليدية<b>(Vanilla Script)</b> يمكنك تحديد ذلك على هذا النحو<b> type="application/javascript"</b> و إذا أردت الإشارة إلى أسلوب كتابة الكود هو أسلوب <b>(Ecma Script)</b> فيجب تحديد ذلك على هذا النحو<b> type="application/ecmascript"</b></p>
+            <p style="display: inline;"><b>ملاحظة:</b>في حال لم تحدد الطريقة المعتمدة في كتابة الكود, سيقوم المتصفح باعتماد الطريقة التقليدية بشكل تلقائي.</p>
+            
+    </ol>
+    <ul><li><b class="title2">إستخدامه:</b></li></ul>
+    <p>في المثال التالي قمنا بعرض رسالة تنبيه في الصفحة بواسطة كود بلغة جافا سكربت.</p>
+    <ul><li class="title2">الكود:</li></ul>
+    <nav class="contcode"><pre id="contx4" dir="ltr"></pre></nav>
+    <ul><li class="title2">فتكون النتيجة كالتالي:</li></ul>
+    <nav class="contcode"><!DOCTYPE html>
+                <p>By default, scripts are execute in the same order.</p>
+                <!-- هنا قمنا بكتابة كود بلغة جافا سكربت 
+                يظهر رسالة أمام المستخدم حين يتم تنفيذه -->
+                 <script>   alert("Hello User!");</script>
+        </nav>
+        <p>في المثال التالي قمنا بإعداد ملف إسمه <b>(sample.js)</b> وضعنا في السكربت السابق ثم قمنا بتضمينه في الصفحة.</p>
+        <ul><li class="title2">الكود:</li></ul>
+        <nav class="contcode"><pre id="contx5" dir="ltr"></pre></nav>
+        <ul><li class="title2">فتكون النتيجة كالتالي:</li></ul>
+        <nav class="contcode"><!DOCTYPE html>
+                    <p>By default, scripts are execute in the same order.</p>
+                    <!-- الذي يقوم بإظهار رسالة عندما يتم تنفيذ الكود الموجود فيه sample.js هنا قمنا بتضمين الملف -->
+                    <script src="https://raw.githack.com/stutcc/style/main/script.js"></script>
+            </nav>
+            <p>في المثال التالي قمنا بتضمين سكربت خارجي جاهز مع إضافة الخاصية <b>(integrity)</b> له للتأكد من أمان الملف.
+                من بعدها قمنا بكتابة سكربت يقوم بإظهار/إخفاء فقرة موجودة في الصفحة بالإعتماد على الكود الموجود في السكربت الذي قمنا بتضمينه.</p>
+                <ul><li class="title2">الكود:</li></ul>
+                <nav class="contcode"><pre id="contx6" dir="ltr"></pre></nav>
+                <ul><li class="title2">فتكون النتيجة كالتالي:</li></ul>
+                <nav class="contcode"><!DOCTYPE html>
+                            <!-- هنا قمنا بتضمين سكربت موجود في موقع آخر 
+                            فإنه integrity ملاحظة: إذا حذفت حرف واحد من قيمة الخاصية
+                            لن يتم تضمين الملف  و بالتالي كل السكربتات لن تعمل -->
+                            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                                integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+                                crossorigin="anonymous"></script>
+                        
+                            <button id="btn" id="toggle">Show/Hide</button>
+                            <p id="demo">Click on the button to hide and view the paragraph.</p>
+                                    
+                            <!-- هنا قمنا بكتابة كود بلغة جافا سكربت مبني على الكود السابق الذي
+                            تم تضمينه و هو يقوم بإظهار / إخفاء الفقرة عند النقر على الزر -->
+                            <script>
+                                $(document).ready(function() {
+                                    $("#btn").click(function() {
+                                        $("#demo").toggle();
+                                      });
+                                });
+                            </script>
+                    </nav>
+                    <ul><li><b class="title2">تصميمه الإفتراضي:</b></li></ul>
+                    <p>بشكل عام جميع المتصفحات تعرضه بالتنسيق التالي.</p>
+                    <nav class="contcode"><pre id="contx7" dir="ltr"></pre></nav>
+                    <ul><li><b class="title2">نصائح و ملاحظات:</b></li></ul>
+                    <p id="contx8" style="display: inline;"><p id="contx9" style="display: inline;"><p id="contx10"><p id="contx11"></p></p></p></p>
+    </div>
+    <script>
+        document.getElementById("contx11").appendChild(document.createTextNode("و إذا كان هدفك أن يتم تنفيذ السكربت بعد عرض كل محتوى الصفحة فيجب أن تضعه في آخر الوسم <body>."));
+        document.getElementById("contx10").appendChild(document.createTextNode("إذا كان هدفك أن يتم تنفيذ كود الجافا سكربت قبل أن يتم عرض محتوى الصفحة يجب أن تضعه في الوسم <head>."));
+        document.getElementById("contx9").appendChild(document.createTextNode("أو بداخل الوسم <body> و هذا الأمر أنت تقرره مستقبلاً على حسب حاجتك"));
+        document.getElementById("contx8").appendChild(document.createTextNode("يمكنك وضع الوسم <script> في أي مكان تريد في الصفحة سواء بداخل الوسم <head>"));
+        document.getElementById("contx7").appendChild(document.createTextNode("script {\ndisplay: none;\n}"));
+        document.getElementById("contx6").appendChild(document.createTextNode('<!DOCTYPE html>\n<html>\n<head>\n<!-- هنا قمنا بتضمين سكربت موجود في موقع آخر \nفإنه integrity ملاحظة: إذا حذفت حرف واحد من قيمة الخاصية\nلن يتم تضمين الملف  و بالتالي كل السكربتات لن تعمل -->\n<script src="https://code.jquery.com/\njquery-3.5.1.slim.min.js"integrity=\n"sha256-4+XzXVhsDmqanXG\nHaHvgh1gMQKX40OUvDEBTu8JcmNs="\ncrossorigin="anonymous">\n</head>\n<body>\n<button id="btn" id="toggle">Show/Hide</button>\n<p id="demo">Click on the button to hide and\n view the paragraph.</p>\n<!-- هنا قمنا بكتابة كود بلغة جافا سكربت مبني على الكود السابق الذي\nتم تضمينه و هو يقوم بإظهار / إخفاء الفقرة عند النقر على الزر --\n<script>\n$(document).ready(function() {\n$("#btn").click(function() {\n$("#demo").toggle();\n});\n});\n</script>\n</body>\n</html>'));
+        document.getElementById("contx5").appendChild(document.createTextNode('<!DOCTYPE html>\n<html>\n<body>\n<p>By default, scripts are execute in the\n same order.</p>\n<!-- الذي يقوم بإظهار رسالة عندما يتم تنفيذ \nالكود الموجود فيه sample.js هنا قمنا بتضمين الملف -->\n<script src="https://raw.githack.com/stutcc\n/style/main/script.js">\n\n</body>\n</html>'));
+        document.getElementById("contx4").appendChild(document.createTextNode('<!DOCTYPE html>\n<html>\n<body>\n<p>By default, scripts are execute in the\n same order.</p>\n<!-- هنا قمنا بكتابة كود بلغة جافا سكربت \nيظهر رسالة أمام المستخدم حين يتم تنفيذه -->\n<script>\nalert("Hello User!")>\n</body>\n</html>'));
+        document.getElementById("contx3").appendChild(document.createTextNode("و من ثم تضمينه بواسطة الوسم <script> أيضاً"));
+        document.getElementById("contx2").appendChild(document.createTextNode("كود الجافا سكربت يمكن كتابته بشكل مباشر بداخل الوسم <script>"));
+        document.getElementById("contx1").appendChild(document.createTextNode("نستخدم الوسم <script> لإضافة كود جافا سكربت في الصفحة."));
+        document.getElementById("title6").appendChild(document.createTextNode("الوسم <script>"));
+        function input(){
+        var x=document.getElementById("input").value;
+   var y= document.getElementById("out").innerHTML=x;
+    }
+    cookieChoices={};
+    </script>
+</body>
+</html>

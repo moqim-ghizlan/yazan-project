@@ -1,0 +1,760 @@
+<!DOCTYPE html >
+<html lang="ar" dir="rtl">
+<head>
+    <link rel="icon" href="https://g.top4top.io/p_1951l48qy1.png" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>editor</title>
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="list" dir="ltr">
+        <a href="https://stutcc.blogspot.com" class="aa" id="title"><b class="titleb">S</b>tu<b class="titleb">T</b>cc</a>
+        <a href="https://stutcc-html-introduction.blogspot.com" class="a">html</a>
+        <a href="https://stutcc-Shortcuts.blogspot.com" class="a">موقع الاختصارات</a>
+        <a href="https://stutcc-html-test.blogspot.com" class="a">اختبار</a>       
+        <a href="https://stutcc-python.blogspot.com" class="a">python</a>
+        <input type="text" placeholder="search" id="search">
+        <button type="submit" id="but">search</button> 
+    </nav >
+    <nav id="box" dir="ltr">
+        <p id="titbox">تنسيقات جاهزة</p>
+        <a href="#" class="abox" onclick="ol();" id="oll">قوائم مرتبة</a>
+        <a href="#" style="display: none;" id="l1" onclick="ol1()">بند واحد</a>
+        <a href="#" style="display: none;" id="l2" onclick="ol2()">بندان</a>
+        <a href="#" style="display: none;;" id="l3" onclick="ol3()">ثلاثة بنود</a>
+        <a href="#" style="display: none;" id="l4" onclick="ol4()">اربعة بنود</a>
+        <a href="#" style="display: none;" id="l5" onclick="ol5()">خمسة بنود</a>
+        <a href="#" class="abox" onclick="ul();" id="ull">قوائم غير مرتبة</a>
+        <a href="#" style="display: none;" id="u1" onclick="ul1()">بند واحد</a>
+        <a href="#" style="display: none;" id="u2" onclick="ul2()">بندان</a>
+        <a href="#" style="display: none;" id="u3" onclick="ul3()">ثلاثة بنود</a>
+        <a href="#" style="display: none;" id="u4" onclick="ul4()">اربعة بنود</a>
+        <a href="#" style="display: none;" id="u5" onclick="ul5()">خمسة بنود</a>
+        <a href="#" class="abox" onclick="table()" id="table1" >جدول</a>
+        <a href="#" id="t2" onclick="ta2()" style="display: none;">2*2</a>
+        <a href="#" id="t3" onclick="ta3()" style="display: none;">3*3</a>
+        <a href="#" class="abox" onclick="img()" id="img1">img</a>
+        <nav style="display: none ;" id="im"><input type="text" style="width:90%;" placeholder="رابط او مسار الصورة" id="src"> <input type="text" style="width:90%" placeholder="ارتفاع الصورة" id="height"> <input type="text" style="width:70%" placeholder="عرض الصورة" id="width"><button onclick="i1()">تنفيذ</button></nav>
+        <a href="#" onclick="aa()" id="aa1">رابط</a>
+        <nav style="display: none ;" id="a2"><input type="text" style="width:70%;" placeholder="الرابط" id="href"><button onclick="a1()">تنفيذ</button></nav>
+        <a href="#" id="pp" onclick="ppp()">فقرة نصية</a>
+    </nav>
+    <input type="number" value="20" id="size">
+    <input type="color" id="color">
+    <button id="bold" style="background-color: white;" onclick="bold()"><img src="https://d.top4top.io/p_1980vsppz1.png" alt="" style=" width: 64%; height: 75%; padding-top: 8%;"></button>
+    <button onclick="underline()" id="underline" style=" background-color: white;"><img src="https://k.top4top.io/p_1980ux1dv1.png" alt="" style="width: 65%; height: 80%; padding-top: 8%;"></button>
+    <button id="italic" style="background-color: white;" onclick="italic()"><img src="https://d.top4top.io/p_19807uyjm1.png" alt="" style="width: 70%; height: 81%; padding-top: 8%;"></button>
+    <button id="left" onclick="left()" style="background-color: white;"><img src="https://l.top4top.io/p_1980nj6ex1.png" alt="" style="width: 90%; height: 100%; padding-top: 4%;"></button>
+    <button id="center" style="background-color: white;" onclick="center()"><img src="https://l.top4top.io/p_1980m3jeh1.png" alt="" style="width: 90%; height: 100%; padding-top: 4%;"></button>
+    <button id="right" style="background-color: white;" onclick="right()"><img src="https://c.top4top.io/p_1980h3r8x1.png" alt=""  style="width: 90%; height: 100%; padding-top: 4%;"></button>
+    <textarea dir="auto" id="input2" placeholder="اكتب النص هنا"></textarea>
+    <textarea id="input" dir="ltr"></textarea>
+    <button type="submit" id="button" onclick="ex();">تنفيذ</button><button id="button2" onclick="rem();">حذف الكود</button>
+    <div id="out" dir="ltr"></div>
+    <div id="cont"></div>
+    <script>
+        var bool;
+        var input=document.getElementById("input");
+        var out=document.getElementById("out");
+        var a=1;
+        function ol(){
+            if(a==1){
+                document.getElementById("oll").style.background="rgb(133, 129, 129)";
+                document.getElementById("l1").style.display="block";
+                document.getElementById("l2").style.display="block";
+                document.getElementById("l3").style.display="block";
+                document.getElementById("l4").style.display="block";
+                document.getElementById("l5").style.display="block";
+                return a=0;
+            }
+            else{
+                document.getElementById("oll").style.background="white";
+                document.getElementById("l1").style.display="none";
+                document.getElementById("l2").style.display="none";
+                document.getElementById("l3").style.display="none";
+                document.getElementById("l4").style.display="none";
+                document.getElementById("l5").style.display="none";
+                return a=1;
+            }
+    }
+    function ol1() {
+        input.value="<html>\n<head>\n</head>\n<body>\n<ol>\n<li>enter a text</li>\n</ol>\n</body>\n</html>";
+    }
+    function ol2() {
+        input.value="<html>\n<head>\n</head>\n<body>\n<ol>\n<li>enter a text</li>\n<li>enter a text</li>\n</ol>\n</body>\n</html>";
+    }
+    function ol3() {
+        input.value="<html>\n<head>\n</head>\n<body>\n<ol>\n<li>enter a text</li>\n<li>enter a text</li>\n<li>enter a text</li>\n</ol>\n</body>\n</html>";
+    }
+    function ol4() {
+        input.value="<html>\n<head>\n</head>\n<body>\n<ol>\n<li>enter a text</li>\n<li>enter a text</li>\n<li>enter a text</li>\n<li>enter a text</li>\n</ol>\n</body>\n</html>";
+    }
+    function ol5() {
+        input.value="<html>\n<head>\n</head>\n<body>\n<ol>\n<li>enter a text</li>\n<li>enter a text</li>\n<li>enter a text</li>\n<li>enter a text</li>\n<li>enter a text</li>\n</ol>\n</body>\n</html>";
+    }
+    var b=1;
+        function ul(){
+            if(b==1){
+                document.getElementById("ull").style.background="rgb(133, 129, 129)";
+                document.getElementById("u1").style.display="block";
+                document.getElementById("u2").style.display="block";
+                document.getElementById("u3").style.display="block";
+                document.getElementById("u4").style.display="block";
+                document.getElementById("u5").style.display="block";
+                return b=0;
+            }
+            else{
+                document.getElementById("ull").style.background="white";
+                document.getElementById("u1").style.display="none";
+                document.getElementById("u2").style.display="none";
+                document.getElementById("u3").style.display="none";
+                document.getElementById("u4").style.display="none";
+                document.getElementById("u5").style.display="none";
+                return b=1;
+            }
+    }
+    function ul1() {
+        input.value="<html>\n<head>\n</head>\n<body>\n<ul>\n<li>enter a text</li>\n</ul>\n</body>\n</html>";
+    }
+    function ul2() {
+        input.value="<html>\n<head>\n</head>\n<body>\n<ul>\n<li>enter a text</li>\n<li>enter a text</li>\n</ul>\n</body>\n</html>";
+    }
+    function ul3() {
+        input.value="<html>\n<head>\n</head>\n<body>\n<ul>\n<li>enter a text</li>\n<li>enter a text</li>\n<li>enter a text</li>\n</ul>\n</body>\n</html>";
+    }
+    function ul4() {
+        input.value="<html>\n<head>\n</head>\n<body>\n<ul>\n<li>enter a text</li>\n<li>enter a text</li>\n<li>enter a text</li>\n<li>enter a text</li>\n</ul>\n</body>\n</html>";
+    }
+    function ul5() {
+        input.value="<html>\n<head>\n</head>\n<body>\n<ul>\n<li>enter a text</li>\n<li>enter a text</li>\n<li>enter a text</li>\n<li>enter a text</li>\n<li>enter a text</li>\n</ul>\n</body>\n</html>";
+    }
+    var c=1;
+    function table(){
+        if(c==1){
+            document.getElementById("table1").style.background="rgb(133, 129, 129)";
+            document.getElementById("t2").style.display="block";
+            document.getElementById("t3").style.display="block";
+            return c=0;
+        }
+        else{
+            document.getElementById("table1").style.background="white";
+            document.getElementById("t2").style.display="none";
+            document.getElementById("t3").style.display="none";
+            return c=1;
+        }
+    }
+    function ta2(){
+       var t= input.value='<html>\n<head>\n</head>\n<body>\n<table border="1">\n<tr>\n<td>A</td>\n<td>B</td>\n</tr>\n<tr>\n<td>C</td>\n<td>D</td>\n</tr>\n</table>\n</body>\n</html>';
+    }
+    function ta3(){
+        input.value='<html>\n<head>\n</head>\n<body>\n<table border="1">\n<tr>\n<td>A</td>\n<td>B</td>\n<td>C</td>\n</tr>\n<tr>\n<td>D</td>\n<td>E</td>\n<td>F</td></tr>\n<tr>\n<td>G</td>\n<td>H</td>\n<td>I</td>\n</tr>\n</table>\n</body>\n</html>';
+    }
+    var d=1;
+    function img(){
+        if(d==1){
+            document.getElementById("img1").style.backgroundColor="rgb(133, 129, 129)";
+            document.getElementById("im").style.display="block";
+            return d=0;
+        }
+            else{
+                
+            document.getElementById("img1").style.backgroundColor="white";
+            document.getElementById("im").style.display="none";
+            return d=1;
+            }
+        }
+        function i1(){
+            var src=document.getElementById("src").value;
+            var width1=document.getElementById("width").value;
+            var height1 =document.getElementById("height").value;
+             if(width1.length==0)
+             {width1="atuo";}
+              if(height1.length==0)
+              {height1="atuo";} 
+              if(src.length==0)
+              {src="الرجاء ادخال مسار او رابط لصورة";}
+           var fg =input.value='<html>\n<head>\n</head>\n<body>\n<img src="'+src+'" width="'+width1+'" height="'+height1+'"/>\n</body>\n</html>';
+            out.innerHTML=fg;
+        }
+        var e=1;
+        function aa(){
+            if(e==1){
+                document.getElementById("aa1").style.backgroundColor="rgb(133, 129, 129)";
+                document.getElementById("a2").style.display="block";   
+                return e=0;
+                }
+            else{
+                document.getElementById("aa1").style.backgroundColor="white";
+                document.getElementById("a2").style.display="none";            
+                return e=1;
+            }
+            }
+            function a1(){
+                var href=document.getElementById("href").value;
+                if(href.length==0)
+                {href="الرجاء ادخال الرابط"}
+               var hj= input.value='<html>\n<head>\n</head>\n<body>\n<a href="'+href+'">test</a>\n</body>\n</html>';
+               out.innerHTML=hj;
+            }
+            var f=1;
+            function ppp(){
+                if(f==1){
+                    document.getElementById("input").style.width="41%";
+                    document.getElementById("input").style.left="57.4%";
+                    document.getElementById("input2").style.display="inline";
+                    document.getElementById("bold").style.display="inline";
+                    document.getElementById("underline").style.display="inline";
+                    document.getElementById("italic").style.display="inline";
+                    document.getElementById("color").style.display="inline";
+                    document.getElementById("size").style.display="inline";
+                    document.getElementById("left").style.display="inline";
+                    document.getElementById("center").style.display="inline";
+                    document.getElementById("right").style.display="inline";
+                    return f=0;
+                }
+                else {
+                    document.getElementById("input").style.width="82%";
+                    document.getElementById("input").style.left="16.4%";
+                    document.getElementById("input2").style.display="none";
+                    document.getElementById("bold").style.display="none";
+                    document.getElementById("underline").style.display="none";
+                    document.getElementById("italic").style.display="none";
+                    document.getElementById("color").style.display="none";
+                    document.getElementById("size").style.display="none";
+                    document.getElementById("left").style.display="none";
+                    document.getElementById("center").style.display="none";
+                    document.getElementById("right").style.display="none";
+                    return f=1;
+            }
+        }
+            var g=1;
+            function left(){
+                if(g==1){
+                    document.getElementById("left").style.backgroundColor="rgb(137, 207, 240)";
+                    document.getElementById("center").style.backgroundColor="white";
+                    document.getElementById("right").style.backgroundColor="white";
+                     h=1;
+                     i=1;
+                    return g=0;
+                }
+                else{
+                    document.getElementById("left").style.backgroundColor="white";
+                    return g=1;
+                }   
+            }
+            var h=1;
+            function center(){
+                if(h==1){
+                    document.getElementById("right").style.backgroundColor="white";
+                    document.getElementById("left").style.backgroundColor="white";
+                    document.getElementById("center").style.backgroundColor="rgb(137, 207, 240)";
+                     i=1;
+                     g=1;
+                    return h=0;
+                }
+                else{
+                    document.getElementById("center").style.backgroundColor="white";
+                    return h=1;
+                }   
+            }
+            var i=1;
+            function right(){
+                if(i==1){
+                    document.getElementById("center").style.backgroundColor="white"
+                    document.getElementById("left").style.backgroundColor="white";
+                    document.getElementById("right").style.backgroundColor="rgb(137, 207, 240)";
+                     g=1;
+                     h=1;
+                    return i=0;
+                }
+                else{
+                    document.getElementById("right").style.backgroundColor="white";
+                    return i=1;
+                }   
+
+            }
+            var k=1;
+            function bold(){
+                if(k==1){
+                    document.getElementById("bold").style.backgroundColor="rgb(137, 207, 240)";
+                    return k=0;
+                }
+                else {
+                    document.getElementById("bold").style.backgroundColor="white";
+                    k=1;
+                }
+            }
+            var ll=1;
+            function italic(){
+                if(ll==1){
+                    document.getElementById("italic").style.backgroundColor="rgb(137, 207, 240)";
+                    return ll=0;
+                }
+                else {
+                    document.getElementById("italic").style.backgroundColor="white";
+                    return ll=1;
+                }
+            }
+            var m=1;
+            function underline(){
+                if(m==1){
+                    document.getElementById("underline").style.backgroundColor="rgb(137, 207, 240)";
+                    return m=0;
+                }
+                else {
+                    document.getElementById("underline").style.backgroundColor="white";
+                  return m=1;
+                }
+            }
+        input.value="<html>\n<head>\n</head>\n<body>\n\n</body>\n</html>";
+        function rem(){
+          input.value="<html>\n<head>\n</head>\n<body>\n\n</body>\n</html>";
+          out.innerHTML="";
+        }
+        var aling="";
+        var bold1="";
+        var italic1="";
+        var underline2="";
+        var size=document.getElementById("size").value;+';';
+        var color=document.getElementById("color").value;+';';
+    function ex(){
+            if(f==0){
+            if(g==0){
+                aling="text-align:left;";
+            }
+            if(h==0){
+                aling="text-align:center;";
+            }
+            if(i==0){
+                aling="text-align:right;";
+            }
+            if(k==0){
+                bold1="font-weight: bold;";
+            }
+            else{
+                bold1="";
+            }
+            if(ll==0){
+                italic1="font-style: italic;";
+            }
+            else {
+                italic1="";
+            }
+            if(m==0){
+                underline2="text-decoration: underline;";
+            }
+            else {
+              underline2="";
+            }
+            if(i==1&h==1&g==1){
+                aling="";
+            }
+               var ty= document.getElementById("input2").value;
+               var to='<p style="font-size:'+document.getElementById("size").value+'px;'+'color:'+document.getElementById("color").value+';'+aling+bold1+underline2+italic1+'">'+ty+'</p>';
+              var ti= document.getElementById("input").value=to;
+               document.getElementById("out").innerHTML=ti;
+            
+            }
+        else{
+    var x=document.getElementById("input").value;
+    out.innerHTML=x;}
+        }
+
+    cookieChoices={};
+//Learn from home
+    </script>
+    <style>
+        #input2::placeholder{
+            font-size: 28px;
+            text-align: center;
+            line-height: 600%;
+        }
+        #right{
+            position: absolute;
+            left: 53%;
+            top: 10%;
+            height: 5.17%;
+width: 4.1%;
+display: none;           
+        }
+        #center{
+            position: absolute;
+            left: 47.9%;
+            top: 10%;
+            height: 5.17%;
+            width: 5%;
+            display: none;
+        }
+        #left{
+            position: absolute;
+            left: 42.8%;
+            top: 10%;
+            height: 5.17%;
+            width: 5%;
+            display: none;
+        }
+        #italic{
+            position: absolute;
+            left: 37.7%;
+            top: 10%;
+            height: 5.17%;
+            width: 5%;
+            display: none;
+        }
+        #underline{
+            position: absolute;
+            left: 32.6%;
+            top: 10%;
+            height: 5.17%;
+            width: 5%;
+            display: none;
+        }
+        #color{
+            position: absolute;
+            left: 22.2%;
+            top: 10%;
+            height: 4.7%;
+            width: 5%;
+            display: none;
+        }
+        #size{
+            position: absolute;
+            left: 16.4%;
+            top: 10%;
+            height: 4.5%;
+            width: 5%;
+            display: none;
+        }
+        #bold{
+            position: absolute;
+            left: 27.9%;
+            top: 10%;
+            height: 5.17%;
+            width: 4.6%;
+            display: none;
+        }
+        #input2{
+            position: absolute;
+            left: 16.4%;
+            top:15.7%;
+            width: 40.4%;
+            height: 250px;
+            display: block;
+            font-size: large;
+            display: none;
+        }
+        body{
+            font-size: 22px;
+        }
+        .titleb{
+            color: #8d9399; font-size: 24px;
+        }
+        .not{
+            border:4px solid black; 
+            background-color:lightblue; 
+            text-align:center;            
+            font-size: 22px;
+            /*الملاحضات والمعلومات*/
+        }
+         .title1{
+           font-size:24px;
+           color:darkred;
+           font-weight: bold;
+           text-align: center;
+           /*العناوين الرئيسية*/
+        }
+        .title2{
+         font-weight: bold;
+         font-size:22px;
+         color:darkblue;
+         /*العناوين الفرعية*/
+        }
+        .bacp{
+            display: inline; background-color: rgb(137, 137, 245); padding:3px; 
+        }
+        .contcode pre{
+            direction: ltr;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+         .contcode{
+             text-align: left;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 20px;
+            border: 2px saddlebrown solid;
+        }
+        #code{
+            text-align: left;
+        }
+        #apage{
+            background-color: rgb(133, 129, 129) ;
+        }
+        body{  
+            margin-top: 0;
+        }
+        #titlecont{
+            display: block;
+            text-align: center;
+        }
+        #cont{
+            text-align: right;
+            position:absolute;
+            top: 11%;
+            left: 17%;
+            width: 64.7%;
+        }
+        #list{
+            background-color:white;
+            z-index: 100;
+            position: fixed; 
+            width: 100%;
+        }
+        #out{
+            background-color: white;
+            width: 82%;
+           min-height: 290px;
+            border: 2px rgb(161, 160, 160) solid;
+            position: absolute;
+            left: 16.3%;
+            top: 58%;
+            padding-left: 5px;
+        }
+        #button:hover{
+            color: white;
+            background-color: #007bff; 
+        }
+        #button2:hover{
+            color: white;
+            background-color: #007bff; 
+        }
+        #button2{
+            position:absolute;
+            left: 57.6%;
+            width: 41.2%;
+            top: 52.9%;   
+            height: 32px;
+        }
+        #button{
+            position:absolute;
+            left: 16.3%;
+            width: 41.2%;
+            height: 32px;
+            top: 52.9%;   
+        }
+       
+        #input{
+            position: absolute;
+            left: 16.4%;
+            top:10%;
+            width: 82%;
+            height: 290px;
+            display: block;
+            font-size: large;
+        }
+        #titbox{
+            text-align: center;
+        }
+        #boxh{
+            background-color: rgb(133, 129, 129);
+        }
+        #box a:hover{
+            background-color: rgb(133, 129, 129);
+        }
+        #box a{
+            margin-top: 1px;
+            padding: 3px;
+            text-decoration: none;
+            margin-left: 5px;
+            display: block;
+            color: #2f3f50;
+        }
+        #box{
+            background-color: white;
+            overflow-y:scroll;   
+            position: fixed;
+            margin-top: 5px;
+            margin-left: 4px;
+            text-align: left;
+            border: 2px #007bff solid;
+            width: 15%;
+            height: 89.5%;
+            top: 9%;
+            right: 84%;
+            float: left;
+        }
+        #but:hover{
+            color:  #007bff;
+            background-color:white;            
+        }
+        #but{
+            
+            color: white;
+            background-color: #007bff;
+        }
+        #search{
+           width: 11%;
+        }
+        nav{
+            text-align: center;
+        }
+        .a:hover{
+            background-color: white;
+            color:   #007bff;
+        }
+        #title{
+            padding-right: 12%;
+            font-size: 22px;
+        }
+        .aa{
+            line-height: 50px;
+           text-align: center;
+           text-decoration: none;
+           padding: 0.6% 7%;
+           background-color:  #007bff; 
+           color: white;
+        }
+       .a{
+        line-height: 50px;
+           text-align: center;
+           text-decoration: none;
+           padding: 0.6% 4.6%;
+           background-color:  #007bff; 
+           color: white;
+       }
+       @media screen and (min-width: 1265px) and (max-width:1365px){
+        .titleb{ font-size: 23.5px;}
+         /*ap*/  *{font-size: 19.5px;}     
+        .a{padding: 0.55% 4.5%;}
+       .aa{padding: 0.55% 4.7%;}
+       #title{padding-right: 11%; font-size: 21.5px;}
+       .title1{font-size:23.5px;}
+        .title2{font-size:21.5px;}
+        .not{font-size: 21.5px;}
+       }
+       @media screen and (min-width: 1165px) and (max-width:1265px){
+        .titleb{ font-size: 23px;}
+        *{font-size: 19px;}
+        .a{padding: 0.5% 4.2%;}
+       .aa{padding: 0.5% 4.4%;}
+       #title{padding-right: 10%; font-size: 21px;}
+       .title1{font-size:23px;}
+        .title2{font-size:21px;}
+        .not{font-size: 21px;}
+      }
+       @media screen and (min-width: 1065px) and (max-width:1165px){
+        .titleb{ font-size: 23.5px;}
+        *{font-size: 18.5px;}
+        .a{padding: 0.45% 4.2%;}
+       .aa{padding: 0.45% 4.4%;}
+       #title{padding-right: 9%; font-size: 20.5px;}
+       .title1{font-size:22.5px;}
+        .title2{font-size:20.5px;}
+        .not{font-size: 20.5px;}
+       }
+       @media screen and (min-width: 965px) and (max-width:1065px){
+        .titleb{ font-size: 23px;}
+        *{font-size: 18px;}
+        .a{padding: 0.4% 3.8%;}
+       .aa{padding: 0.4% 4%;}
+       #title{padding-right: 8%; font-size: 20px;}
+       .title1{font-size:22px;}
+        .title2{font-size:20px;}
+        .not{font-size: 20px;}
+       }
+       @media screen and (min-width: 865px) and (max-width:965px){
+        .titleb{ font-size: 22.5px;}
+        *{font-size: 17.5px;}
+        .a{padding: 0.35% 3.6%;}
+       .aa{padding: 0.35% 3.5%;}
+       #title{padding-right: 7%; font-size: 19.5px;}
+       .title1{font-size:21.5px;}
+        .title2{font-size:19.5px;}
+        .not{font-size: 19.5px;}
+       }
+       @media screen and (min-width: 765px) and (max-width:865px){
+        .titleb{ font-size: 22px;}
+        *{font-size: 17px;}
+        .a{padding: 0.3% 3%;}
+       .aa{padding: 0.3% 2.9%;}
+       #title{padding-right: 6%; font-size: 19px;}
+       .title1{font-size:21px;}
+        .title2{font-size:19px;}
+        .not{font-size: 19px;}
+       }
+       @media screen and (min-width: 665px) and (max-width:765px){
+        .titleb{ font-size: 21.5px;}
+        *{font-size: 16.5px;}
+        .a{padding: 0.25% 2.5%;}
+       .aa{padding: 0.25% 2.4%;}
+       #title{padding-right: 5%; font-size: 18.5px;}
+       .title1{font-size:20.5px;}
+        .title2{font-size:18.5px;}
+        .not{font-size: 18.5px;}
+       }
+       @media screen and (min-width: 565px) and (max-width:665px){
+        .titleb{ font-size: 21px;}
+        *{font-size: 16px;}
+        .a{padding: 0.2% 1.6%;}
+       .aa{padding: 0.2% 1.5%;}
+       #title{padding-right: 4%; font-size: 18px;}
+       .title1{font-size:20px;}
+        .title2{font-size:18px;}
+        .not{font-size: 18px;}
+       }
+       @media screen and (min-width: 465px) and (max-width:565px){
+        .titleb{ font-size: 20.5px;}
+        *{font-size: 15.5px;}
+        .a{padding: 0.15% 0.7%;}
+       .aa{padding: 0.15% 0.8%;}
+       #title{padding-right: 3%; font-size: 17.5px;}
+       .title1{font-size:19.5px;}
+       .title2{font-size:17.5px;}
+        .not{font-size: 17.5px;}
+       /**/
+        }
+       @media screen and (min-width: 365px) and (max-width:465px){
+        .titleb{ font-size: 20px;}
+        *{font-size: 15px;}
+        .a{padding: 0.1% 0.5%;}
+       .aa{padding: 0.1% 3.6%;}
+       #title{padding-right: 3%; font-size: 17px;}
+       .title1{font-size:19px;}
+        .title2{font-size:17px;}
+        .not{font-size: 17px;}
+       }
+       @media screen and (min-width: 265px) and (max-width:365px){
+        .titleb{ font-size: 19.5px;}
+        *{font-size: 14.5px;}
+        .a{padding: 0.05% 0.3%;}
+       .aa{padding: 0.05% 0.4%;}
+       #title{padding-right: 2%; font-size: 16.5px;}
+       .title1{font-size:18.5px;}
+        .title2{font-size:16.5px;}
+        .not{font-size: 16.5px;}
+       }
+       @media screen and (min-width: 165px) and (max-width:265px){
+        .titleb{ font-size: 19px;}
+        *{font-size: 14px;}
+        .a{padding: 0.05% 0.1%;}
+       .aa{padding: 0.05% 0.2%;}
+       #title{padding-right: 1%; font-size: 16px;}
+       .title1{font-size:18px;}
+        .title2{font-size:16px;}
+        .not{font-size: 16px;}
+       }
+       @media screen and (min-width: 65px) and (max-width:165px){
+        .titleb{ font-size: 18.5px;}
+        *{font-size: 13.5px;}
+        .a{padding: 0.05% 0.05%;}
+       .aa{padding: 0.05% 0.1%;}
+       #title{padding-right: 0.5%; font-size: 15.5px;}
+       .title1{font-size:17.5px;}
+        .title2{font-size:15.5px;}
+        .not{font-size: 15.5px;}
+       }
+</style>
+</body>
+</html>

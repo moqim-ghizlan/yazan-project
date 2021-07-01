@@ -1,0 +1,998 @@
+<!DOCTYPE html >
+<html lang="ar" dir="rtl">
+<head>
+    <link rel="icon" href="https://g.top4top.io/p_1951l48qy1.png" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>العوامل في بايثون</title>
+    <style>
+        .code-title{display:block;text-align:left;direction:ltr;margin-left:10px;padding-left:30px;line-height:25px;margin-bottom:3px;font-family:Helvetica,Arial,Sans-Serif;font-size:15px}
+        .code-title{display:block;padding:6px;border-radius:2px;direction:ltr;text-align:left;font-weight:700;font-size:16px;margin-bottom:10px;font-family:Helvetica,Arial,Sans-Serif}
+        
+        .full-width{width:100%}
+        .row-number{width:28px;text-align:center}
+        table.list{direction:rtl;text-align:right;border-collapse:collapse;margin-top:10px;margin-bottom:20px;box-shadow:2px 4px 3px #777;font-family:droid_arabic_naskh_regular}table.list td{font-size:14px;padding:10px 10px;padding-bottom:20px;border:1px solid #d4d4d4;vertical-align:middle;direction:rtl;line-height:2em}table.list th{border:1px solid #237eb5;padding:10px;color:#fff;background-color:#237eb5;text-align:center;direction:rtl;font-weight:400}table.list tr:nth-child(odd){background-color:#f1f1f1}table.list tr:nth-child(even){background-color:#fff}table.list .code{background-color:transparent}table.list .word{background-color:transparent}table.list .code-title{display:block;padding:6px;border-radius:2px;direction:ltr;text-align:left;font-weight:700;font-size:16px;margin-bottom:10px;font-family:Helvetica,Arial,Sans-Serif}
+        .center{text-align:center}
+        .right{text-align:right}.left{text-align:left}
+        .word{background-color:transparent} 
+        .word{color:#622a62;padding:0 2px;border-radius:4px;direction:ltr;display:inline-block;font-family:Helvetica,Arial,Sans-Serif;font-weight:700}
+        table code{direction: ltr;}
+         .titleb{
+            color: #8d9399; font-size: 24px;
+        }
+        
+        b{ color:darkred;}
+        .title1{
+           font-size:24px;
+           color:darkred;
+           font-weight: bold;
+           text-align: center;
+           /*العناوين الرئيسية*/
+        }
+        .title2{
+         font-weight: bold;
+         font-size:22px;
+         color:darkblue;
+         /*العناوين الفرعية*/
+        }
+        *{
+            font-size: 20px;
+        }
+        .bacp{
+            display: inline; background-color: rgb(137, 137, 245); padding:3px; 
+        }
+        .contcode pre{
+            direction: ltr;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+         .contcode{
+             text-align: left;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 20px;
+            border: 2px saddlebrown solid;
+        }
+        #code{
+            text-align: left;
+        }
+        #apage{
+            background-color: rgb(133, 129, 129) ;
+        }
+        body{  
+            margin-top: 0;
+        }
+        #titlecont{
+            display: block;
+            text-align: center;
+        }
+        #cont{
+            text-align: right;
+            position:absolute;
+            top: 11%;
+            left: 17%;
+            height: 197%;
+            width: 81%;
+        }
+        #list{
+            background-color:white;
+            z-index: 100;
+            position: fixed; 
+            width: 100%;
+        }
+        #out{
+            background-color: white;
+            width: 17.4%;
+            height: 380px;
+            border: 2px rgb(161, 160, 160) solid;
+            position: fixed;
+            left: 82%;
+            top: 44%;
+        }
+        #button:hover{
+            color: white;
+            background-color: #007bff; 
+        }
+        #button{
+            position: fixed;
+            bottom: 47.5%;
+            left: 82%;
+            width: 18%;
+            height: 30px;
+            top: 275px;   
+        }
+        #input::placeholder{
+            text-align: center;
+        }
+        #input{
+            width: 17.5%;
+            height: 200px;
+            position: fixed;
+            bottom: 52%;
+            left: 82%;
+            top: 10%;
+            display: block;
+        }
+        #titbox{
+            text-align: center;
+        }
+        #boxh{
+        background-color: rgb(133, 129, 129);
+    }   
+        #box a:hover{
+            background-color: rgb(133, 129, 129);
+        }
+        #box a{
+            margin-top: 1px;
+            padding: 3px;
+            text-decoration: none;
+            margin-right: 5px;
+            display: block;
+            color: #2f3f50;
+        }
+        #box{
+            background-color: white;  
+            position: fixed;
+            margin-top: 5px;
+            margin-left: 4px;
+            text-align: right;
+            border: 2px #007bff solid;
+            width: 15%;
+            height: 89.5%;
+            top: 9%;
+            right: 84%;
+            float: left;
+        }
+        #but:hover{
+            color:  #007bff;
+            background-color:white;            
+        }
+        #but{
+            color: white;
+            background-color: #007bff;
+        }
+        #search{
+           width: 12.5%;
+        }
+        nav{
+            text-align: center;
+        }
+        .a:hover{
+            background-color: white;
+            color:   #007bff;
+        }
+        #title{
+            padding-right: 12%;
+            font-size: 22px;
+            text-align: left;
+            padding-left: 18px;
+        }
+        .aa{
+            line-height: 50px;
+           text-align: center;
+           text-decoration: none;
+          /* padding: 0.55% 7.9%;*/
+           padding: 7px 108px;
+           background-color:  #007bff; 
+           color: white;
+        }
+       .a{
+        line-height: 50px;
+           text-align: center;
+           text-decoration: none;
+           /*padding: 0.6% 7.7%;*/
+           padding: 8px 100px;
+           background-color:  #007bff; 
+           color: white;
+       }
+       @media screen and (min-width: 1285px) and (max-width:1365px){
+        .titleb{ font-size: 23.5px;}
+           *{font-size: 19.5px;}     
+        .a{padding: 7px 97px;}
+       .aa{padding: 6px 100px;}
+       #title{padding-right: 11%; font-size: 21.5px;}
+       .title1{font-size:23.5px;}
+        .title2{font-size:21.5px;}
+        .not{font-size: 21.5px;}
+       }
+       @media screen and (min-width: 1204px) and (max-width:1284px){
+        .titleb{ font-size: 23px;}
+        *{font-size: 19px;}
+        .a{padding: 6px 90px;}
+       .aa{padding: 6px 100px;}
+       #title{padding-right: 10%; font-size: 21px;}
+       .title1{font-size:23px;}
+        .title2{font-size:21px;}
+        .not{font-size: 21px;}
+      }
+       @media screen and (min-width: 1123px) and (max-width:1203px){
+        .titleb{ font-size: 23.5px;}
+        *{font-size: 18.5px;}
+        .a{padding: 6px 83px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 9%; font-size: 20.5px;}
+       .title1{font-size:22.5px;}
+        .title2{font-size:20.5px;}
+        .not{font-size: 20.5px;}
+       }
+       @media screen and (min-width: 1042px) and (max-width:1122px){
+        .titleb{ font-size: 23px;}
+        *{font-size: 18px;}
+        .a{padding: 6px 77px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 8%; font-size: 20px;}
+       .title1{font-size:22px;}
+        .title2{font-size:20px;}
+        .not{font-size: 20px;}
+       }
+       @media screen and (min-width: 961px) and (max-width:1041px){
+        .titleb{ font-size: 22.5px;}
+        *{font-size: 17.5px;}
+        .a{padding: 6px 69px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 7%; font-size: 19.5px;}
+       .title1{font-size:21.5px;}
+        .title2{font-size:19.5px;}
+        .not{font-size: 19.5px;}
+       }
+       @media screen and (min-width: 880px) and (max-width:960px){
+        .titleb{ font-size: 22px;}
+        *{font-size: 17px;}
+        .a{padding: 6px 61px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 6%; font-size: 19px;}
+       .title1{font-size:21px;}
+        .title2{font-size:19px;}
+        .not{font-size: 19px;}
+       }
+       @media screen and (min-width: 799px) and (max-width:879px){
+        .titleb{ font-size: 21.5px;}
+        *{font-size: 16.5px;}
+        .a{padding: 6px 53px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 5%; font-size: 18.5px;}
+       .title1{font-size:20.5px;}
+        .title2{font-size:18.5px;}
+        .not{font-size: 18.5px;}
+       }
+       @media screen and (min-width: 718px) and (max-width:798px){
+        .titleb{ font-size: 21px;}
+        *{font-size: 16px;}
+        .a{padding: 6px 43px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 4%; font-size: 18px;}
+       .title1{font-size:20px;}
+        .title2{font-size:18px;}
+        .not{font-size: 18px;}
+       }
+       @media screen and (min-width: 637px) and (max-width:717px){
+        .titleb{ font-size: 20.5px;}
+        *{font-size: 15.5px;}
+        .a{padding: 6px 35px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 3%; font-size: 17.5px;}
+       .title1{font-size:19.5px;}
+       .title2{font-size:17.5px;}
+        .not{font-size: 17.5px;}
+       /**/
+        }
+       @media screen and (min-width: 556px) and (max-width:636px){
+        .titleb{ font-size: 20px;}
+        *{font-size: 15px;}
+        .a{padding: 6px 25px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 3%; font-size: 17px;}
+       .title1{font-size:19px;}
+        .title2{font-size:17px;}
+        .not{font-size: 17px;}
+       }
+       @media screen and (min-width: 475px) and (max-width:555px){
+        .titleb{ font-size: 19.5px;}
+        *{font-size: 14.5px;}
+        .a{padding: 6px 18px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 2%; font-size: 16.5px;}
+       .title1{font-size:18.5px;}
+        .title2{font-size:16.5px;}
+        .not{font-size: 16.5px;}
+       }
+       @media screen and (min-width: 394px) and (max-width:474px){
+        .titleb{ font-size: 19px;}
+        *{font-size: 14px;}
+        .a{padding: 6px 9px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 1%; font-size: 16px;}
+       .title1{font-size:18px;}
+        .title2{font-size:16px;}
+        .not{font-size: 16px;}
+       }
+       @media screen and (min-width: 313px) and (max-width:393px){
+        .titleb{ font-size: 18.5px;}
+        *{font-size: 13.5px;}
+        .a{padding: 6px 1px;}
+       .aa{padding:6px 1px;}
+       #title{padding-right: 0.5%; font-size: 15.5px;}
+       .title1{font-size:17.5px;}
+        .title2{font-size:15.5px;}
+        .not{font-size: 15.5px;}
+       }
+</style>
+</head>
+<body>
+    <nav id="list" dir="ltr">
+        <a href="https://stutcc.blogspot.com" class="aa" id="title"><b class="titleb">S</b>tu<b class="titleb">T</b>cc</a>
+        <a href="https://stutcc-html-introduction.blogspot.com" class="a">html</a>
+        <a href="https://stutcc-Shortcuts.blogspot.com" class="a">موقع الاختصارات</a>
+        <a href="https://stutcc-python-test.blogspot.com" class="a">اختبار</a>       
+        <input type="text" placeholder="search" id="search">
+        <button type="submit" id="but">search</button> 
+    </nav >
+    <nav id="box" dir="rtl">
+        <p id="titbox">بايثون</p>
+        <a href="https://stutcc-python.blogspot.com">نظرة عامة</a>
+        <a href="https://stutcc-python-syntaxs.blogspot.com">أسلوب كتابة الكود</a>
+        <a href="https://stutcc-python-variablesTypes.blogspot.com">أنواع المتغيرات</a>
+        <a href="https://stutcc-python-operators.blogspot.com" id="boxh">العوامل</a>
+        <a href="https://stutcc-python-conditions.blogspot.com">الشروط</a>
+        <a href="https://stutcc-python-loops.blogspot.com">الحلقات</a>
+        <a href="https://stutcc-python-numbers.blogspot.com">التعامل مع الأعداد</a>
+        <a href="https://stutcc-python-strings.blogspot.com">التعامل مع النصوص</a>
+        <a href="https://stutcc-python-lists.blogspot.com">الكلاس list </a>
+        <a href="https://stutcc-python-tuples.blogspot.com">الكلاس tuple</a>
+    </nav>
+    <div id="cont">
+        <p  class="title1">العوامل في بايثون</p>
+        <ul><li><p class="title2">مفهوم العوامل في بايثون:</p></li></ul>
+    <p>عامل:تعني <b> operator </b> في اللغة الإنجليزية, و العامل عبارة عن رمز له معنى محدد في بايثون.</p>
+    <p>يمكننا تصنيف العوامل في بايثون إلى 7 مجموعات أساسية و هي:</p>
+    <ul><li><b> Arithmetic Operators </b></li></ul>
+    <ul><li><b> Comparison Operators </b></li></ul>
+    <ul><li><b> Logical Operators </b></li></ul>
+    <ul><li><b> Bitwise Operators </b></li></ul>
+    <ul><li><b> Assignment Operators </b></li></ul>
+    <ul><li><b> Membership Operators </b></li></ul>
+    <ul><li><b> Identity Operators </b></li></ul>
+    <ul><li><p class="title2">العوامل التي تستخدم في العمليات الحسابية <b>(Arithmetic Operators) </b>:</p></li></ul>
+    <table class="list full-width">
+	    <tr>
+			<th>إسم العامل</th>
+			<th>رمزه</th>
+			<th>مثال</th>
+		    <th>شرح الكود</th>
+		</tr>
+		<tr>
+			<td class="center"><span class="word">Assignment</span></td>
+			<td class="center"><code data-enlighter-language="python">=</code></td>
+			<td class="center"><code data-enlighter-language="python">a = b</code></td>
+			<td>أعطي <code data-enlighter-language="python">a</code> قيمة <code data-enlighter-language="python">b</code></td>
+		</tr>
+		<tr>
+			<td class="center"><span class="word">Addition</span></td>
+			<td class="center"><code data-enlighter-language="python">+</code></td>
+			<td class="center"><code data-enlighter-language="python">a + b</code></td>
+	    	<td>أضف قيمة <code data-enlighter-language="python">b</code> على قيمة <code data-enlighter-language="python">a</code></td>
+		</tr>
+		<tr>
+			<td class="center"><span class="word">Subtraction</span></td>
+			<td class="center"><code data-enlighter-language="python">-</code></td>
+			<td class="center"><code data-enlighter-language="python">a - b</code></td>
+		    <td>إطرح قيمة <code data-enlighter-language="python">b</code> من قيمة <code data-enlighter-language="python">a</code></td>
+		</tr>
+		<tr>
+			<td class="center"><span class="word">Unary plus</span></td>
+			<td class="center"><code data-enlighter-language="python">+</code></td>
+			<td class="center"><code data-enlighter-language="python">+a</code></td>
+		    <td>أضرب قيمة <code data-enlighter-language="python">a</code> بالعامل <code data-enlighter-language="python">+</code></td>
+		</tr>
+		<tr>
+			<td class="center"><span class="word">Unary minus</span></td>
+			<td class="center"><code data-enlighter-language="python">-</code></td>
+			<td class="center"><code data-enlighter-language="python">-a</code></td>
+	    	<td>أضرب قيمة <code data-enlighter-language="python">a</code> بالعامل <code data-enlighter-language="python">-</code></td>
+		</tr>
+		<tr>
+			<td class="center"><span class="word">Multiplication</span></td>
+			<td class="center"><code data-enlighter-language="python">*</code></td>
+			<td class="center"><code data-enlighter-language="python">a * b</code></td>
+		    <td>أضرب قيمة <code data-enlighter-language="python">a</code> بقيمة <code data-enlighter-language="python">b</code></td>
+		</tr>
+		<tr>
+			<td class="center"><span class="word">Exponent</span></td>
+			<td class="center"><code data-enlighter-language="python">**</code></td>
+			<td class="center"><code data-enlighter-language="python">a ** b</code></td>
+		    <td>ضاعف قيمة <code data-enlighter-language="python">a</code> بقيمة <code data-enlighter-language="python">b</code></td>
+		</tr>
+		<tr>
+			<td class="center"><span class="word">Division</span></td>
+			<td class="center"><code data-enlighter-language="python">/</code></td>
+			<td class="center"><code data-enlighter-language="python">a / b</code></td>
+		    <td>أقسم قيمة <code data-enlighter-language="python">a</code> على قيمة <code data-enlighter-language="python">b</code></td>
+		</tr>
+		<tr>
+			<td class="center"><span class="word">Floor Divide</span></td>
+			<td class="center"><code data-enlighter-language="python">//</code></td>
+			<td class="center"><code data-enlighter-language="python">a // b</code></td>
+		    <td>أقسم قيمة <code data-enlighter-language="python">a</code> على قيمة <code data-enlighter-language="python">b</code> و أرجع أقرب عدد صحيح للناتج لا يحتوي على فاصلة.</td>
+		</tr>
+		<tr>
+			<td class="center"><span class="word">Modulo</span></td>
+			<td class="center"><code data-enlighter-language="python">%</code></td>
+			<td class="center"><code data-enlighter-language="python">a % b</code></td>
+		    <td>للحصول على آخر رقم يبقى عندما نقسم قيمة <code data-enlighter-language="python">a</code> على قيمة <code data-enlighter-language="python">b</code></td>
+		</tr>
+	</table>
+    <p>هنا وضعنا مثال لكل عامل موجود في الجدول</p>
+    <p class="title2">العامل <b> = (Assignment Operator) </b></p>
+    <p>العامل <b> =</b> يستخدم لإعطاء قيمة للمتغير.</p>
+    <ul><li class="title2">مثال</li></ul>
+    <nav class="contcode"><pre id="contx1" dir="ltr"></pre></nav>
+    <ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+  <nav class="contcode"> <p>a = 5 <br>b = 5</p></nav><br>
+  <p class="title2">العامل <b> + (Addition Operator) </b></p>
+  <p>العامل <b> +</b> يستخدم لإضافة قيمة على قيمة, أي في عمليات الجمع.</p>
+  <ul><li class="title2">مثال</li></ul>
+  <nav class="contcode"><pre id="contx2" dir="ltr"></pre></nav>
+  <ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+  <nav class="contcode"> <p>c = 7</p></nav>
+  <p class="title2">العامل <b> - (Subtraction Operator) </b></p>
+  <p>العامل <b> - </b>  يستخدم لإنقاص قيمة من قيمة, أي في عمليات الطرح.</p>
+  <ul><li class="title2">مثال</li></ul>
+  <nav class="contcode"><pre id="contx3" dir="ltr"></pre></nav>
+<ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+<nav class="contcode"><p>c = -1</p></nav>
+<p class="title2">العامل <b> + (Unary-Plus Operator) </b> </p>
+        <p>يعني ضرب القيمة بالعامل <b> + </b>.</p>
+        <ul><li class="title2">مثال</li></ul>
+        <nav class="contcode"><pre id="contx4" dir="ltr"></pre></nav>
+        <ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+        <nav class="contcode"><p>b = 10<br> b = -10</p></nav>
+        <p class="title2">العامل <b> - (Unary-Minus Operator) </b></p>
+        <p>عني ضرب القيمة بالعامل <b> - </b>.</p>
+        <ul><li class="title2">مثال</li></ul>
+        <nav class="contcode"><pre id="contx5" dir="ltr"></pre></nav>
+        <ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+        <nav class="contcode"><p>b = -10
+           <br> b = 10</p></nav>
+<p class="title2">العامل <b>* (Multiplication Operator) </b> </p>
+<p>العامل <b> *</b>  يستخدم لضرب قيمة بقيمة, أي في عمليات الضرب.</p>
+<ul><li class="title2">مثال</li></ul>
+<nav class="contcode"><pre id="contx6" dir="ltr"></pre></nav>
+<ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+<nav class="contcode"><p>c = 30</p></nav>
+<p class="title2">العامل <b> ** (Exponential Operator) </b></p>
+<p>العامل <b>**</b> يستخدم لمضاعفة قيمة بقيمة, أي لضرب قيمة بنفسها عدة مرات</p>
+<ul><li class="title2">مثال</li></ul>
+<nav class="contcode"><pre id="contx7" dir="ltr"></pre></nav>
+<ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+<nav class="contcode"><p>c = 32</p></nav>
+<p class="title2">العامل <b> / (Division Operator) </b> </p>
+<p>العامل <b>/</b> يستخدم لقسمة قيمة على قيمة, أي في عمليات القسمة.</p>
+<ul><li class="title2">مثال</li></ul>
+<nav class="contcode"><pre id="contx8" dir="ltr"></pre></nav>
+<ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+<nav class="contcode"><p>c = 1.6</p></nav>
+<p class="title2">العامل <b> // (Floor Division Operator)</b> </p>
+<p>العامل <b> //</b> يستخدم لقسمة قيمة على قيمة و إزالة أي أرقام بعد الفاصلة.</p>
+<ul><li class="title2">مثال</li></ul>
+<nav class="contcode"><pre id="contx9" dir="ltr"></pre></nav>
+<ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+<nav class="contcode"><p>c = 1</p></nav>
+<p class="title2">العامل <b> % (Modulo Operator)</b> </p>
+<p>العامل <b>%</b> يقال له الـ <b>Modulo </b> و يسمى <b>Remainder</b> في الرياضيات و هو آخر رقم يبقى من عملية القسمة.
+    إذاً نستخدم الـ <b>Modulo</b> للحصول على آخر رقم يبقى من عملية القسمة.
+    و له فوائد كثيرة, فمثلاً يمكننا إستخدامه لمعرفة ما إذا كان الرقم مفرد أو مزدوج <b>( أي Even or Odd )</b> و هذا شرحناه بتفصيل في مادة الخوارزميات.
+    
+    في هذا المثال سنقوم بتخزين الرقم الذي يبقى من القسمة في المتغير c.</p>
+    <ul><li class="title2">مثال</li></ul>
+    <nav class="contcode"><pre id="contx10" dir="ltr"></pre></nav>
+    <ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+    <nav class="contcode"><p>c = 3</p></nav>
+    <ul><li><p class="title2">العوامل التي تستخدم في المقارنات <b>(Comparison Operators)</b> </p></li></ul>
+    <table class="list full-width">
+	    <tr>
+			<th>إسم العامل</th>
+			<th>رمزه</th>
+			<th>مثال</th>
+		    <th>شرح الكود</th>
+		</tr>
+		<tr></code>
+			<td class="center"><span class="word">Equal to</span></td>
+			<td class="center"><code data-enlighter-language="python">==</code></td>
+			<td class="center"><code data-enlighter-language="python">(a == b)</code></td>
+	    	<td>هل قيمة <code data-enlighter-language="python">a</code> تساوي قيمة <code data-enlighter-language="python">b</code> ؟<br>
+			إذا كان الجواب نعم فإنها ترجع <code data-enlighter-language="python">True</code></td>
+		</tr>
+		<tr>
+			<td class="center"><span class="word">Not equal to</span></td>
+			<td class="center"><code data-enlighter-language="python">!=</code></td>
+			<td class="center"><code data-enlighter-language="python">(a != b)</code></td>
+		    <td>هل قيمة <code data-enlighter-language="python">a</code> لا تساوي قيمة <code data-enlighter-language="python">b</code> ؟<br>
+			إذا كان الجواب نعم فإنها ترجع <code data-enlighter-language="python">True</code></td>
+		</tr>
+		<tr>
+			<td class="center"><span class="word">Greater than</span></td>
+			<td class="center"><code data-enlighter-language="python">></code></td>
+			<td class="center"><code data-enlighter-language="python">(a > b)</code></td>
+		    <td>هل قيمة <code data-enlighter-language="python">a</code> أكبر من قيمة <code data-enlighter-language="python">b</code> ؟<br>
+			إذا كان الجواب نعم فإنها ترجع <code data-enlighter-language="python">True</code></td>
+		</tr>
+		<tr>
+			<td class="center"><span class="word">Less than</span></td>
+			<td class="center"><code data-enlighter-language="python"><</code></td>
+			<td class="center"><code data-enlighter-language="python">(a < b)</code></td>
+	    	<td>هل قيمة <code data-enlighter-language="python">a</code> أصغر من قيمة <code data-enlighter-language="python">b</code> ؟<br>
+			إذا كان الجواب نعم فإنها ترجع <code data-enlighter-language="python">True</code></td>
+		</tr>
+		<tr>
+			<td class="center"><span class="word">Greater than<br><span class="red">or</span> Equal to</span></td>
+			<td class="center"><code data-enlighter-language="python">>=</code></td>
+			<td class="center"><code data-enlighter-language="python">(a >= b)</code></td>
+		    <td>هل قيمة <code data-enlighter-language="python">a</code> أكبر أو تساوي قيمة <code data-enlighter-language="python">b</code> ؟<br>
+			إذا كان الجواب نعم فإنها ترجع <code data-enlighter-language="python">True</code></td>
+		</tr>
+		<tr>
+			<td class="center"><span class="word">Less than<br><span class="red">or</span> Equal to</span></td>
+			<td class="center"><code data-enlighter-language="python"><=</code></td>
+			<td class="center"><code data-enlighter-language="python">(a <= b)</code></td>
+		    <td>هل قيمة <code data-enlighter-language="python">a</code> أصغر أو تساوي قيمة <code data-enlighter-language="python">b</code> ؟<br>
+			إذا كان الجواب نعم فإنها ترجع <code data-enlighter-language="python">True</code></td>
+		</tr>
+	</table>
+                                <p>هنا وضعنا مثال لكل عامل موجود في الجدول</p>
+                                <p class="title2">العامل <b>== (Equal To Operator)</b> </p>
+                                <p>العامل <b> ==</b> يستخدم لتنفيذ كود معين إذا كانت قيمة المتغير الأول تساوي قيمة المتغير الثاني
+<br>
+                                    عندما نضعه في الشرط فإنه يعني هل قيمة المتغير الأول تساوي قيمة المتغير الثاني؟</p>
+                                    <ul><li>إذا كانت تساويها سيكون الجواب <b>True </b> و بالتالي سينفذ الكود</li></ul>
+                                    <ul><li>أما إذا لم تكن تساويها سيكون الجواب <b> False </b> و بالتالي لن ينفذ الكود.</li></ul>
+                                    <ul><li class="title2">مثال</li></ul>
+                                    <nav class="contcode"><pre id="contx11" dir="ltr"></pre></nav> 
+                                    <ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+                                    <nav class="contcode"><p>a = b</p></nav>
+                                    <p>نلاحظ أنه نفذ أمر الطباعة الموضوع في الشرط الأول لأن جواب الشرط كان <b> True </b>. و لم ينفذ أمر الطباعة الموضوع في الشرط الثاني لأن جواب الشرط كان <b> False </b>.</p>
+    <p class="title2">العامل <b> != (Not Equal To Operator)</b></p>
+    <p>العامل <b> !=</b> يستخدم لتنفيذ كود معين إذا كانت قيمة المتغير الأول لا تساوي قيمة المتغير الثاني.
+<br>
+        عندما نضعه في الشرط فإنه يعني هل قيمة المتغير الأول لا تساوي قيمة المتغير الثاني؟</p>
+        <ul><li>إذا كانت لا تساويها سيكون الجواب <b> True </b> و بالتالي سينفذ الكود.</li></ul>
+        <ul><li>أما إذا كانت تساويها سيكون الجواب <b> False </b> و بالتالي لن ينفذ الكود.</li></ul>
+    <ul><li class="title2">مثال</li></ul>
+    <nav class="contcode"><pre id="contx12" dir="ltr"></pre></nav>
+    <ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+    <nav class="contcode"><p>a != c</p></nav>
+    <p>لاحظ أنه نفذ أمر الطباعة الموضوع في الشرط الثاني لأن جواب الشرط كان <b> True </b>. و لم ينفذ أمر الطباعة الموضوع في الشرط الأول لأن جواب الشرط كان <b> False </b>. </p>
+<p class="title2">العامل <b> > (Greater Than Operator) </b></p>
+<p>العامل <b> > </b> يستخدم لتنفيذ كود معين إذا كانت قيمة المتغير الأول أكبر من قيمة المتغير الثاني.
+<br>
+    عندما نضعه في الشرط فإنه يعني هل قيمة المتغير الأول أكبر من قيمة المتغير الثاني؟</p>
+    <ul><li>إذا كانت أكبر منها سيكون الجواب <b> True </b> و بالتالي سينفذ الكود.</li></ul>
+    <ul><li>إذا لم تكن أكبر منها سيكون الجواب <b> False </b> و بالتالي لن ينفذ الكود.</li></ul>
+    <ul><li class="title2">مثال</li></ul>
+    <nav class="contcode"><pre id="contx13" dir="ltr"></pre></nav>
+<ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل. </li></ul>
+<nav class="contcode">a > b</nav>
+<p>نلاحظ أنه نفذ أمر الطباعة الموضوع في الشرط الأول لأن جواب الشرط كان <b> True </b>. و لم ينفذ أمر الطباعة الموضوع في الشرط الثاني لأن جواب الشرط كان <b> False </b>.</p>
+<p class="title2">العامل <b> < (Less Than Operator)</b> </p>
+<p>العامل <b> < </b> يستخدم لتنفيذ كود معين إذا كانت قيمة المتغير الأول أصغر من قيمة المتغير الثاني.
+<br>
+    عندما نضعه في الشرط فإنه يعني هل قيمة المتغير الأول أصغر من قيمة المتغير الثاني؟</p>
+    <ul><li>إذا كانت أصغر منها سيكون الجواب <b> True </b> و بالتالي سينفذ الكود.</li></ul>
+    <ul><li>إذا لم تكن أصغر منها سيكون الجواب <b> False </b> و بالتالي لن ينفذ الكود.    </li></ul>
+    <ul><li class="title2">مثال</li></ul>
+    <nav class="contcode"><pre id="contx14" dir="ltr"></pre></nav>
+<ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+<nav class="contcode">a > b</nav>
+<p>نلاحظ أنه نفذ أمر الطباعة الموضوع في الشرط الأول لأن جواب الشرط كان <b> True </b>. و لم ينفذ أمر الطباعة الموضوع في الشرط الثاني لأن جواب الشرط كان <b> False </b>.</p>
+<p class="title2">العامل <b> < (Less Than Operator)</b> </p>
+<p>العامل < يستخدم لتنفيذ كود معين إذا كانت قيمة المتغير الأول أصغر من قيمة المتغير الثاني.
+<br>
+    عندما نضعه في الشرط فإنه يعني هل قيمة المتغير الأول أصغر من قيمة المتغير الثاني؟
+    </p>
+    <ul><li>إذا كانت أصغر منها سيكون الجواب <b> True </b> و بالتالي سينفذ الكود.    </li></ul>
+    <ul><li>إذا لم تكن أصغر منها سيكون الجواب <b> False </b> و بالتالي لن ينفذ الكود.</li></ul>
+    <ul><li class="title2">مثال</li></ul>
+    <nav class="contcode"><pre id="contx15" dir="ltr"></pre></nav>
+    <ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل</li></ul>
+    <nav class="contcode"><p>b < a</p></nav>
+    <p>نلاحظ أنه نفذ أمر الطباعة الموضوع في الشرط الثاني لأن جواب الشرط كان <b> True </b>. و لم ينفذ أمر الطباعة الموضوع في الشرط الأول لأن جواب الشرط كان <b> False </b>.</p>
+    <p class="title2">العامل <b> >= (Greater Than or Equal To Operator)</b> </p>
+    <p>العامل <b> >= </b> يستخدم لتنفيذ كود معين إذا كانت قيمة المتغير الأول أكبر أو تساوي قيمة المتغير الثاني.
+<br>
+        عندما نضعه في الشرط فإنه يعني هل قيمة المتغير الأول أكبر أو تساوي قيمة المتغير الثاني؟</p>
+        <ul><li>إذا كانت أكبر منها أو تساويها سيكون الجواب <b> True </b> و بالتالي سينفذ الكود.</li></ul>
+        <ul><li>إذا لم تكن أكبر منها أو تساويها سيكون الجواب <b> False </b> و بالتالي لن ينفذ الكود.</li></ul>
+        <ul><li class="title2">مثال</li></ul>
+        <nav class="contcode"><pre id="contx16" dir="ltr"></pre></nav>
+        <ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+        <nav class="contcode"><p>a >= b
+           <br> c >= a</p></nav>
+           <p>نلاحظ أنه نفذ أمر الطباعة الموضوع في الشرط الأول و الثالث لأن جواب الشرط كان <b> True</b>. و لم ينفذ أمر الطباعة الموضوع في الشرط الثاني لأن جواب الشرط كان <b> False </b>.</p>
+           <p class="title2">العامل <b> <= (Less Than or Equal To Operator)</b> </p>
+           <p>العامل <b> <=</b> يستخدم لتنفيذ كود معين إذا كانت قيمة المتغير الأول أصغر أو تساوي قيمة المتغير الثاني.
+<br>
+            عندما نضعه في الشرط فإنه يعني هل قيمة المتغير الأول أصغر أو تساوي قيمة المتغير الثاني؟</p>
+            <ul><li>إذا كانت أصغر منها أو تساويها سيكون الجواب <b> True </b> و بالتالي سينفذ الكود.</li></ul>
+            <ul><li>إذا لم تكن أصغر منها أو تساويها سيكون الجواب <b> False</b> و بالتالي لن ينفذ الكود. </li></ul>
+            <ul><li class="title2">مثال</li></ul>
+            <nav class="contcode"><pre id="contx17" dir="ltr"></pre></nav>
+            <ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+            <nav class="contcode"><p>a <= b
+            <br>   a <= c</p></nav>
+            <p>نلاحظ أنه نفذ أمر الطباعة الموضوع في الشرط الأول و الثاني لأن جواب الشرط كان <b> True </b>. و لم ينفذ أمر الطباعة الموضوع في الشرط الثالث لأن جواب الشرط كان <b> False </b>.</p>
+            <ul><li><p class="title2">العوامل التي تستخدم في وضع شروط منطقية <b> (Logical Operators)</b> </p></li></ul>
+            <table class="list full-width">
+                <tr>
+                    <th>إسم العامل</th>
+                    <th>رمزه</th>
+                    <th>مثال</th>
+                    <th>شرح الكود</th>
+                </tr>
+                <tr>
+                    <td class="center"><span class="word">Logical AND</span></td>
+                    <td class="center"><code data-enlighter-language="python">and</code></td>
+                    <td class="center"><code data-enlighter-language="python">a and b</code></td>
+                    <td>هل قيمة <code data-enlighter-language="python">a</code> و <code data-enlighter-language="python">b</code> تساويان <code data-enlighter-language="python">True</code> ؟<br>
+                    هنا يجب أن يتم تحقيق الشرطين ليرجع <code data-enlighter-language="python">True</code></td>
+                </tr>
+                <tr>
+                    <td class="center"><span class="word">Logical OR</span></td>
+                    <td class="center"><code data-enlighter-language="python">or</code></td>
+                    <td class="center"><code data-enlighter-language="python">a or b</code></td>
+                    <td>هل قيمة <code data-enlighter-language="python">a</code> أو <code data-enlighter-language="python">b</code> أو كلاهما تساويان <code data-enlighter-language="python">True</code> ؟<br>
+                    هنا يكفي أن يتم تحقيق شرط واحد من الشرطين ليرجع <code data-enlighter-language="python">True</code></td>
+                </tr>
+                <tr>
+                    <td class="center"><span class="word">Logical NOT</span></td>
+                    <td class="center"><code data-enlighter-language="python">not</code></td>
+                    <td class="center"><code data-enlighter-language="python">not a</code></td>
+                    <td>هل قيمة <code data-enlighter-language="python">a</code> لا تساوي <code data-enlighter-language="python">True</code> ؟<br>
+                    إذا كان الجواب نعم فإنها ترجع <code data-enlighter-language="python">True</code></td>
+                </tr>
+            </table>
+            <p>هنا وضعنا مثال لكل عامل موجود في الجدول</p>
+            <p class="title2">العامل <b> and (Logical AND Operator)</b></p>
+            <p>العامل <b> and </b> يستخدم لتنفيذ كود معين إذا تحقق الشرط الأول و الشرط الثاني</p>
+            <ul><li>أي إذا كانت نتيجة الشرط الأول تساوي <b> True </b> و نتيجة الشرط الثاني تساوي <b> True</b> سينفذ الكود.</li></ul>
+            <ul><li>إذا لم تكن نتيجة كلا الشرطين تساوي <b> True </b> لن ينفذ الكود.</li></ul>
+            <ul><li class="title2">مثال</li></ul>
+            <nav class="contcode"><pre id="contx18" dir="ltr"></pre></nav>
+            <ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+            <nav class="contcode"><p>One of the conditions return True</p></nav>
+            <p>فذ أمر الطباعة لأن جواب الشرط الأول الموضوع في الجملة <b> if </b>هو <b> True </b>.</p>
+            <p class="title2">العامل <b> or (Logical OR Operator)</b> </p>
+            <p>العامل <b> or </b> يستخدم لتنفيذ كود معين إذا تحقق على الأقل واحد من الشروط الموضوعة.
+                <br>
+                إذاً هنا يكفي أن يرجع أحد الشرطين القيمة <b> True</b> حتى يتم تنفيذ الأوامر الموضوعة.</p>
+                <ul><li class="title2">مثال</li></ul>
+                <nav class="contcode"><pre id="contx20" dir="ltr"></pre></nav>
+                <ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+                <nav class="contcode"><p>One of the conditions return True</p></nav>
+                <p>نفذ أمر الطباعة لأن جواب الشرط الأول الموضوع في الجملة <b> if </b> هو <b> True </b>.</p>
+            <p class="title2">العامل <b> not (Logical NOT Operator)</b> </p>
+            <p>العامل <b> not </b> يستخدم لتنفيذ كود معين إذا لم يتحقق أي شرط تم وضعه.
+            <br>   أي إذا أرجع الشرط أو جميع الشروط الموضوعة القيمة <b> False </b> سيتم تنفيذ الأوامر الموضوعة.</p>
+        <ul><li class="title2">مثال</li></ul>
+        <nav class="contcode"><pre id="contx19" dir="ltr"></pre></nav>
+        <ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+        <nav class="contcode"><p>The condition return False</p></nav>
+        <p>نفذ أمر الطباعة لأن جواب الشرط هو <b> False </b>.</p>
+        <ul><li><p class="title2">العوامل التي تستخدم للتعامل مع الـ <b> bits (Bitwise Operators)</b></p></li></ul>
+        <table class="list full-width">
+            <tr>
+                <th>إسم العامل</th>
+                <th>رمزه</th>
+                <th>مثال</th>
+                <th>شرح الكود</th>
+            </tr>
+            <tr>
+                <td class="center"><span class="word">Bitwise AND</span></td>
+                <td class="center"><code data-enlighter-language="python">&</code></td>
+                <td class="center"><code data-enlighter-language="python">a & b</code></td>
+                <td>العامل <code data-enlighter-language="python">&</code> يحسب ناتج جمع الـ <span class="word">bits</span> المشتركة بين <code data-enlighter-language="python">a</code> و <code data-enlighter-language="python">b</code></td>
+            </tr>
+            <tr>
+                <td class="center"><span class="word">Bitwise OR</span></td>
+                <td class="center"><code data-enlighter-language="python">|</code></td>
+                <td class="center"><code data-enlighter-language="python">a | b</code></td>
+                <td>العامل <code data-enlighter-language="python">|</code> يحسب ناتج جمع الـ <span class="word">bits</span> المشتركة و الغير مشتركة بين <code data-enlighter-language="python">a</code> و <code data-enlighter-language="python">b</code></td>
+            </tr>
+            <tr>
+                <td class="center"><span class="word">Bitwise XOR</span></td>
+                <td class="center"><code data-enlighter-language="python">^</code></td>
+                <td class="center"><code data-enlighter-language="python">a ^ b</code></td>
+                <td>العامل <code data-enlighter-language="python">^</code> يحسب ناتج جمع الـ <span class="word">bits</span> الغير مشتركة بين <code data-enlighter-language="python">a</code> و <code data-enlighter-language="python">b</code></td>
+            </tr>
+            <tr>
+                <td class="center"><span class="word">Bitwise compliment OR</span></td>
+                <td class="center"><code data-enlighter-language="python">~</code></td>
+                <td class="center"><code data-enlighter-language="python">~a</code></td>
+                <td>العامل <code data-enlighter-language="python">~</code> يقلب الـ <span class="word">bits</span> التي تساوي <span class="number">0</span> إلى <span class="number">1</span> و يقلب الـ <span class="word">bits</span> التي تساوي <span class="number">1</span> إلى <span class="number">0</span>,<br> ثم يضيف عليهم <span class="number">1</span> و يحسب ناتج جمعهم, بعدها يضرب الجواب بالعامل <span class="inline">( <code data-enlighter-language="python">-</code> )</span> ثم يعطينا جواب سلبي.</td>
+            </tr>
+            <tr>
+                <td class="center"><span class="word">Left shift</span></td>
+                <td class="center"><code data-enlighter-language="python"><<</code></td>
+                <td class="center"><code data-enlighter-language="python">a << 2</code></td>
+                <td>العامل <code data-enlighter-language="python"><<</code> يزيح الـ <span class="word">bits</span> من آخر اليسار إلى أول اليمين.<br>
+                العدد <span class="number">2</span> يعني أننا سنزيح آخر إثنين <span class="word">bits</span> و نضعهم في الأول.</td>
+            </tr>
+            <tr>
+                <td class="center"><span class="word">Right shift</span></td>
+                <td class="center"><code data-enlighter-language="python">>></code></td>
+                <td class="center"><code data-enlighter-language="python">a >> 2</code></td>
+                <td>العامل <code data-enlighter-language="python">>></code> يزيح الـ <span class="word">bits</span> من أول اليمين إلى آخر اليسار.<br>
+                العدد <span class="number">2</span> يعني أننا سنزيح أول إثنين <span class="word">bits</span> و نضعهم في الأخير.</td>
+            </tr>
+        </table>
+        <p>هنا وضعنا مثال لكل عامل موجود في الجدول</p>
+        <p class="title2">العامل <b> & (Bitwize AND)</b> </p>
+        <p>العامل <b> &</b>  يحسب ناتج جمع الـ <b> bits </b> المشتركة بين قيمتين</p>
+        <ul><li class="title2">مثال</li></ul>
+<nav class="contcode"><pre id="contx21" dir="ltr"></pre></nav>
+<ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+<nav class="contcode"><p>10 & 75 = 10</p></nav>
+<p> هنا قمنا بتعليم الـ <b> bits </b> المشتركة و التي تم جمعها باللون الاصفر.</p>
+<nav class="contcode">a = 10;      // 10 = 00000000000000000000000000001010
+    b = 75;      // 75 = 00000000000000000000000001001011
+    
+    c = a & b;   //  c = 00000000000000000000000000001010
+                 //  c = 10</nav>
+                 <p class="title2">العامل <b> | (Bitwize OR)</b> </p>
+                 <p>العامل <b> |</b>  يحسب ناتج جمع الـ <b> bits</b> المشتركة و الغير مشتركة بين قيمتين.</p>
+                 <ul><li class="title2">مثال</li></ul>
+                 <nav class="contcode"><pre id="contx22" dir="ltr"></pre></nav>
+<ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+<nav class="contcode">10 | 75 = 75</nav>
+<p>هنا قمنا بتعليم الـ <b> bits </b> المشتركة و الغير مشتركة و التي تم جمعها باللون الاصفر.</p>
+<nav class="contcode">a = 10;      // 10 = 00000000000000000000000000001010
+    b = 75;      // 75 = 00000000000000000000000001001011
+    
+    c = a | b;   //  c = 00000000000000000000000001001011
+                 //  c = 75</nav>
+                 <p class="title2">العامل <b> ^ (Bitwize XOR)</b> </p>
+                 <p>العامل <b> ^</b>  يحسب ناتج جمع الـ <b> bits </b> الغير مشتركة بين قيمتين.</p>
+                 <ul><li class="title2">مثال</li></ul>
+                 <nav class="contcode"><pre id="contx23" dir="ltr"></pre></nav>
+                 <ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+                 <nav class="contcode"><p>10 ^ 75 = 65</p></nav>
+                 <p>هنا قمنا بتعليم الـ <b> bits </b> الغير مشتركة و التي تم جمعها باللون الاصفر.</p>
+                 <nav class="contcode">a = 10;      // 10 = 00000000000000000000000000001010
+                    b = 75;      // 75 = 00000000000000000000000001001011
+                    
+                    c = a | b;   //  c = 00000000000000000000000001000001
+                                 //  c = 65</nav>
+                                 <p class="title2">العامل <b> ~ (Bitwize Compliment OR)</b> </p>
+                                 <p>العامل <b> ~</b> يقلب الـ <b> bits  </b> التي تساوي 0 إلى 1 و يقلب الـ <b> bits </b> التي تساوي 1 إلى 0.
+                                    بعدها يتم حساب الناتج باتباع مبدأ single precision floating point number.</p>
+                                    <ul><li class="title2">مثال</li></ul>
+                                    <nav class="contcode"><pre id="contx24" dir="ltr"></pre></nav>
+                                    <ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+                                    <nav class="contcode">~ 10 = -11</nav>
+                                    <p class="title2">العامل <b> << (Left Shift)</b> </p>
+                                    <p>العامل <b> << </b> يمسح <b> bits </b> من ناحية اليسار ثم يبدل كل <b> bit </b> تم مسحها منهم بصفر و يضعهم من ناحية اليمين.</p>
+                                    <ul><li class="title2">مثال</li></ul>
+                                    <nav class="contcode"><pre id="contx25" dir="ltr"></pre></nav>
+<ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+<nav class="contcode"><p>10 << 2 = 40</p></nav>
+<p> هنا قمنا بتعليم الـ <b> bits </b> التي تم مسحها باللون الاصفر و تعليم الـ <b> bits </b> التي تم إضافتها باللون الأزرق.</p>
+<nav class="contcode">a = 10;       // 10 = 00000000000000000000000000001010
+
+    c = a << 2;   //  c = 00000000000000000000000000101000 = 40
+                  //  c = 40</nav>
+                  <p class="title2">العامل <b> >> (Right Shift)</b> </p>
+                  <p>العامل <b> >> </b>  عندها حالتين: قد يكون العدد أكبر من صفر أو أصغر من صفر.</p>
+                  <ul><li>إذا كان العدد أكبر من صفر, يمسح <b> bits </b> من ناحية اليمين ثم يبدل كل <b> bit </b> منهم بصفر و يضعهم من ناحية اليسار.</li></ul>
+                  <ul><li>إذا كان العدد أصغر من صفر, يمسح <b> bits </b> من ناحية اليمين ثم يبدل كل <b> bit </b> منهم بواحد ليحافظ على إشارة الناقص و يضعهم من ناحية اليسار.</li></ul>
+                <ul><li class="title2">مثال</li></ul>  
+                <nav class="contcode"><pre id="contx26" dir="ltr"></pre></nav>
+                <ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+                <nav class="contcode"><p>9 >> 2 = 2</p></nav>
+                <ul><li><p class="title2">العوامل التي تستخدم لإعطاء قيم للمتغيرات <b> (Assignment Operators)</b> </p></li></ul>
+                <table class="list full-width">
+                    <tr>
+                        <th>إسم العامل</th>
+                        <th>رمزه</th>
+                        <th>مثال</th>
+                        <th>شرح الكود</th>
+                    </tr>
+                    <tr>
+                        <td class="center"><span class="word">Basic Assignment</span></td>
+                        <td class="center"><code data-enlighter-language="python">=</code></td>
+                        <td class="center"><code data-enlighter-language="python">a = b</code></td>
+                        <td>ضع قيمة <code data-enlighter-language="python">b</code> في <code data-enlighter-language="python">a</code>.</td>
+                    </tr>
+                    <tr>
+                        <td class="center"><span class="word">Add AND Assignment</span></td>
+                        <td class="center"><code data-enlighter-language="python">+=</code></td>
+                        <td class="center"><code data-enlighter-language="python">a += b</code></td>
+                        <td>أضف قيمة <code data-enlighter-language="python">a</code> على قيمة <code data-enlighter-language="python">b</code> و خزن الناتج في <code data-enlighter-language="python">a</code></td>
+                    </tr>
+                    <tr>
+                        <td class="center"><span class="word">Susbtract AND Assignment</span></td>
+                        <td class="center"><code data-enlighter-language="python">-=</code></td>
+                        <td class="center"><code data-enlighter-language="python">a -= b</code></td>
+                        <td>أنقص قيمة <code data-enlighter-language="python">a</code> من قيمة <code data-enlighter-language="python">b</code> و خزن الناتج في <code data-enlighter-language="python">a</code></td>
+                    </tr>
+                    <tr>
+                        <td class="center"><span class="word">Multiply AND Assignment</span></td>
+                        <td class="center"><code data-enlighter-language="python">*=</code></td>
+                        <td class="center"><code data-enlighter-language="python">a *= b</code></td>
+                        <td>أضرب قيمة <code data-enlighter-language="python">a</code> بقيمة <code data-enlighter-language="python">b</code> و خزن الناتج في <code data-enlighter-language="python">a</code></td>
+                    </tr>
+                    <tr>
+                        <td class="center"><span class="word">Exponent AND Assignment</span></td>
+                        <td class="center"><code data-enlighter-language="python">**=</code></td>
+                        <td class="center"><code data-enlighter-language="python">a **= b</code></td>
+                        <td>ضاعف قيمة <code data-enlighter-language="python">a</code> بقيمة <code data-enlighter-language="python">b</code> و خزن الناتج في <code data-enlighter-language="python">a</code></td>
+                    </tr>
+                    <tr>
+                        <td class="center"><span class="word">Divide AND Assignment</span></td>
+                        <td class="center"><code data-enlighter-language="python">/=</code></td>
+                        <td class="center"><code data-enlighter-language="python">a /= b</code></td>
+                        <td>أقسم قيمة <code data-enlighter-language="python">a</code> على قيمة <code data-enlighter-language="python">b</code> و خزن الناتج في <code data-enlighter-language="python">a</code></td>
+                    </tr>
+                    <tr>
+                        <td class="center"><span class="word">Floor Divide AND Assignment</span></td>
+                        <td class="center"><code data-enlighter-language="python">//=</code></td>
+                        <td class="center"><code data-enlighter-language="python">a //= b</code></td>
+                        <td>أقسم قيمة <code data-enlighter-language="python">a</code> على قيمة <code data-enlighter-language="python">b</code> و أرجع أقرب عدد صحيح للناتج</td>
+                    </tr>
+                    <tr>
+                        <td class="center"><span class="word">Modulo AND Assignment</span></td>
+                        <td class="center"><code data-enlighter-language="python">%=</code></td>
+                        <td class="center"><code data-enlighter-language="python">a %= b</code></td>
+                        <td>أقسم قيمة <code data-enlighter-language="python">a</code> على قيمة <code data-enlighter-language="python">b</code> و خزن آخر رقم يبقى من عملية القسمة في <code data-enlighter-language="python">a</code></td>
+                    </tr>
+                    <tr>
+                        <td class="center"><span class="word">Left shift AND Assignment</span></td>
+                        <td class="center"><code data-enlighter-language="python"><<=</code></td>
+                        <td class="center"><code data-enlighter-language="python">a <<= 2</code></td>
+                        <td>أزح آخر إثنين <span class="word">bits</span> و ضعهم في الأول ثم خزن الناتج في <code data-enlighter-language="python">a</code></td>
+                    </tr>
+                    <tr>
+                        <td class="center"><span class="word">Right shift AND Assignment</span></td>
+                        <td class="center"><code data-enlighter-language="python">>>=</code></td>
+                        <td class="center"><code data-enlighter-language="python">a >>= 2</code></td>
+                        <td>أزح أول اثنين <span class="word">bits</span> و ضعهم في الآخر ثم خزن الناتج في <code data-enlighter-language="python">a</code></td>
+                    </tr>
+                    <tr>
+                        <td class="center"><span class="word">Bitwise AND Assignment</span></td>
+                        <td class="center"><code data-enlighter-language="python">&=</code></td>
+                        <td class="center"><code data-enlighter-language="python">a &= b</code></td>
+                        <td>أحسب ناتج جمع الـ <span class="word">bits</span> المشتركة بين <code data-enlighter-language="python">a</code> و <code data-enlighter-language="python">b</code> و خزن الناتج في <code data-enlighter-language="python">a</code></td>
+                    </tr>
+                    <tr>
+                        <td class="center"><span class="word">Bitwise exclusive OR and Assignment</span></td>
+                        <td class="center"><code data-enlighter-language="python">^=</code></td>
+                        <td class="center"><code data-enlighter-language="python">a ^= b</code></td>
+                        <td>أحسب ناتج جمع الـ <span class="word">bits</span> الغير مشتركة بين <code data-enlighter-language="python">a</code> و <code data-enlighter-language="python">b</code> و خزن الناتج في <code data-enlighter-language="python">a</code></td>
+                    </tr>
+                    <tr>
+                        <td class="center"><span class="word">Bitwise inexclusive OR and Assignment</span></td>
+                        <td class="center"><code data-enlighter-language="python">|=</code></td>
+                        <td class="center"><code data-enlighter-language="python">a |= b</code></td>
+                        <td>أحسب ناتج جمع الـ <span class="word">bits</span> المشتركة و الغير مشتركة بين <code data-enlighter-language="python">a</code> و <code data-enlighter-language="python">b</code> و خزن الناتج في <code data-enlighter-language="python">a</code></td>
+                    </tr>
+                </table>
+                <ul><li><p class="title2">العوامل التي تستخدم للبحث في المصفوفات <b> (Membership Operators)</b> </p></li></ul>
+                <table class="list full-width">
+                    <tr>
+                        <th>إسم العامل</th>
+                        <th>رمزه</th>
+                        <th>مثال</th>
+                        <th>شرح الكود</th>
+                    </tr>
+                    <tr>
+                        <td class="center"><span class="word">In</span></td>
+                        <td class="center"><code data-enlighter-language="python">in</code></td>
+                        <td class="center"><code data-enlighter-language="python">a in arr</code></td>
+                        <td>هل قيمة المتغير <code data-enlighter-language="python">a</code> موجودة في المصفوفة <code data-enlighter-language="python">arr</code>؟<br>
+                        إذا كان الجواب نعم فإنها ترجع <code data-enlighter-language="python">True</code></td>
+                    </tr>
+                    <tr>
+                        <td class="center"><span class="word">Not In</span></td>
+                        <td class="center"><code data-enlighter-language="python">not in</code></td>
+                        <td class="center"><code data-enlighter-language="python">a not in arr</code></td>
+                        <td>هل قيمة المتغير <code data-enlighter-language="python">a</code> غير موجودة في المصفوفة <code data-enlighter-language="python">arr</code>؟<br>
+                        إذا كان الجواب نعم فإنها ترجع <code data-enlighter-language="python">True</code></td>
+                    </tr>
+                </table>
+                <p>هنا وضعنا مثال لكل عامل موجود في الجدول</p>
+                <ul><li class="title2">العامل <b> in (In Operator) </b></li></ul>
+                <p>العامل <b> in </b> يستخدم لمعرفة ما إذا كانت المصفوفة تحتوي على قيمة معينة أم لا.</p>
+                <ul><li>إذا كان يوجد عنصر في المصفوفة عنده نفس القيمة المراد البحث عنها, يرجع الجواب <b> True </b>.</li></ul>
+                <ul><li>إذا كان لا يوجد أي عنصر في المصفوفة عنده نفس القيمة المراد البحث عنها, يرجع الجواب <b> False </b>.</li></ul>
+                <ul><li class="title2">مثال</li></ul>
+                <nav class="contcode"><pre id="contx27" dir="ltr"></pre></nav>
+                <ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+                <nav class="contcode"><p>x value exist in the array</p></nav>
+                <p>نلاحظ أنه تم تنفيذ أمر الطباعة الموضوع في الشرط الأول فقط لأنه تم إيجاد عنصر في المصفوفة <b> numbers </b> عنده نفس قيمة المتغير x.</p>
+                <ul><li class="title2">العامل <b> not in (Not In Operator) </b></li></ul>
+                <p>العامل <b> not in </b> يستخدم لمعرفة ما إذا كانت المصفوفة لا تحتوي على قيمة معينة أم لا.</p>
+                <ul><li>
+                    إذا كان لا يوجد أي عنصر في المصفوفة عنده نفس القيمة المراد البحث عنها, يرجع الجواب <b> True </b>.</li></ul>
+                    <ul><li>إذا كان يوجد أي عنصر في المصفوفة عنده نفس القيمة المراد البحث عنها, يرجع الجواب <b> False </b>.</li></ul>
+                    <ul><li class="title2">مثال</li></ul>
+                    <nav class="contcode"><pre id="contx28" dir="ltr"></pre></nav>
+                    <ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+                    <nav class="contcode"><p>y value not exist in the array</p></nav>
+                    <p>نلاحظ أنه تم تنفيذ أمر الطباعة الموضوع في الشرط الثاني فقط لأنه لم يتم إيجاد عنصر في المصفوفة <b> numbers </b> عنده نفس قيمة المتغير y.</p>
+                    <ul><li><p class="title2">العوامل التي تستخدم لمعرفة ما إذا كان الكائنين يشيران لكائن واحد في الذاكرة أم لا <b> (Identity Operators)</b> </p></li></ul>
+                    <table class="list full-width">
+                        <tr>
+                            <th>إسم العامل</th>
+                            <th>رمزه</th>
+                            <th>مثال</th>
+                            <th>شرح الكود</th>
+                        </tr>
+                        <tr>
+                            <td class="center"><span class="word">Is</span></td>
+                            <td class="center"><code data-enlighter-language="python">is</code></td>
+                            <td class="center"><code data-enlighter-language="python">a is b</code></td>
+                            <td>هل الكائن <code data-enlighter-language="python">a</code> و الكائن <code data-enlighter-language="python">b</code> يشيران إلى كائن واحد في الذاكرة؟<br>
+                            إذا كان الجواب نعم فإنها ترجع <code data-enlighter-language="python">True</code></td>
+                        </tr>
+                        <tr>
+                            <td class="center"><span class="word">Is Not</span></td>
+                            <td class="center"><code data-enlighter-language="python">is not</code></td>
+                            <td class="center"><code data-enlighter-language="python">a is not b</code></td>
+                            <td>هل الكائن <code data-enlighter-language="python">a</code> و الكائن <code data-enlighter-language="python">b</code> لا يشيران إلى كائن واحد في الذاكرة؟<br>
+                            إذا كان الجواب نعم فإنها ترجع <code data-enlighter-language="python">True</code></td>
+                        </tr>
+                    </table>
+                                <p>هنا وضعنا مثال لكل عامل موجود في الجدول</p>
+                                <ul><li class="title2">العامل <b> is (Is Operator) </b> </li></ul>
+                                <p>العامل <b> is </b> يستخدم لمعرفة ما إذا كان الكائنين يشيران لكائن واحد في الذاكرة أم لا.</p>
+                                <ul><li>إذا كانا يشيران لنفس الكائن فإنه يرجع الجواب <b> True </b>.</li></ul>
+                                <ul><li>إذا كانا لا يشيران لنفس الكائن فإنه يرجع الجواب <b> False </b>.</li></ul>
+                                <ul><li class="title2">مثال</li></ul>
+                    <nav class="contcode"><pre id="contx29" dir="ltr"></pre></nav>
+                    <ul><li class="title2">سنحصل على نتيجة تشبه النتيجة التالية عند التشغيل</li></ul>
+                    <nav class="contcode"><p>A address is: 36662848
+                        B address is: 36563624</p></nav>
+                        <p>نلاحظ أن عنوان المصفوفة <b> A </b> مختلف عن عنوان المصفوفة <b> B </b> و بالتالي إنهما لا يشيران لمكان واحد في الذاكرة.
+                            لهذا السبب لم يتم تنفيذ أمر الطباعة الأخير الموضوع داخل الشرط و الذي كان سيتنفذ في حال كان <b> A </b> و <b> B </b> يشيران لنفس المصفوفة في الذاكرة.</p>
+                            <ul><li class="title2">العامل <b> is not (Is Not Operator) </b> </li></ul>
+                            <p>العامل <b> is not </b> يستخدم لمعرفة ما إذا كان الكائنين لا يشيران لكائن واحد في الذاكرة أم لا.</p>
+                            <ul><li>إذا كانا لا يشيران لنفس الكائن فإنه يرجع الجواب <b> True </b>.</li></ul>
+                            <ul><li>إذا كانا يشيران لنفس الكائن فإنه يرجع الجواب <b> False </b>.</li></ul>
+                            <ul><li class="title2">مثال</li></ul>
+                            <nav class="contcode"><pre id="contx30" dir="ltr"></pre></nav>
+                            <ul><li class="title2">سنحصل على نتيجة تشبه النتيجة التالية عند التشغيل</li></ul>
+                            <nav class="contcode"><p>A address is: 5992000
+                                B address is: 5892776
+                                A and B have different IDs</p></nav>
+                                <p>نلاحظ أن عنوان المصفوفة <b> A </b> مختلف عن عنوان المصفوفة  <b> B </b> و بالتالي إنهما لا يشيران لمكان واحد في الذاكرة.
+                                    لهذا السبب تم تنفيذ أمر الطباعة الأخير الموضوع داخل الشرط.</p>
+    </div>
+    <script>
+        document.getElementById("contx30").appendChild(document.createTextNode("# هنا قمنا بتعريف مصفوفتين عندهما نفس الحجم و وضعنا فيهما نفس القيم\nA = [1, 2, 3]\nB = [1, 2, 3]\n# في الذاكرة B و A هنا قمنا بطباعة عنوان المصفوفتان\nprint('A address is:', id(A))\nprint('B address is:', id(B))\n# لا يشيران لكائن واحد في الذاكرة ( أي لعنوان واحد ) سيتم تنفيذ أمر الطباعة B و A إذا كان\nif A is not B:\nprint('A and B have different IDs')"));
+        document.getElementById("contx29").appendChild(document.createTextNode("# هنا قمنا بتعريف مصفوفتين عندهما نفس الحجم و وضعنا فيهما نفس القيم\nA = [1, 2, 3]\nB = [1, 2, 3]\n# في الذاكرة B و A هنا قمنا بطباعة عنوان المصفوفتان\nprint('A address is:', id(A))\nprint('B address is:', id(B))\n# يشيران لكائن واحد في الذاكرة ( أي لعنوان واحد ) سيتم تنفيذ أمر الطباعة B و A إذا كان\nif A is B:\nprint('A and B have the same ID')"));
+        document.getElementById("contx28").appendChild(document.createTextNode("# هنا قمنا بتعريف مصفوفة تتألف من 5 عناصر عبارة عن أرقام صحيحة\nnumbers = [1, 2, 3, 4, 5]\n# y و x هنا قمنا بتعريف متغيران\nx = 3\ny = 8\n# سيتم تنفيذ أمر الطباعة x لا تحتوي على قيمة المتغير numbers إذا كانت المصفوفة\nif x not in numbers:\nprint('x value not exists in the array')\n# سيتم تنفيذ أمر الطباعة y لا تحتوي على قيمة المتغير numbers إذا كانت المصفوفة\nif y not in numbers:\nprint('y value not exists in the array')"));
+        document.getElementById("contx27").appendChild(document.createTextNode("# هنا قمنا بتعريف مصفوفة تتألف من 5 عناصر عبارة عن أرقام صحيحة\nnumbers = [1, 2, 3, 4, 5]\n# y و x هنا قمنا بتعريف متغيران\nx = 3\ny = 8\n# سيتم تنفيذ أمر الطباعة x تحتوي على قيمة المتغير numbers إذا كانت المصفوفة\nif x in numbers:\nprint('x value exists in the array')\n# سيتم تنفيذ أمر الطباعة y تحتوي على قيمة المتغير numbers إذا كانت المصفوفة\nif y in numbers:\nprint('y value exists in the array')"));
+        document.getElementById("contx26").appendChild(document.createTextNode("a = 9        # 9 = 00000000000000000000000000001001\nc = a >> 2   # شرحنا كيف سيتم الحصول على الناتج تحت نتيجة التشغيل\nprint(a, '>> 2 =', c)"));
+        document.getElementById("contx25").appendChild(document.createTextNode("a = 10       # 10 = 00000000000000000000000000001010\nc = a << 2   # شرحنا كيف سيتم الحصول على الناتج تحت نتيجة التشغيل\nprint(a, '<< 2 =', c)"));
+        document.getElementById("contx24").appendChild(document.createTextNode("a = 10     # 10 = 00000000000000000000000000001010\nc = ~a     #  c = 11111111111111111111111111110111 = -11\nprint('~', a, '=', c)"));
+        document.getElementById("contx23").appendChild(document.createTextNode("a = 10      # 10 = 00000000000000000000000000001010\nb = 75      # 75 = 00000000000000000000000001001011\nc = a ^ b   # شرحنا كيف سيتم الحصول على الناتج تحت نتيجة التشغيل\nprint(a, '^', b, '=', c)"));
+        document.getElementById("contx22").appendChild(document.createTextNode("a = 10      # 10 = 00000000000000000000000000001010\nb = 75      # 75 = 00000000000000000000000001001011\nc = a | b   # شرحنا كيف سيتم الحصول على الناتج تحت نتيجة التشغيل\nprint(a, '|', b, '=', c)"));
+        document.getElementById("contx21").appendChild(document.createTextNode("a = 10      # a = 10 = 00000000000000000000000000001010\nb = 75      # 7b = 75 = 00000000000000000000000001001011\nc = a & b   # شرحنا كيف سيتم الحصول على الناتج تحت نتيجة التشغيل\nprint(a, '&', b, '=', c)"));
+        document.getElementById("contx20").appendChild(document.createTextNode("a = 10\nb = 20\n# تساوي 50 سيتم تنفيذ أمر الطباعة b تساوي 10, أو قيمة المتغير a الشرط التالي يعني أنه إذا كانت قيمة المتغير\nif a == 10 or b == 50:\nprint('One of the conditions return True')"));
+        document.getElementById("contx19").appendChild(document.createTextNode("a = 10\n# لا تساوي 20 سيتم تنفيذ أمر الطباعة a الشرط التالي يعني أنه إذا كانت قيمة المتغير\nif not a == 20:\nprint('The condition return False')"));
+        document.getElementById("contx18").appendChild(document.createTextNode("a = 10\nb = 20\n# تساوي 50 سيتم تنفيذ أمر الطباعة b تساوي 10, أو قيمة المتغير a الشرط التالي يعني أنه إذا كانت قيمة المتغير\nif a == 10 or b == 50:\nprint('One of the conditions return True')"));
+        document.getElementById("contx17").appendChild(document.createTextNode("a = 5\nb = 5\nc = 10\n# سيتم تنفيذ أمر الطباعة b أصغر أو تساوي قيمة المتغير a الشرط التالي يعني أنه إذا كانت قيمة المتغير\nif a <= b:\nprint('a <= b')\n# سيتم تنفيذ أمر الطباعة c أصغر أو تساوي قيمة المتغير a الشرط التالي يعني أنه إذا كانت قيمة المتغير\nif a <= c:\nprint('a <= c')\n# سيتم تنفيذ أمر الطباعة a أصغر أو تساوي قيمة المتغير c الشرط التالي يعني أنه إذا كانت قيمة المتغير\nif c <= a:\nprint('c <= a')"))
+        document.getElementById("contx16").appendChild(document.createTextNode("a = 5\nb = 5\nc = 10\n# سيتم تنفيذ أمر الطباعة b أكبر أو تساوي قيمة المتغير a الشرط التالي يعني أنه إذا كانت قيمة المتغير\nif a >= b:\nprint('a >= b')\n# سيتم تنفيذ أمر الطباعة c أكبر أو تساوي قيمة المتغير a الشرط التالي يعني أنه إذا كانت قيمة المتغير\nif a >= c:\nprint('a >= c')\n# سيتم تنفيذ أمر الطباعة a أكبر أو تساوي قيمة المتغير c الشرط التالي يعني أنه إذا كانت قيمة المتغير\nif c >= a:\nprint('c >= a')"));
+        document.getElementById("contx15").appendChild(document.createTextNode("a = 10\nb = 5\n# سيتم تنفيذ أمر الطباعة b أصغر من قيمة المتغير a الشرط التالي يعني أنه إذا كانت قيمة المتغير\nif a < b:\nprint('a < b')\n# سيتم تنفيذ أمر الطباعة a أصغر من قيمة المتغير b الشرط التالي يعني أنه إذا كانت قيمة المتغير\nif b < a:\nprint('b < a')"));
+        document.getElementById("contx14").appendChild(document.createTextNode("a = 10\nb = 5\n# سيتم تنفيذ أمر الطباعة b أكبر من قيمة المتغير a الشرط التالي يعني أنه إذا كانت قيمة المتغير\nif a > b:\nprint('a > b')\n# سيتم تنفيذ أمر الطباعة a أكبر من قيمة المتغير b الشرط التالي يعني أنه إذا كانت قيمة المتغير\nif b > a:\nprint('b > a')"));
+        document.getElementById("contx13").appendChild(document.createTextNode("a = 10\nb = 5\n# سيتم تنفيذ أمر الطباعة b أكبر من قيمة المتغير a الشرط التالي يعني أنه إذا كانت قيمة المتغير\nif a > b:\nprint('a > b')\n# سيتم تنفيذ أمر الطباعة a أكبر من قيمة المتغير b الشرط التالي يعني أنه إذا كانت قيمة المتغير\nif b > a:\nprint('b > a')\n"));
+        document.getElementById("contx12").appendChild(document.createTextNode("a = 10\nb = 10\nc = 20\n# سيتم تنفيذ أمر الطباعة b لا تساوي قيمة المتغير a الشرط التالي يعني أنه إذا كانت قيمة المتغير\nif(a != b)\nprint('a != b')\n# سيتم تنفيذ أمر الطباعة c لا تساوي قيمة المتغير a الشرط التالي يعني أنه إذا كانت قيمة المتغير\nif(a != c)\nprint('a != c')"));
+        document.getElementById("contx11").appendChild(document.createTextNode("a = 10\nb = 10\nc = 20\n# سيتم تنفيذ أمر الطباعة b تساوي قيمة المتغير a الشرط التالي يعني أنه إذا كانت قيمة المتغير\nif a == b:\nprint('a = b')\n# سيتم تنفيذ أمر الطباعة c تساوي قيمة المتغير a الشرط التالي يعني أنه إذا كانت قيمة المتغير\nif a == c:\nprint('a = c')"));
+        document.getElementById("contx10").appendChild(document.createTextNode("a = 8\nb = 5\nc = a % b;     # c = 8 % 5 = 3\nprint('c =', c)"));
+        document.getElementById("contx9").appendChild(document.createTextNode("a = 8\nb = 5\nc = a // b     # c = 8 ÷ 5 = 1.6     [ بعد أي رقم موجود بعض الفاصلة ]===>     c = 1\nprint('c =', c) "));
+        document.getElementById("contx8").appendChild(document.createTextNode("a = 8\nb = 5\nc = a / b     # c = 8 ÷ 5 = 1.6\nprint('c =', c)"));
+        document.getElementById("contx7").appendChild(document.createTextNode("a = 2\nb = 5\nc = a ** b     # c = 2 ** 5 = 2 * 2 * 2 * 2 * 2 = 32\nprint('c =', c)"));
+        document.getElementById("contx6").appendChild(document.createTextNode("a = 6\nb = 5\nc = a * b     # c = 6 * 5 = 30\nprint('c =', c)"));
+        document.getElementById("contx5").appendChild(document.createTextNode("# b لها في المتغير Unary-Minus قيمة أكبر من صفر, ثم وضعنا قيمة الـ a هنا وضعنا في المتغير\na = 10\nb = -a       # b = -(10) = -10\nprint('b =', b)\n# b لها في المتغير Unary-Minus قيمة أصغر من صفر, ثم وضعنا قيمة الـ a هنا وضعنا في المتغير\na = -10\nb = -a       # b = -(-10) = 10\nprint('b =', b)"));
+        document.getElementById("contx4").appendChild(document.createTextNode("# b لها في المتغير Unary-Plus قيمة أكبر من صفر, ثم وضعنا قيمة الـ a هنا وضعنا في المتغير\na = 10\nb = +a       # b = +(10) = 10\nprint('b =', b)\n# b لها في المتغير Unary-Plus قيمة أصغر من صفر, ثم وضعنا قيمة الـ a هنا وضعنا في المتغير\na = -10\nb = +a       # b = +(-10) = -10\nprint('b =', b)"));
+        document.getElementById("contx3").appendChild(document.createTextNode("a = 3\nb = 4\nc = a - b   # c = 3 - 4 = -1\nprint('c =', c)"))
+        document.getElementById("contx1").appendChild(document.createTextNode("a = 5   # 5 و أعطيناه القيمة a هنا قمنا بتعريف متغير إسمه\nb = a   # a و أعطيناه نفس قيمة المتغير b هنا قمنا بتعريف متغير إسمه\nprint('a =', a)\nprint('b =', b)"));
+        document.getElementById("contx2").appendChild(document.createTextNode("a = 3\nb = 4\nc = a + b   # c = 3 + 4 = 7\nprint('c =', c)"));
+    </script>
+</body>
+</html>

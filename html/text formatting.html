@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link rel="icon" href="https://g.top4top.io/p_1951l48qy1.png" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text formatting</title>
+    <style>
+        #i1{
+                color:darkblue;
+                font-weight:bold;
+                background-color:white;
+        } 
+        b{
+        color:darkred;}
+        
+                
+        #butex{
+                    margin-top: 35px;
+                    padding: 3px;
+                }
+                #butex2{
+                    visibility:hidden;
+                    margin-top: 67px;
+                    padding: 3px;
+                }
+                .inpex{
+                    
+                    width: 30px;
+                }
+        .contcode{
+                    margin-top: 20px;
+                    border:2px saddlebrown solid;
+                     text-align:right;
+                }
+        #code{
+                    text-align:left;
+                  }
+                  #test{
+                    display: block;
+                    text-align: center ;
+                    border: 2px solid black;
+                    height: 19.6%;
+                }
+                #testt2{
+                    border: 2px solid black;
+                    height: 10%;
+                }
+               #contex{
+                    margin-right: 3px;
+                }
+                .titleb{
+                    color: #8d9399; font-size: 24px;
+                }
+                .not{
+                    border:4px solid black; 
+                    background-color:lightblue; 
+                    text-align:center;            
+                    font-size: 22px;
+                    /*الملاحضات والمعلومات*/
+                }
+                 .title1{
+                   font-size:24px;
+                   color:darkred;
+                   font-weight: bold;
+                   text-align: center;
+                   /*العناوين الرئيسية*/
+                }
+                .title2{
+                 font-weight: bold;
+                 font-size:22px;
+                 color:darkblue;
+                 /*العناوين الفرعية*/
+                }
+                *{
+                    font-size: 20px;
+                }
+                .bacp{
+                    display: inline; background-color: rgb(137, 137, 245); padding:3px; 
+                }
+                .contcode pre{
+                    direction: ltr;
+                    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+                 .contcode{
+                     text-align: left;
+                    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    margin-top: 20px;
+                    border: 2px saddlebrown solid;
+                }
+                #code{
+                    text-align: left;
+                }
+                #apage{
+                    background-color: rgb(133, 129, 129) ;
+                }
+                body{  
+                    margin-top: 0;
+                }
+                #titlecont{
+                    display: block;
+                    text-align: center;
+                }
+                #cont{
+                    text-align: right;
+                    position:absolute;
+                    top: 11%;
+                    left: 17%;
+                    height: 197%;
+                    width: 64.7%;
+                }
+                #list{
+                    background-color:white;
+                    z-index: 100;
+                    position: fixed; 
+                    width: 100%;
+                }
+                #out{
+                    background-color: white;
+                    width: 17.4%;
+                    height: 380px;
+                    border: 2px rgb(161, 160, 160) solid;
+                    position: fixed;
+                    left: 82%;
+                    top: 44%;
+                }
+                #button:hover{
+                    color: white;
+                    background-color: #007bff; 
+                }
+                #button{
+                    position: fixed;
+                    bottom: 47.5%;
+                    left: 82%;
+                    width: 18%;
+                    height: 30px;
+                    top: 275px;   
+                }
+                #input::placeholder{
+                    text-align: center;
+                }
+                #input{
+                    width: 17.5%;
+                    height: 200px;
+        
+                    position: fixed;
+                    bottom: 52%;
+                    left: 82%;
+                    top: 10%;
+                    display: block;
+                }
+                #titbox{
+                    text-align: center;
+                }
+                #boxh{
+                    background-color: rgb(133, 129, 129);
+                }
+                #box a:hover{
+                    background-color: rgb(133, 129, 129);
+                }
+                #box a{
+                    margin-top: 1px;
+                    padding: 3px;
+                    text-decoration: none;
+                    margin-left: 5px;
+                    display: block;
+                    color: #2f3f50;
+                }
+                #box{
+                    background-color: white;
+                    overflow-y:scroll;   
+                    position: fixed;
+                    margin-top: 5px;
+                    margin-left: 4px;
+                    text-align: left;
+                    border: 2px #007bff solid;
+                    width: 15%;
+                    height: 89.5%;
+                    top: 9%;
+                    right: 84%;
+                    float: left;
+                }
+                #but:hover{
+                    color:  #007bff;
+                    background-color:white;            
+                }
+                #but{
+                    color: white;
+                    background-color: #007bff;
+                }
+                #search{
+                   width: 11%;
+                }
+                nav{
+                    text-align: center;
+                }
+                .a:hover{
+                    background-color: white;
+                    color:   #007bff;
+                }
+                #title{
+                    padding-right: 12%;
+                    font-size: 22px;
+                }
+                .aa{
+                    line-height: 50px;
+                   text-align: center;
+                   text-decoration: none;
+                   padding: 0.6% 4.8%;
+                   background-color:  #007bff; 
+                   color: white;
+                }
+               .a{
+                line-height: 50px;
+                   text-align: center;
+                   text-decoration: none;
+                   padding: 0.6% 4.6%;
+                   background-color:  #007bff; 
+                   color: white;
+               }
+               @media screen and (min-width: 1265px) and (max-width:1365px){
+                .titleb{ font-size: 23.5px;}
+                   *{font-size: 19.5px;}     
+                .a{padding: 0.55% 4.5%;}
+               .aa{padding: 0.55% 4.7%;}
+               #title{padding-right: 11%; font-size: 21.5px;}
+               .title1{font-size:23.5px;}
+                .title2{font-size:21.5px;}
+                .not{font-size: 21.5px;}
+               }
+               @media screen and (min-width: 1165px) and (max-width:1265px){
+                .titleb{ font-size: 23px;}
+                *{font-size: 19px;}
+                .a{padding: 0.5% 4.2%;}
+               .aa{padding: 0.5% 4.4%;}
+               #title{padding-right: 10%; font-size: 21px;}
+               .title1{font-size:23px;}
+                .title2{font-size:21px;}
+                .not{font-size: 21px;}
+              }
+               @media screen and (min-width: 1065px) and (max-width:1165px){
+                .titleb{ font-size: 23.5px;}
+                *{font-size: 18.5px;}
+                .a{padding: 0.45% 4.2%;}
+               .aa{padding: 0.45% 4.4%;}
+               #title{padding-right: 9%; font-size: 20.5px;}
+               .title1{font-size:22.5px;}
+                .title2{font-size:20.5px;}
+                .not{font-size: 20.5px;}
+               }
+               @media screen and (min-width: 965px) and (max-width:1065px){
+                .titleb{ font-size: 23px;}
+                *{font-size: 18px;}
+                .a{padding: 0.4% 3.8%;}
+               .aa{padding: 0.4% 4%;}
+               #title{padding-right: 8%; font-size: 20px;}
+               .title1{font-size:22px;}
+                .title2{font-size:20px;}
+                .not{font-size: 20px;}
+               }
+               @media screen and (min-width: 865px) and (max-width:965px){
+                .titleb{ font-size: 22.5px;}
+                *{font-size: 17.5px;}
+                .a{padding: 0.35% 3.6%;}
+               .aa{padding: 0.35% 3.5%;}
+               #title{padding-right: 7%; font-size: 19.5px;}
+               .title1{font-size:21.5px;}
+                .title2{font-size:19.5px;}
+                .not{font-size: 19.5px;}
+               }
+               @media screen and (min-width: 765px) and (max-width:865px){
+                .titleb{ font-size: 22px;}
+                *{font-size: 17px;}
+                .a{padding: 0.3% 3%;}
+               .aa{padding: 0.3% 2.9%;}
+               #title{padding-right: 6%; font-size: 19px;}
+               .title1{font-size:21px;}
+                .title2{font-size:19px;}
+                .not{font-size: 19px;}
+               }
+               @media screen and (min-width: 665px) and (max-width:765px){
+                .titleb{ font-size: 21.5px;}
+                *{font-size: 16.5px;}
+                .a{padding: 0.25% 2.5%;}
+               .aa{padding: 0.25% 2.4%;}
+               #title{padding-right: 5%; font-size: 18.5px;}
+               .title1{font-size:20.5px;}
+                .title2{font-size:18.5px;}
+                .not{font-size: 18.5px;}
+               }
+               @media screen and (min-width: 565px) and (max-width:665px){
+                .titleb{ font-size: 21px;}
+                *{font-size: 16px;}
+                .a{padding: 0.2% 1.6%;}
+               .aa{padding: 0.2% 1.5%;}
+               #title{padding-right: 4%; font-size: 18px;}
+               .title1{font-size:20px;}
+                .title2{font-size:18px;}
+                .not{font-size: 18px;}
+               }
+               @media screen and (min-width: 465px) and (max-width:565px){
+                .titleb{ font-size: 20.5px;}
+                *{font-size: 15.5px;}
+                .a{padding: 0.15% 0.7%;}
+               .aa{padding: 0.15% 0.8%;}
+               #title{padding-right: 3%; font-size: 17.5px;}
+               .title1{font-size:19.5px;}
+               .title2{font-size:17.5px;}
+                .not{font-size: 17.5px;}
+               /**/
+                }
+               @media screen and (min-width: 365px) and (max-width:465px){
+                .titleb{ font-size: 20px;}
+                *{font-size: 15px;}
+                .a{padding: 0.1% 0.5%;}
+               .aa{padding: 0.1% 3.6%;}
+               #title{padding-right: 3%; font-size: 17px;}
+               .title1{font-size:19px;}
+                .title2{font-size:17px;}
+                .not{font-size: 17px;}
+               }
+               @media screen and (min-width: 265px) and (max-width:365px){
+                .titleb{ font-size: 19.5px;}
+                *{font-size: 14.5px;}
+                .a{padding: 0.05% 0.3%;}
+               .aa{padding: 0.05% 0.4%;}
+               #title{padding-right: 2%; font-size: 16.5px;}
+               .title1{font-size:18.5px;}
+                .title2{font-size:16.5px;}
+                .not{font-size: 16.5px;}
+               }
+               @media screen and (min-width: 165px) and (max-width:265px){
+                .titleb{ font-size: 19px;}
+                *{font-size: 14px;}
+                .a{padding: 0.05% 0.1%;}
+               .aa{padding: 0.05% 0.2%;}
+               #title{padding-right: 1%; font-size: 16px;}
+               .title1{font-size:18px;}
+                .title2{font-size:16px;}
+                .not{font-size: 16px;}
+               }
+               @media screen and (min-width: 65px) and (max-width:165px){
+                .titleb{ font-size: 18.5px;}
+                *{font-size: 13.5px;}
+                .a{padding: 0.05% 0.05%;}
+               .aa{padding: 0.05% 0.1%;}
+               #title{padding-right: 0.5%; font-size: 15.5px;}
+               .title1{font-size:17.5px;}
+                .title2{font-size:15.5px;}
+                .not{font-size: 15.5px;}
+               }
+               </style>
+</head>
+<body>
+    <nav id="list" dir="ltr">
+        <a href="https://stutcc.blogspot.com" class="aa" id="title"><b class="titleb">S</b>tu<b class="titleb">T</b>cc</a>
+        <a href="https://stutcc-html-editor.blogspot.com" class="a">محرر الاكواد</a>
+        <a href="https://stutcc-Shortcuts.blogspot.com" class="a">موقع الاختصارات</a>
+        <a href="https://stutcc-html-test.blogspot.com" class="a">اختبار</a>       
+        <a href="https://stutcc-python.blogspot.com" class="a">بايثون</a>
+        <input type="text" placeholder="search" id="search">
+        <button type="submit" id="but">search</button> 
+    </nav >
+    <nav id="box" dir="ltr">
+        <p id="titbox">Tags</p>
+        <a href="https://stutcc-html-introduction.blogspot.com" class="abox">introduction</a>
+        <a href="https://stutcc-html-html.blogspot.com" class="abox">html</a>
+        <a href="https://stutcc-html-head.blogspot.com" class="abox">head</a>
+        <a href="https://stutcc-html-body.blogspot.com" class="abox">body</a>
+        <a href="https://stutcc-html-link.blogspot.com" class="abox" >link</a>
+        <a href="https://stutcc-html-textFormatting.blogspot.com" class="abox" id="boxh" >text formatting</a>
+        <a href="https://stutcc-html-p.blogspot.com" class="abox" >paragraph(p)</a>
+        <a href="https://stutcc-html-titles.blogspot.com" class="abox" >titles</a>
+        <a href="https://stutcc-html-abbr.blogspot.com" class="abox" >abbr</a>
+        <a href="https://stutcc-html-a.blogspot.com" class="abox" >a</a>
+        <a href="https://stutcc-html-img.blogspot.com" class="abox" >img</a>
+        <a href="https://stutcc-html-picture.blogspot.com" class="abox" >picture</a>
+        <a href="https://stutcc-html-video.blogspot.com" class="abox" >video</a>
+        <a href="https://stutcc-html-style.blogspot.com" class="abox" >style</a>
+        <a href="https://stutcc-html-script.blogspot.com" class="abox" >script</a>
+        <a href="https://stutcc-html-forms.blogspot.com" class="abox" >forms</a>
+        <a href="https://stutcc-html-button.blogspot.com" class="abox" >button</a>
+        <a href="https://stutcc-html-ol.blogspot.com" class="abox" >ordered list(ol)</a>
+        <a href="https://stutcc-html-ul.blogspot.com" class="abox" >unordered list(ul)</a>
+        <a href="https://stutcc-html-tables.blogspot.com" class="abox" >tables</a>
+        <a href="https://stutcc-html-colgroup.blogspot.com" class="abox" >colgroup</a>
+        <a href="https://stutcc-html-div.blogspot.com" class="abox" >div</a>
+        <a href="https://stutcc-html-nav.blogspot.com" class="abox" >nav</a>
+        <a href="https://stutcc-html-article.blogspot.com" class="abox" >article</a>
+        <a href="https://stutcc-html-header.blogspot.com" class="abox" >header</a>
+        <a href="https://stutcc-html-thead.blogspot.com" class="abox" >thead</a>
+        <a href="https://stutcc-html-tfoot.blogspot.com" class="abox" >tfoot</a>
+        <a href="https://stutcc-html-aside.blogspot.com" class="abox" >aside</a>
+        <a href="https://stutcc-html-cite.blogspot.com" class="abox" >cite</a>
+        <a href="https://stutcc-html-address.blogspot.com" class="abox" >address</a>
+        <a href="https://stutcc-html-area.blogspot.com" class="abox" >area</a>
+        <a href="https://stutcc-html-label.blogspot.com" class="abox" >label</a>
+        <a href="https://stutcc-html-param.blogspot.com" class="abox" >param</a>
+        <a href="https://stutcc-html-iframe.blogspot.com" class="abox" >iframe</a>
+        <a href="https://stutcc-html-data.blogspot.com" class="abox" >data</a>
+        <a href="https://stutcc-html-main.blogspot.com" class="abox" >main</a>
+        <a href="https://stutcc-html-output.blogspot.com" class="abox" >output</a>
+        <a href="https://stutcc-html-kbd.blogspot.com" class="abox" >kbd</a>
+        <a href="https://stutcc-html-bdi.blogspot.com" class="abox" >bdi</a>
+        <a href="https://stutcc-html-bdo.blogspot.com" class="abox" >bdo</a>
+        <a href="https://stutcc-html-object.blogspot.com" class="abox" >object</a>
+    </nav>
+    <textarea name="" id="input" cols="30" rows="10" placeholder="اكتب الكود هنا ضمن وسم ال <body>" dir="ltr"></textarea>
+    <button type="submit" id="button" onclick="input()">النتيجة</button>
+  <div id="out"></div>
+
+    <div id =cont> <b id="titlecont" class="title1">
+   Text Formatting تنسيق النص  </b>
+<p>تنسيق النص في لغة <b>HTML</b>: <br/>
+ تنسيق النص <b>( Text Formatting )</b> يقصد به عرض النص بشكل أفضل فمثلاً إن كان هناك كلمة مهمة في النص يمكننا عرضها بخط عريض, و إن كان هناك شيء تم حذفه يمكننا عرضه خط فوقه للإشارة إلى أنه محذوف و هكذا. <br/>
+في <b>HTML </b>يوجد العديد من الوسوم الجاهزة التي يمكن استخدامها في تنسيق النص و هي ما سنتعرف عليها في هذه الصفحة.</p>
+<p style="font-weight:bold;"> <b class="title2"> أولاً:</b> عرض النص بخط عريض </p> <ul> <li> أي كلمة أو جملة في النص تريد عرضها بخط عريض <b>( Bold )</b> يمكنك وضعها بين </li> </ul> <p id="contex"> </p>
+ <ul> <li> <p id="contex1"> </p> </li> </ul>
+<nav class="contcode" id="code"> <p id="1"> </p> <p id="2"> </nav>
+<ul> <li class="title2"> فتكون النتيجة كالتالي:</li> </ul>
+<nav class="contcode" id="code"> <p>My name is <b>Mhamad</b> </p> <p>My name is <strong>Mhamad</strong></p> </nav>
+<p style="font-weight:bold;"> <b class="title2"> ثانياً:</b> عرض النص بخط مائل </p> <ul> <li> أي كلمة أو جملة في النص تريد عرضها بخط مائل <b>( Italic )</b> يمكنك وضعها بين </li> </ul> <p id="contex2"> </p>
+<ul> <li> الفرق الوحيد بين الإثنين هو أنه في حال كان المستخدم كفيف و يعتمد على قارئ الشاشة <b> ( Screen Reader )</b> حتى يقرأ له محتوى الصفحة: </li> </ul>
+<p id="contex3"> </p>
+<ul> <li> <p id="contex4"> </p> </li> </ul>
+<nav class="contcode" id="code"> <p id="3"> </p> <p id="4"> </nav>
+<ul> <li class="title2"> فتكون النتيجة كالتالي:</li> </ul>
+<nav class="contcode" id="code"> <p> <i style="color:darkred;"> .Quran </i> is a very great book</p> <p> <em> .Quran </em> is a very great book</p> </nav>
+<p style="font-weight:bold;"> <b class="title2">ثالثاً:</b> عرض نص محذوف</p> <ul> <li>أي كلمة أو جملة في النص تريد وضع خط عليها و كأنها محذوفة يمكنك وضعها بين </li> </ul> <p id="contex5"> </p>  <ul> <li> <p id="contex6"> </p> </li> </ul>
+<ul> <li> <p id="contex7"> </p> </li> </ul>
+<nav class="contcode" id="code"> <p id="5"> </p> <p id="6"> </nav>
+<ul> <li class="title2"> فتكون النتيجة كالتالي:</li> </ul>
+<nav class="contcode" id="code"> <p>.HTML is so <del style="color:darkred;">hard </del> easy to learn</p> <p>.The Earth is <s> flat </s> spherical in shape</p> </nav>
+<p style="font-weight:bold;"> <b class="title2">رابعاً:</b>وضع خط تحت النص </p> <ul> <li>أي كلمة أو جملة في النص تريد عرض خط تحتها <b> ( Underline )</b>يمكنك وضعها بين </li> </ul> <p id="contex8"> </p>  <ul> <li> <p id="contex9"> </p> </li> </ul>
+<ul> <li> <p id="contex10"> </p> </li> </ul>
+<nav class="contcode" id="code"> <p id="7"> </nav>
+<ul> <li class="title2"> فتكون النتيجة كالتالي:</li> </ul>
+<nav class="contcode" id="code"> <p> <u>Name:</u> Mhamad Harmush</p> </nav> 
+<ul> <li> <p id="contex11"> </p> </li> </ul>
+<nav class="contcode" id="code"> <p id="8"> </nav>
+<ul> <li class="title2"> فتكون النتيجة كالتالي:</li> </ul>
+<nav class="contcode" id="code"> <p>.HTML is <del style="color:darkred;">not important</del> <ins>essential</ins> in web design</p> </nav>
+<p style="font-weight:bold;"> <b class="title2">خامساً:</b>تعليم أجزاء في النص</p> <ul> <li>تعليم النص <b>( Text Marking )</b> فكرته وضع لون أصفر خلف جزئية محددة في النص للفت نظر المستخدم إليها. </li> </ul> <ul> <li> <p id="contex12"> </p> </li> </ul>
+<ul> <li> <p id="contex13"> </p> </li> </ul>
+<nav class="contcode" id="code"> <p id="9"> </nav>
+<ul> <li class="title2"> فتكون النتيجة كالتالي:</li> </ul>
+<nav class="contcode" id="code"> <p>!the<mark>Fast food</mark> affect your body</p> </nav>
+<p style="font-weight:bold;"> <b>سادساً:</b> عرض جزء من النص بشكل مرتفع أو منخفض</p>
+<ul> <li>  في المعادلات الحسابية نتعامل كثيراً مع أرقام و رموز تظهر بشكل مرتفع قليلاً أو منخفض قليلاً نسبةً لباقي الأرقام و الرموز الموجودة في نفس السطر. </li> </ul> 
+<p> في <b>HTML</b> يوجد نوعين من الوسوم التي تستخدم لهذا الغرض: </p>
+<ul> <li> <p id="contex14"> </p> </li> <li> <p id="contex15"> </p> </li> </ul>
+<p style="border:5px solid black; background-color:lightblue; text-align:center;" class="title2"> <em class="title1">معلومة:</em> <i id="i1">sup </i>إختصار لكلمة <b>Super Script</b> التي تعني نص مرتفع, و <i id="i1" class="title2">sub</i> إختصار لكلمة <b>Sub Script</b> التي تعني نص منخفض.</p>
+<ul> <li> <p id="contex16"> </p> </li> </ul>
+<nav class="contcode" id="code"> <p id="10"> </p> </nav>
+<ul> <li class="title2"> فتكون النتيجة كالتالي:</li> </ul>
+<nav class="contcode" id="code"> <p>10<sup style="color:darkred;">6</sup> log <sub style="color:darkred;"> 2 </sub> 64 = 6 Mbps </p> </nav>
+<b style="display: block; text-align: center; margin-top: 8px;" class="title2">الاختبار:</b>
+<ul><li class="title2">اكمل الكود التالي للحصول على النتيجة المطلوبة:</li></ul>
+<nav id="test" style="text-align: center;" dir="ltr">
+    <p style="text-align: center;" class="title1">الكود:</p>
+<p id="test1" style="display: inline;"></p>
+<p id="test2" style="display: inline;"></p>
+<input type="text" id="inpex1" class="inpex" dir="ltr">
+<input type="text" id="inpex2" class="inpex" dir="ltr">
+<p id="test3" style="display: inline;"></p>
+<p id="test4" style="display: inline;"></p>
+<p id="test5" style="display: inline;"></p>
+<p id="test6" style="display: inline;"></p>
+<input type="text" id="inpex3" class="inpex" dir="ltr">
+<p id="test7" style="display: inline;"></p>
+<br><button id="butex" onclick="exm()">التحقق من النتيجة</button><br>
+<button id="butex2" onclick="exm2()">اظهار النتيجة</button>
+</nav><br>
+<nav id="testt2"><p class="title2">النتيجة:</p> <p> I am<b> <i> <u>Ahmad </b> </i> </u> </p></nav>
+</div>
+<script>
+var pp=document.getElementById("contex");
+var contex=document.createTextNode('<b> </b>أو بين <strong> </strong>.بشكل عام إستخدم <b> إذا أردت عرض الكلام بخط عريض و استخدم <strong> في حال كان الكلام مهم.');
+pp.appendChild(contex);
+var pp1=document.getElementById("contex1");
+var contex1=document.createTextNode('في المثال التالي سنقوم بعرض كلمة في الفقرة بخط عريض باستخدام <b> و <strong> أيضاً.');
+pp1.appendChild(contex1);
+document.getElementById("1").appendChild(document.createTextNode('<p>My name is <b>Mhamad</b></p>'));
+document.getElementById("2").appendChild(document.createTextNode('<p>My name is <strong>Mhamad</strong></p>'));
+var pp2=document.getElementById("contex2");
+var contex2=document.createTextNode('<i> </i> أو بين <em> </em>.');
+pp2.appendChild(contex2);
+var pp3=document.getElementById("contex3");
+var contex3=document.createTextNode('فإن القارئ سيغير نبرته حين يقرأ النص المائل الموضوع بداخل <em> </em>  لا أكثر. لذلك استخدم <i>  إذا أردت عرض نص مائل و استخدم <em> في حال أردت عرض نص مائل و أردت جعل قارئ الشاشة يغيّر نبرته حين يقرأ الكلام المائل.');
+pp3.appendChild(contex3);
+var pp4=document.getElementById("contex4");
+var contex4=document.createTextNode('في المثال التالي سنقوم بعرض جملة في الفقرة بخط مائل باستخدام <i>و <em>أيضاً.');
+pp4.appendChild(contex4);
+document.getElementById("3").appendChild(document.createTextNode('<p><i>Quran</i> is a very great book.</p>'));
+document.getElementById("4").appendChild(document.createTextNode('<p><em>Quran</em> is a very great book.</p>'));
+var pp5=document.getElementById("contex5");
+var contex5=document.createTextNode('<del> </del> أو بين <s> </s>.');
+pp5.appendChild(contex5);
+var pp6=document.getElementById("contex6");
+var contex6=document.createTextNode('بشكل عام إستخدم <del> إذا أردت للإشارة إلى أن الكلام قد تم حذفه و استخدم <s>عند الإشارة إلى أن الكلام محذوف لأنه لم يعد صحيحاً.');
+pp6.appendChild(contex6);
+var pp7=document.getElementById("contex7");
+var contex7=document.createTextNode('في المثال التالي سنقوم بعرض كلام مشطوب في الفقرة باستخدام <del>و <s> أيضاً.');
+pp7.appendChild(contex7);
+document.getElementById("5").appendChild(document.createTextNode('<p>HTML is so <del>hard</del> easy to learn.</p>'));
+document.getElementById("6").appendChild(document.createTextNode('<p>The Earth is <s>flat</s> spherical in shape.</p>'));
+var pp8=document.getElementById("contex8");
+var contex8=document.createTextNode('<u> </u> أو بين <ins> </ins>.');
+pp8.appendChild(contex8);
+var pp9=document.getElementById("contex9");
+var contex9=document.createTextNode('بشكل عام إستخدم <u> إذا أردت وضع خط تحت الكلام و استخدم <ins> في حال كان سبب وضع الخط هو الإشارة إلى أن النص تم إضافته على النص الموجود مسبقاً.');
+pp9.appendChild(contex9);
+var pp10=document.getElementById("contex10");
+var contex10=document.createTextNode('في المثال التالي سنقوم بعرض خط تحت الكلام الموجود في الفقرة باستخدام <u>.');
+pp10.appendChild(contex10);
+document.getElementById("7").appendChild(document.createTextNode('<p> <u>Name:</u> Mhamad Harmush</p>'));
+var pp11=document.getElementById("contex11");
+var contex11=document.createTextNode('في المثال التالي سنقوم بعرض كلام محذوف باستخدام <del> يليه كلام تحته خط باستخدام <ins> للإشارة إلى أنه تم تبديل الكلام المحذوف بالكلام الذي تحته خط.');
+pp11.appendChild(contex11);
+document.getElementById("8").appendChild(document.createTextNode('<p>HTML is <del>not important</del> <ins>essential</ins> in web design.</p>'));
+var pp12=document.getElementById("contex12");
+var contex12=document.createTextNode('أي كلمة أو جملة في النص تريد تعليمها باللون الأصفر يمكنك وضعها بين <mark> </mark>.');
+pp12.appendChild(contex12);
+var pp13=document.getElementById("contex13");
+var contex13=document.createTextNode('في المثال التالي سنقوم بتعليم كلمة موجودة في الفقرة باستخدام <mark>.');
+pp13.appendChild(contex13);
+document.getElementById("9").appendChild(document.createTextNode('<p> the<mark> Fast food </mark> affect your body!</p>'));
+var pp14=document.getElementById("contex14");
+var contex14=document.createTextNode('أي جزء في النص تريد عرضه بشكل مرتفع قليلاً عن باقي النص ضعه بين <sup> </sup>.');
+pp14.appendChild(contex14);
+var pp15=document.getElementById("contex15");
+var contex15=document.createTextNode('أي جزء في النص تريد عرضه بشكل منخفض قليلاً عن باقي النص ضعه بين <sub> </sub>.');
+pp15.appendChild(contex15);
+var pp16=document.getElementById("contex16");
+var contex16=document.createTextNode('في المثال التالي سنقوم بعرض جزء من النص بداخل <sup> </sup> حتى يظهر بشكل مرتفع قليلاً عنه و جزء من النص بداخل <sub> </sub> حتى يظهر بشكل منخفض قليلاً عنه.');
+pp16.appendChild(contex16);
+document.getElementById("10").appendChild(document.createTextNode('<p>10<sup> 6</sup>log<sub> 2</sub> 64 = 6 Mbps </p>'));
+var v1=document.getElementById("test1");
+        var test1=document.createTextNode("<p>");
+        var v2=document.getElementById("test2");
+        var test2=document.createTextNode('I am');
+        var v3=document.getElementById("test3");
+        var test3=document.createTextNode("<u>");
+        var v4=document.getElementById("test4");
+        var test4=document.createTextNode("Ahmad");
+        var v5=document.getElementById("test5");
+        var test5=document.createTextNode("</b>");
+        var v6=document.getElementById("test6");
+        var test6=document.createTextNode("</i>");
+        var v7=document.getElementById("test7");
+        var test7=document.createTextNode("</p>");
+ v1.appendChild(test1);
+v2.appendChild(test2);
+v3.appendChild(test3);
+v4.appendChild(test4);
+v5.appendChild(test5);
+v6.appendChild(test6);
+v7.appendChild(test7);
+var inpex1=document.getElementById("inpex1");
+var inpex2=document.getElementById("inpex2");
+var inpex3=document.getElementById("inpex3");
+function exm() {
+    if(inpex1.value=="<b>"&&inpex2.value=="<i>"&& inpex3.value=="</u>")
+        alert("احسنت الناتج صحيح");
+        else
+        alert("الاجابة خاطئة حاول مجددا");
+    if(inpex1.value=="<b>")
+    inpex1.style.backgroundColor="rgb(154, 243, 161)";
+    else
+    inpex1.style.backgroundColor="rgb(250, 166, 154)";
+    if(inpex2.value=="<i>")
+    inpex2.style.backgroundColor="rgb(154, 243, 161)";
+    else
+    inpex2.style.backgroundColor="rgb(250, 166, 154)";
+    if(inpex3.value=="</u>")
+    inpex3.style.backgroundColor="rgb(154, 243, 161)";
+    else
+    inpex3.style.backgroundColor="rgb(250, 166, 154)";
+    document.getElementById("butex2").style.visibility="visible";
+}
+function exm2() {
+    inpex1.value="<b>";
+    inpex2.value="<i>";
+    inpex3.value="</u>";
+    inpex1.style.backgroundColor="rgb(154, 243, 161)";
+    inpex2.style.backgroundColor="rgb(154, 243, 161)";
+    inpex3.style.backgroundColor="rgb(154, 243, 161)";
+}
+function input(){
+        var x=document.getElementById("input").value;
+   var y= document.getElementById("out").innerHTML=x;
+    }
+    cookieChoices={};
+//Learn from home
+</script>
+
+</body>
+</html>
+

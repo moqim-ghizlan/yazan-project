@@ -1,0 +1,409 @@
+<!DOCTYPE html >
+<html lang="ar" dir="rtl">
+<head>
+    <link rel="icon" href="https://g.top4top.io/p_1951l48qy1.png" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحلقات</title>
+    <style>
+        .code-title{display:block;text-align:left;direction:ltr;margin-left:10px;padding-left:30px;line-height:25px;margin-bottom:3px;font-family:Helvetica,Arial,Sans-Serif;font-size:15px}
+        .code-title{display:block;padding:6px;border-radius:2px;direction:ltr;text-align:left;font-weight:700;font-size:16px;margin-bottom:10px;font-family:Helvetica,Arial,Sans-Serif}
+        a.open-page{cursor:pointer;display:inline-block;padding:5px 10px;background:#333;color:#fff;border-radius:5px;text-decoration:none;margin:1px 0}.open-page img{vertical-align:middle}a.open-page:hover{color:red;background:#000}table a.open-page{padding:2px 8px;font-size:13px;margin-top:8px}
+        .full-width{width:100%}
+        .row-number{width:28px;text-align:center}
+        table.list{direction:rtl;text-align:right;border-collapse:collapse;margin-top:10px;margin-bottom:20px;box-shadow:2px 4px 3px #777;font-family:droid_arabic_naskh_regular}table.list td{font-size:14px;padding:10px 10px;padding-bottom:20px;border:1px solid #d4d4d4;vertical-align:middle;direction:rtl;line-height:2em}table.list th{border:1px solid #237eb5;padding:10px;color:#fff;background-color:#237eb5;text-align:center;direction:rtl;font-weight:400}table.list tr:nth-child(odd){background-color:#f1f1f1}table.list tr:nth-child(even){background-color:#fff}table.list .code{background-color:transparent}table.list .word{background-color:transparent}table.list .code-title{display:block;padding:6px;border-radius:2px;direction:ltr;text-align:left;font-weight:700;font-size:16px;margin-bottom:10px;font-family:Helvetica,Arial,Sans-Serif}
+        .center{text-align:center}
+        .right{text-align:right}.left{text-align:left}
+        .word{background-color:transparent} 
+        .word{color:#622a62;padding:0 2px;border-radius:4px;direction:ltr;display:inline-block;font-family:Helvetica,Arial,Sans-Serif;font-weight:700}
+        table code{direction: ltr;}
+        .titleb{
+            color: #8d9399; font-size: 24px;
+        }
+              strong{ color:darkblue;}
+              b{ color:darkred;}
+              .title1{
+           font-size:24px;
+           color:darkred;
+           font-weight: bold;
+           text-align: center;
+           /*العناوين الرئيسية*/
+        }
+        .title2{
+         font-weight: bold;
+         font-size:22px;
+         color:darkblue;
+         /*العناوين الفرعية*/
+        }
+        *{
+            font-size: 20px;
+        }
+        .bacp{
+            display: inline; background-color: rgb(137, 137, 245); padding:3px; 
+        }
+        .contcode pre{
+            direction: ltr;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+         .contcode{
+             text-align: left;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 20px;
+            border: 2px saddlebrown solid;
+        }
+        #code{
+            text-align: left;
+        }
+        #apage{
+            background-color: rgb(133, 129, 129) ;
+        }
+        body{  
+            margin-top: 0;
+        }
+        #titlecont{
+            display: block;
+            text-align: center;
+        }
+        #cont{
+            text-align: right;
+            position:absolute;
+            top: 11%;
+            left: 17%;
+            height: 197%;
+            width: 81%;
+        }
+        #list{
+            background-color:white;
+            z-index: 100;
+            position: fixed; 
+            width: 100%;
+        }
+        #out{
+            background-color: white;
+            width: 17.4%;
+            height: 380px;
+            border: 2px rgb(161, 160, 160) solid;
+            position: fixed;
+            left: 82%;
+            top: 44%;
+        }
+        #button:hover{
+            color: white;
+            background-color: #007bff; 
+        }
+        #button{
+            position: fixed;
+            bottom: 47.5%;
+            left: 82%;
+            width: 18%;
+            height: 30px;
+            top: 275px;   
+        }
+        #input::placeholder{
+            text-align: center;
+        }
+        #input{
+            width: 17.5%;
+            height: 200px;
+            position: fixed;
+            bottom: 52%;
+            left: 82%;
+            top: 10%;
+            display: block;
+        }
+        #titbox{
+            text-align: center;
+        }
+        #boxh{
+        background-color: rgb(133, 129, 129);
+    }   
+        #box a:hover{
+            background-color: rgb(133, 129, 129);
+        }
+        #box a{
+            margin-top: 1px;
+            padding: 3px;
+            text-decoration: none;
+            margin-right: 5px;
+            display: block;
+            color: #2f3f50;
+        }
+        #box{
+            background-color: white;  
+            position: fixed;
+            margin-top: 5px;
+            margin-left: 4px;
+            text-align: right;
+            border: 2px #007bff solid;
+            width: 15%;
+            height: 89.5%;
+            top: 9%;
+            right: 84%;
+            float: left;
+        }
+        #but:hover{
+            color:  #007bff;
+            background-color:white;            
+        }
+        #but{
+            color: white;
+            background-color: #007bff;
+        }
+        #search{
+           width: 12.5%;
+        }
+        nav{
+            text-align: center;
+        }
+        .a:hover{
+            background-color: white;
+            color:   #007bff;
+        }
+        #title{
+            padding-right: 12%;
+            font-size: 22px;
+            text-align: left;
+            padding-left: 18px;
+        }
+        .aa{
+            line-height: 50px;
+           text-align: center;
+           text-decoration: none;
+          /* padding: 0.55% 7.9%;*/
+           padding: 7px 108px;
+           background-color:  #007bff; 
+           color: white;
+        }
+       .a{
+        line-height: 50px;
+           text-align: center;
+           text-decoration: none;
+           /*padding: 0.6% 7.7%;*/
+           padding: 8px 100px;
+           background-color:  #007bff; 
+           color: white;
+       }
+       @media screen and (min-width: 1285px) and (max-width:1365px){
+        .titleb{ font-size: 23.5px;}
+           *{font-size: 19.5px;}     
+        .a{padding: 7px 97px;}
+       .aa{padding: 6px 100px;}
+       #title{padding-right: 11%; font-size: 21.5px;}
+       .title1{font-size:23.5px;}
+        .title2{font-size:21.5px;}
+        .not{font-size: 21.5px;}
+       }
+       @media screen and (min-width: 1204px) and (max-width:1284px){
+        .titleb{ font-size: 23px;}
+        *{font-size: 19px;}
+        .a{padding: 6px 90px;}
+       .aa{padding: 6px 100px;}
+       #title{padding-right: 10%; font-size: 21px;}
+       .title1{font-size:23px;}
+        .title2{font-size:21px;}
+        .not{font-size: 21px;}
+      }
+       @media screen and (min-width: 1123px) and (max-width:1203px){
+        .titleb{ font-size: 23.5px;}
+        *{font-size: 18.5px;}
+        .a{padding: 6px 83px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 9%; font-size: 20.5px;}
+       .title1{font-size:22.5px;}
+        .title2{font-size:20.5px;}
+        .not{font-size: 20.5px;}
+       }
+       @media screen and (min-width: 1042px) and (max-width:1122px){
+        .titleb{ font-size: 23px;}
+        *{font-size: 18px;}
+        .a{padding: 6px 77px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 8%; font-size: 20px;}
+       .title1{font-size:22px;}
+        .title2{font-size:20px;}
+        .not{font-size: 20px;}
+       }
+       @media screen and (min-width: 961px) and (max-width:1041px){
+        .titleb{ font-size: 22.5px;}
+        *{font-size: 17.5px;}
+        .a{padding: 6px 69px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 7%; font-size: 19.5px;}
+       .title1{font-size:21.5px;}
+        .title2{font-size:19.5px;}
+        .not{font-size: 19.5px;}
+       }
+       @media screen and (min-width: 880px) and (max-width:960px){
+        .titleb{ font-size: 22px;}
+        *{font-size: 17px;}
+        .a{padding: 6px 61px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 6%; font-size: 19px;}
+       .title1{font-size:21px;}
+        .title2{font-size:19px;}
+        .not{font-size: 19px;}
+       }
+       @media screen and (min-width: 799px) and (max-width:879px){
+        .titleb{ font-size: 21.5px;}
+        *{font-size: 16.5px;}
+        .a{padding: 6px 53px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 5%; font-size: 18.5px;}
+       .title1{font-size:20.5px;}
+        .title2{font-size:18.5px;}
+        .not{font-size: 18.5px;}
+       }
+       @media screen and (min-width: 718px) and (max-width:798px){
+        .titleb{ font-size: 21px;}
+        *{font-size: 16px;}
+        .a{padding: 6px 43px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 4%; font-size: 18px;}
+       .title1{font-size:20px;}
+        .title2{font-size:18px;}
+        .not{font-size: 18px;}
+       }
+       @media screen and (min-width: 637px) and (max-width:717px){
+        .titleb{ font-size: 20.5px;}
+        *{font-size: 15.5px;}
+        .a{padding: 6px 35px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 3%; font-size: 17.5px;}
+       .title1{font-size:19.5px;}
+       .title2{font-size:17.5px;}
+        .not{font-size: 17.5px;}
+       /**/
+        }
+       @media screen and (min-width: 556px) and (max-width:636px){
+        .titleb{ font-size: 20px;}
+        *{font-size: 15px;}
+        .a{padding: 6px 25px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 3%; font-size: 17px;}
+       .title1{font-size:19px;}
+        .title2{font-size:17px;}
+        .not{font-size: 17px;}
+       }
+       @media screen and (min-width: 475px) and (max-width:555px){
+        .titleb{ font-size: 19.5px;}
+        *{font-size: 14.5px;}
+        .a{padding: 6px 18px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 2%; font-size: 16.5px;}
+       .title1{font-size:18.5px;}
+        .title2{font-size:16.5px;}
+        .not{font-size: 16.5px;}
+       }
+       @media screen and (min-width: 394px) and (max-width:474px){
+        .titleb{ font-size: 19px;}
+        *{font-size: 14px;}
+        .a{padding: 6px 9px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 1%; font-size: 16px;}
+       .title1{font-size:18px;}
+        .title2{font-size:16px;}
+        .not{font-size: 16px;}
+       }
+       @media screen and (min-width: 313px) and (max-width:393px){
+        .titleb{ font-size: 18.5px;}
+        *{font-size: 13.5px;}
+        .a{padding: 6px 1px;}
+       .aa{padding:6px 1px;}
+       #title{padding-right: 0.5%; font-size: 15.5px;}
+       .title1{font-size:17.5px;}
+        .title2{font-size:15.5px;}
+        .not{font-size: 15.5px;}
+       }
+</style>
+</head>
+<body>
+    <nav id="list" dir="ltr">
+        <a href="https://stutcc.blogspot.com" class="aa" id="title"><b class="titleb">S</b>tu<b class="titleb">T</b>cc</a>
+        <a href="https://stutcc-html-introduction.blogspot.com" class="a">html</a>
+        <a href="https://stutcc-Shortcuts.blogspot.com" class="a">موقع الاختصارات</a>
+        <a href="https://stutcc-python-test.blogspot.com" class="a">اختبار</a>       
+        <input type="text" placeholder="search" id="search">
+        <button type="submit" id="but">search</button> 
+    </nav >
+    <nav id="box" dir="rtl">
+        <p id="titbox">بايثون</p>
+        <a href="https://stutcc-python.blogspot.com">نظرة عامة</a>
+        <a href="https://stutcc-python-syntaxs.blogspot.com">أسلوب كتابة الكود</a>
+        <a href="https://stutcc-python-variablesTypes.blogspot.com">أنواع المتغيرات</a>
+        <a href="https://stutcc-python-operators.blogspot.com">العوامل</a>
+        <a href="https://stutcc-python-conditions.blogspot.com">الشروط</a>
+        <a href="https://stutcc-python-loops.blogspot.com"  id="boxh">الحلقات</a>
+        <a href="https://stutcc-python-numbers.blogspot.com">التعامل مع الأعداد</a>
+        <a href="https://stutcc-python-strings.blogspot.com">التعامل مع النصوص</a>
+        <a href="https://stutcc-python-lists.blogspot.com">الكلاس list </a>
+        <a href="https://stutcc-python-tuples.blogspot.com">الكلاس tuple</a>
+    </nav>
+    <div id="cont">
+        <p id="titlecont" class="title1">الحلقات في بايثون   </p>
+        <b class="title2">مفهوم الحلقات في بايثون</b>
+     <p><b>حلقة</b>: تعني <b> Loop </b> في اللغة الإنجليزية. نستخدم الحلقات لعدم تكرار نفس الكود عدة مرات, إذاً أي كود نريده أن يتنفذ عدة مرات, نقوم بكتابته داخل حلقة فتقوم هي بإعادة تنفيذ الكود قدر ما شئنا ضمن شروط معينة نقوم نحن بتحديدها.</p>
+<b class="title2">طريقة تنفيذ الأوامر و الحلقات في الذاكرة</b>
+<p>الأوامر في العادة تتنفذ بتسلسل وراء بعضها, و لكن الحلقات تجعل سهم تنفيذ الأوامر يقف عندها فيقوم بتنفيذ الأوامر التي بداخلها عدة مرات, و بعد أن يخرج من الحلقة يعود و يكمل تنفيذ باقي الأوامر التي تليها, كما في الصورة التالية:
+</p>
+<img src="https://g.top4top.io/p_2004cps9w1.png" width="38%"></br>
+<b class="title2">الحلقات الموجودة في بايثون</b>
+<table class="list">
+    <tr>
+        <th>إسم الحلقة</th>
+        <th>دواعي الإستخدام</th>
+    </tr>
+    <tr>
+        <td class="center"><span class="word">For Loop</span></td>
+        <td>تستخدم الحلقة <code data-enlighter-language="python">for</code> للمرور على جميع عناصر السلسلة أو المصفوفة بسهولة بدون الحاجة لتعريف عداد و تحديد أين يبدأ و أين ينتهي.<br>
+        و تستخدم لتنفيذ الكود عدة مرات محددة.<br>
+        <a class="open-page" target="_blank" href="https://stutcc-python-loop-for.blogspot.com">تابع القراءة »</a></td>
+    </tr>
+    <tr>
+        <td class="center"><span class="word">While Loop</span></td>
+        <td>تستخدم الحلقة <code data-enlighter-language="python">while</code> لتنفيذ الكود عدة مرات غير محددة و يتوقف التنفيذ إذا تحقق شرط معين, لأن هذه الحلقة يتم توقيفها إذا تحقق الشرط الذي نضعه بين القوسين.<br>
+        <a class="open-page" target="_blank" href="https://stutcc-python-loop-while.blogspot.com">تابع القراءة »</a></td>
+    </tr>
+</table>
+<b class="title2">جمل التحكم في الحلقات في بايثون</b>
+<p>جمل التحكم تعني <b> Control Statements </b> بالإنجليزية, و نستخدمهم للتحكم في سير تنفيذ الحلقات.</p>
+<table class="list">
+    <tr>
+        <th>جملة التحكم</th>
+        <th>تعريفها</th>
+    </tr>
+    <tr>
+        <td class="center"><span class="word">Break Statement</span></td>
+        <td>الجملة <code data-enlighter-language="python">break</code> تستخدم بشكل عام لإيقاف الحلقة في حال تحقق شرط معين. ثم تنتقل للكود الذي يليها في البرنامج.<br>
+            <a class="open-page" target="_blank" href="https://stutcc-python-loop-break.blogspot.com">تابع القراءة »</a></td></td>
+    </tr>
+    <tr>
+        <td class="center"><span class="word">Continue Statement</span></td>
+        <td>الجملة <code data-enlighter-language="python">continue</code> تستخدم بشكل عام لإيقاف الدورة الحالية في الحلقة و الإنتقال إلى الدورة التالية فيها في حال تحقق شرط معين.<br>
+            <a class="open-page" target="_blank" href="https://stutcc-python-loop-continue.blogspot.com">تابع القراءة »</a></td></td>
+    </tr>
+</table>
+<b class="title2">الوصول للأشياء التي تم تعريفها بداخل الحلقة من الخارج في بايثون</b>
+<p>في أغلب لغات البرمجة لا يمكن الوصول للأشياء التي تم تعريفها داخل الحلقة من الخارج, أما في بايثون فإنه بإمكانك الوصول لهم.
+</p>
+<nav class="contcode" id="contout" style="text-align:right;">
+    <b id="titlecont" style="text-align:right;"> مثال </b>
+    
+    <pre style="text-align: left;"> <b> # </b> بعدها سيتم عرضه .<b> n  </b>هنا قمنا بإنشاء سلسلة من الأرقام الموجودة بين 1 إلى 5. في كل دورة في الحلقة سيتم جلب رقم من هذه السلسلة و تخزينه في المتغير
+       <strong>  for n in range(1, 6):
+            print(n) </strong>
+        <b> # </b> بعد أن توقفت الحلقة <b> n </b> هنا عرضنا القيمة الموجودة في المتغير
+      <strong>  print('n contains:', n ) </strong> </pre>
+    <pre  style="text-align: left;"></pre></nav>
+ <ul><li><p >  سنحصل على النتيجة التالية عند التشغيل.</p></li></ul> 
+    <nav  class="contcode" id="contout" style="text-align:left;"> <pre>1
+2
+3
+4
+5
+n contains: 5</pre></nav>
+<ul><li><p>إذاً لاحظنا أننا استطعنا معرفة القيمة الأخيرة التي تم وضعها في المتغير <b> n </b> الذي تم تعريفه في الأساس بداخل الحلقة <b> for </b> خارجها.</p></li></ul>
+    </div>
+    <script>
+    </script>
+</body>
+</html>

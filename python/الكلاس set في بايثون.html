@@ -1,0 +1,698 @@
+<!DOCTYPE html >
+<html lang="ar" dir="rtl">
+<head>
+    <link rel="icon" href="https://g.top4top.io/p_1951l48qy1.png" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <nav id="list" dir="ltr">
+        <a href="https://stutcc.blogspot.com" class="aa" id="title"><b class="titleb">S</b>tu<b class="titleb">T</b>cc</a>
+        <a href="https://stutcc-html-introduction.blogspot.com" class="a">html</a>
+        <a href="https://stutcc-Shortcuts.blogspot.com" class="a">موقع الاختصارات</a>
+        <a href="https://stutcc-paython-test.blogspot.com" class="a">اختبار</a>       
+        <input type="text" placeholder="search" id="search">
+        <button type="submit" id="but">search</button> 
+    </nav >
+    <nav id="box" dir="ltr">
+        <p id="titbox">title</p>
+    </nav>
+    <div id="cont">
+        <b id="titie6" class="title1">Python
+            <br>
+            الكلاس set في بايثون
+ </b>
+ <ul><li><p class="title2">مفهوم الكلاس <b> set </b> في بايثون</p></li></ul>   
+ <p>الـ <b> set </b> عبارة عن مصفوفة ليس لها حجم ثابت, يمكنها تخزين قيم من مختلف الأنواع في وقت واحد, و لا يمكن تبديل أو حذف قيمها بشكل مباشر.
+    كما أنه لا يمكنها أن تحتوي على قيم مكررة. أي إذا وضعت فيها نفس القيمة مرتين فإنه سيتم تخزين قيمة واحدة فيها و ليس قيمتين.
+    
+    النوع <b> set </b> لا يحافظ على الترتيب الذي تم فيه إدخال العناصر لأنه لا يضيف رقم <b> Index </b> لكل عنصر كما يفعل النوع <b> list </b> و النوع <b> tuple </b>.
+    لذلك لا تستغرب إذا قمت بتخزين مجموعة قيم بداخل <b> set </b> ثم حاولت عرضها. لأنك في كل مرة ستقوم فيها بتشغيل البرنامج من جديد ستتبدل أماكن القيم.</p>
+    <p class="title2">طريقة تعريف <b> set </b> </p>
+    <p>تعريف <b> set </b> نستخدم الرمز <b> { } </b>.
+        بداخل هذا الرمز يمكنك تمرير القيم بشكل مباشر له بشرط وضع فاصلة بين كل عنصرين.
+        
+        
+        في المثال التالي قمنا بتعريف <b> set </b> وضعنا فيه أعداد صحيحة.</p>  
+        <ul><li class="title2">المثال الأول</li></ul>
+        <nav class="contcode"><pre id="contx1" dir="ltr"></pre></nav> 
+        <ul><li class="title2">سنحصل على نتيجة تشبه النتيجة التالية عند التشغيل لأننا لا نعرف كيف سيتم ترتيب العناصر.</li></ul>
+        <nav class="contcode"><p>{40, 10, 50, 20, 30}</p></nav>    
+        <p>في المثال التالي قمنا بتعريف <b> set </b> وضعنا فيه نصوص.</p>
+        <ul><li class="title2">المثال الثاني</li></ul>
+        <nav class="contcode"><pre id="contx2" dir="ltr"></pre></nav> 
+        <ul><li class="title2">سنحصل على نتيجة تشبه النتيجة التالية عند التشغيل لأننا لا نعرف كيف سيتم ترتيب العناصر.</li></ul>
+        <nav class="contcode"><p>{'Sara', 'Rami', 'Nada'}</p></nav>
+        <p>في المثال التالي قمنا بتعريف <b> set </b> وضعنا فيه أعداد صحيحة و نصوص.</p>
+        <ul><li class="title2">المثال الثالث</li></ul>
+        <nav class="contcode"><pre id="contx3" dir="ltr"></pre></nav>
+        <ul><li class="title2">سنحصل على نتيجة تشبه النتيجة التالية عند التشغيل لأننا لا نعرف كيف سيتم ترتيب العناصر.</li></ul>
+        <nav class="contcode"><p>{'Harmush', 1, 1500, 'Mhamad'}</p></nav>
+        <p>في المثال التالي قمنا بتعريف <b> set </b> وضعنا فيه نصوص و قمنا بتكرار هذه النصوص عن قصد لإثبات فكرة أن النوع <b> set </b> لا يقوم بتخزين نفس القيمة أكثر من مرة.</p>
+        <ul><li class="title2">المثال الرابع</li></ul>
+        <nav class="contcode"><pre id="contx4" dir="ltr"></pre></nav>
+        <ul><li class="title2">سنحصل على نتيجة تشبه النتيجة التالية عند التشغيل لأننا لا نعرف كيف سيتم ترتيب العناصر.</li></ul>
+        <nav class="contcode"><p>{'Ahmad', 'Rami', 'Nada'}</p></nav>
+        <ul><li><p class="title2">حذف الـ <b> set </b> بواسطة الجملة <b> del </b> في بايثون</p></li></ul>
+        <p>الجملة <b> del </b> تستخدم لحذف الـ <b> set </b> كما هي من الذاكرة. </p>
+
+
+            في المثال التالي قمنا بتعريف <b> set </b> وضعنا فيه أرقام. بعدها قمنا بحذفه من الذاكرة. بعدها حاولنا أن نعرض ما يحتويه.</p>
+            <ul><li class="title2">مثال</li></ul>
+            <nav class="contcode"><pre id="contx5" dir="ltr"></pre></nav>
+            <ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+            <nav class="contcode"><p>NameError: name 'arr' is not defined</p></nav>
+            <ul><li><p class="title2">التشييك على قيم الـ <b> set </b> بواسطة العامل <b> in </b> في بايثون</p></li></ul>
+            <nav class="contcode"><p>Is Rima in the set?
+                True</p></nav>
+                <p>في المثال التالي قمنا بتعريف <b> set </b> وضعنا فيه نصوص. بعدها قمنا بعرض جميع القيم الموضوعة فيه باستخدام الحلقة <b> for </b>.</p>
+                <ul><li class="title2">المثال الثاني</li></ul>
+                <nav class="contcode"><pre id="contx6" dir="ltr"></pre></nav>
+                <ul><li class="title2">سنحصل على نتيجة تشبه النتيجة التالية عند التشغيل لأننا لا نعرف كيف سيتم ترتيب العناصر.</li></ul>
+                <nav class="contcode"><p>Nada
+                    Salem
+                    Mhamad
+                    Rami
+                    Sara</p></nav>
+                    <ul><li><b class="title2">دوال الكلاس <b> set </b> في بايثون</b></li></ul>
+                    <table border="18">
+                        <tr><td>إسم الدالة مع تعريفها</td></tr>
+                        <tr><td>1</td><td>add(elem)
+                            تستخدم لإضافة عنصر جديد في الـset الذي قام باستدعائها.</td></tr>
+                        <tr><td>2</td><td>discard(elem)
+                            تستخدم لحذف عنصر محدد من الـset الذي قام باستدعائها.
+                            مكان الباراميتر elem نمرر كائن قيمته تطابق قيمة العنصر الذي نريد حذفه.</td></tr>
+                            <tr><td>3</td><td>remove(elem)
+                                تستخدم لحذف عنصر محدد من الـset الذي قام باستدعائها.
+                                مكان الباراميتر elem نمرر كائن قيمته تطابق قيمة العنصر الذي نريد حذفه.
+                                ملاحظة: الفرق بينها و بين الدالة discard() أنها ترمي الإستثناء KeyError في حال لم يتم إيجاد عنصر في الـset يملك نفس قيمة الكائن الذي مررناه مكان الباراميتر elem.</td></tr>
+                                <tr><td>4</td><td>clear()
+                                    تستخدم لحذف جميع عناصر الـset الذي قام باستدعائها.</td></tr>
+                                    <tr><td>5</td><td>pop()
+                                        تستخدم لإرجاع قيمة عنصر يتم إختياره بشكل عشوائي من الـset الذي قام باستدعائها, بعدها يتم حذفه منه.</td></tr>
+                                        <tr><td>6</td><td>copy()
+                                            ترجع نسخة من الـset الذي قام باستدعائها.</td></tr>
+                                            <tr><td>7</td><td>difference(*sets)
+                                                ترجع set جديد يحتوي على العناصر الموجودة في الـset الذي قام باستدعائها و الغير موجودة في كل set نمرره لها مكان الباراميتر sets*.</td></tr>
+                                                <tr><td>8</td><td>difference_update(*sets)
+                                                    تقارن الـset الذي قام باستدعائها مع كل set نمرره لها مكان الباراميتر sets*.
+                                                    بعدها تحذف من الـset الذي قام باستدعائها العناصر المشتركة بينهم.</td></tr>
+                                                    <tr><td>9</td><td>intersection(*sets)
+                                                        ترجع set جديد يحتوي على العناصر الموجودة في الـset الذي قام باستدعائها و في كل set نمرره لها مكان الباراميتر sets*.</td></tr>
+                                                        <tr><td>10</td><td>intersection_update(*sets)
+                                                            تقارن الـset الذي قام باستدعائها مع كل set نمرره لها مكان الباراميتر sets*.
+                                                            بعدها تحذف من الـset الذي قام باستدعائها العناصر الغير مشتركة بينهم.</td></tr>
+                                                            <tr><td>11</td><td>symmetric_difference(anotherSet)
+                                                                ترجع set جديد يحتوي على العناصر الغير موجودة في كل من الـset الذي قام باستدعائها و في الـset الذي نمرره لها مكان الباراميتر anotherSet.</td></tr>
+                                                                <tr><td>12</td><td>symmetric_difference_update(anotherSet)
+                                                                    تقارن الـset الذي قام باستدعائها مع الـset الذي نمرره لها مكان الباراميتر anotherSet.
+                                                                    بعدها تضع في الـset الذي قام باستدعائها العناصر المشتركة بينهما فقط و تمسح أي عناصر آخرى كانت موجودة فيه.</td></tr>
+                                                                    <tr><td>13</td><td>union(sets*)
+                                                                        ترجع set جديد يحتوي على العناصر الموجودة في الـset الذي قام باستدعائها و العناصر الموجودة في كل set نمرره لها مكان الباراميتر sets*</td></tr>
+                                                                        <tr><td>14</td><td>update(sets*)
+                                                                            تقارن عناصر الـset الذي قام باستدعائها مع العناصر الموجودة في كل set نمرره لها مكان الباراميتر sets*.
+                                                                            بعدها تضع في الـset الذي قام باستدعائها العناصر المشتركة و الغير مشتركة بينهم.</td></tr>
+                                                                            <tr><td>15</td><td>isdisjoint(anotherSet)
+                                                                                تقارن عناصر الـset الذي قام باستدعائها مع عناصر الـset الذي نمرره لها مكان الباراميتر anotherSet.
+                                                                                ترجع True إذا كانا لا يحتوان على عناصر قيمها متساوية. و ترجع False إن لم يكونا كذلك.</td></tr>
+                                                                                <tr><td>16</td><td>issuperset(anotherSet)
+                                                                                    تقارن عناصر الـset الذي قام باستدعائها مع عناصر الـset الذي نمرره لها مكان الباراميتر anotherSet.
+                                                                                    ترجع True إذا كانت جميع عناصر الـset الذي نمرره لها مكان الباراميتر anotherSet موجودة في الـset الذي قام باستدعائها.
+                                                                                    غير ذلك ترجع False.</td></tr>
+                                                                                    <tr><td>17</td><td>issubset(anotherSet)
+                                                                                        تقارن عناصر الـset الذي قام باستدعائها مع عناصر الـset الذي نمرره لها مكان الباراميتر anotherSet.
+                                                                                        ترجع True إذا كانت جميع عناصر الـset الذي قام باستدعائها موجودة في الـset الذي نمرره لها مكان الباراميتر anotherSet.
+                                                                                        غير ذلك ترجع False.</td></tr>
+
+                    </table>
+                    <ul><li class="title2">الدالة <b> add() </b></li></ul>
+                    <p class="title2">تعريفها:</p>
+                    <p> تستخدم لإضافة عنصر جديد في الـ<b> set </b> الذي قام باستدعائها.</p>
+                    <b class="title2">بناؤها:</b>
+                    <nav class="contcode"><p>set.add(elem)</p></nav>
+                    <p class="title2">باراميترات:</p>
+                    <p>مكان الباراميتر <b> x </b> نمرر الكائن الذي نريد إضافته في الـ<b> set </b>.</p>
+                    <p class="title2">قيمة الإرجاع:</p>
+                    <p>لا ترجع قيمة.</p>
+                    <ul><li class="title2">مثال</li></ul>
+                    <nav class="contcode"><pre id="contx7" dir="ltr"></pre></nav>
+<ul><li class="title2">سنحصل على نتيجة تشبه النتيجة التالية عند التشغيل لأننا لا نعرف كيف سيتم ترتيب العناصر.</li></ul>
+<nav class="contcode"><p>Before: {'Apple', 'Banana', 'Mango'}
+    After:  {'Apple', 'Orange', 'Banana', 'Mango'</p></nav>
+    <ul><li class="title2">الدالة <b> discard() </b></li></ul>
+    <p class="title2">تعريفها:</p>
+    <p>تستخدم لحذف عنصر محدد من الـ<b> set </b> الذي قام باستدعائها.</p>
+    <p class="title2">بناؤها:</p>
+    <nav class="contcode"><p>set.discard()</p></nav>
+    <p class="title2">باراميترات:</p>
+    <p>مكان الباراميتر <b> elem </b> نمرر كائن قيمته تطابق قيمة العنصر الذي نريد حذفه</p>
+    <p class="title2">قيمة الإرجاع:</p>
+    <p>لا ترجع قيمة.</p>
+    <ul><li class="title2">مثال</li></ul>
+    <nav class="contcode"><pre id="contx8" dir="ltr"></pre></nav>
+    <ul><li class="title2">سنحصل على نتيجة تشبه النتيجة التالية عند التشغيل لأننا لا نعرف كيف سيتم ترتيب العناصر.</li></ul>
+    <nav class="contcode"><p>{2, 3, 4, 5}</p></nav>
+    <u><li class="title2">الدالة <b> remove() </b></li></u>
+    <p class="title2">تعريفها: </p>
+    <p>تستخدم لحذف عنصر محدد من الـ<b> set </b> الذي قام باستدعائها.</p>
+    <p class="title2">بناؤها:</p>
+    <nav class="contcode"><p>set.remove(elem)</p></nav>
+    <p class="title2">باراميترات:</p>
+    <p>مكان الباراميتر <b> elem </b> نمرر كائن قيمته تطابق قيمة العنصر الذي نريد حذفه.</p>
+    <p class="title2">قيمة الإرجاع:</p>
+    <p>لا ترجع قيمة.</p>
+    <p>أخطاء محتملة
+        ترمي الإستثناء <b> KeyError </b> في حال لم يتم إيجاد عنصر في الـ<b> set </b> يملك نفس قيمة الكائن الذي مررناه مكان الباراميتر <b> elem </b></p>
+        <ul><li class="title2">مثال</li></ul>
+        <nav class="contcode"><pre id="contx9" dir="ltr"></pre></nav>
+        <ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+        <nav class="contcode"><p>KeyError: 10</p></nav>
+        <ul><li class="title2">الدالة <b> clear() </b></li></ul>
+        <p class="title2">تعريفها:</p>
+        <p>تستخدم لحذف جميع عناصر الـ<b> set </b> الذي قام باستدعائها.</p>
+        <p class="title2">بناؤها:</p>
+        <nav class="contcode"><p>set.clear()</p></nav>
+        <p class="title2">باراميترات:</p>
+        <p>لا تقبل أي باراميتر.</p>
+        <p class="title2">قيمة الإرجاع:</p>
+        <p>لا ترجع قيمة.</p>
+        <ul><li class="title2">مثال</li></ul>
+        <nav class="contcode"><pre id="contx10" dir="ltr"></pre></nav>
+        <ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+        <nav class="contcode"><p>aSet contains: set()</p></nav>
+        <p>القيمة <b> set() </b> التي ظهرت في نتيجة التشغيل تعني أن الكائن <b> aSet </b> عبارة عن <b> set </b> فارغ لا يحتوي اي قيمة.</p>
+        <ul><li class="title2">الدالة <b> pop() </b></li></ul>
+        <p class="title2">تعريفها:</p>
+<p>تستخدم لإرجاع قيمة عنصر يتم إختياره بشكل عشوائي من الـ<b> set </b> الذي قام باستدعائها, بعدها يتم حذفه منه.</p>
+<p class="title2">بناؤها:</p>
+<nav class="contcode"><p>set.pop()</p></nav>
+<p class="title2">باراميترات:</p>
+<p>لا تقبل أي باراميتر.</p>
+<p class="title2">قيمة الإرجاع:</p>
+<p>ترجع العنصر الذي تم حذفه من الـ<b> set </b>.
+
+
+
+    أخطاء محتملة
+    ترمي الإستثناء <b> TypeError </b> في حال كان الـ<b> set </b> فارغ.</p>
+    <ul><li class="title2">مثال</li></ul>
+    <nav class="contcode"><pre id= "contx11" dir="ltr"></pre></nav>
+<ul><li class="title2">سنحصل على نتيجة تشبه النتيجة التالية عند التشغيل لأننا لا نعرف كيف سيتم ترتيب العناصر.</li></ul>
+<nav class="contcode"><p>Returned element: 40
+    Remaining elements: {10, 50, 20, 30}</p></nav>
+    <ul><li class="title2">الدالة <b> copy() </b> </li></ul>
+    <p class="title2">تعريفها:</p>
+    <p>ترجع نسخة من الـ<b> set</b> الذي قام باستدعائها.</p>
+    <p class="title2">بناؤها:</p>
+    <nav class="contcode"><p>set.copy()</p></nav>
+    <p class="title2">باراميترات</p>
+    <p>لا تقبل أي باراميتر.</p>
+    <p class="title2">قيمة الإرجاع:</p>
+    <p>ترجع نسخة من الـ<b> set </b> الذي قام باستدعائها. </p>
+    <ul><li class="title2">مثال</li></ul>
+    <nav class="contcode"><pre id="contx12" dir="ltr"></pre></nav>
+    <ul><li class="title2">سنحصل على نتيجة تشبه النتيجة التالية عند التشغيل لأننا لا نعرف كيف سيتم ترتيب العناصر.</li></ul>
+<nav class="condcode"><p>set1 contains: {40, 10, 50, 20, 30}
+    set2 contains: {50, 20, 40, 10, 30}</p></nav>
+    <ul><li class="title2">الدالة <b> difference() </b></li></ul>
+    <p class="title2">تعريفها:</p>
+    <p>
+        ترجع <b> set </b> جديد يحتوي على العناصر الموجودة في الـ<b> set </b> الذي قام باستدعائها و الغير موجودة في كل <b> set </b> نمرره لها مكان الباراميتر <b> sets* </b>.</p>
+        <p class="title2">بناؤها:</p>
+        <nav class="contcode"><p>set.difference(*sets)</p></nav>
+        <p class="title2">باراميترات:</p> 
+        <p>مكان الباراميتر <b> sets* </b> نمرر كائن أو أكثر من النوع <b> set </b> مع الإشارة إلى أنه يجب وضع فاصلة بينهم عند تمرير أكثر من كائن.</p>
+        <p class="title2">قيمة الإرجاع:</p>
+        <p>ترجع <b> set </b> جديد يحتوي على العناصر الموجودة في الـ<b> set </b> الذي قام باستدعائها و الغير موجودة في كل <b> set </b> نمرره لها مكان الباراميتر <b> sets* </b>.</p>
+        <ul><li class="title2">مثال</li></ul>
+        <nav class="contcode"><pre id="contx13" dir="ltr"></pre></nav>
+        <ul><li class="title2">سنحصل على نتيجة تشبه النتيجة التالية عند التشغيل لأننا لا نعرف كيف سيتم ترتيب العناصر.</li></ul>
+        <nav class="contcode"><p>newSet contains: {4, 5}</p></nav>
+        <ul><li class="title2">الدالة <b> difference_update() </b> </li></ul>
+        <p class="title2">تعريفها:</p>
+        <p>تستخدم هذه الدالة لحذف مجموعة عناصر من الـ<b> set </b> الذي قام باستدعائها.
+            فعلياً, عند إستدعائها نمرر لها مكان الباراميتر <b> *sets </b> كائن <b> set </b> أو أكثر يحتوون على مجموعة العناصر التي نريد حذفها من الـ<b> set </b> الذي قام باستدعائها في حال كانت موجودة فيه.</p>
+            <p class="title2">بناؤها:</p>
+            <nav class="contcode"><p>set.difference_update(*sets)</p></nav>
+            <p class="title2">باراميترات:</p>
+            <p>مكان الباراميتر <b>sets*</b> نمرر كائن أو أكثر من النوع <b>set</b> مع الإشارة إلى أنه يجب وضع فاصلة بينهم عند تمرير أكثر من كائن.</p>
+            <p class="title2">قيمة الإرجاع:</p>
+            <p>لا ترجع قيمة.</p>
+            <ul><li class="title2">مثال</li></ul>
+            <nav class="contcode"><pre id="contx14" dir="ltr"></pre></nav>
+<ul><li class="title2">سنحصل على نتيجة تشبه النتيجة التالية عند التشغيل لأننا لا نعرف كيف سيتم ترتيب العناصر.</li></ul>
+<nav class="contcode"><p>set1 contains: {4, 5}</p></nav>
+<ul><li class="title2">الدالة <b> intersection() </b> </li></ul>
+<p class="title2">تعريفها:</p>
+<p> ترجع <b>set</b>جديد يحتوي على العناصر الموجودة في الـ<b> set </b> الذي قام باستدعائها و في كل <b>set</b> نمرره لها مكان الباراميتر <b>sets*</b>.</p>
+<p class="title2">بناؤها:</p>
+<nav class="contcode"><p>set.intersection(*sets)</p></nav>
+<p class="title2">باراميترات:</p>
+<p>مكان الباراميتر <b>sets*</b> نمرر كائن أو أكثر من النوع <b>set</b> مع الإشارة إلى أنه يجب وضع فاصلة بينهم عند تمرير أكثر من كائن.</p>
+<p class="title2">قيمة الإرجاع:</p>
+<p>ترجع <b>set</b> جديد يحتوي على العناصر الموجودة في الـ<b> set </b> الذي قام باستدعائها و في كل <b>set</b> نمرره لها مكان الباراميتر <b>sets*</b>.</p>
+<ul><li class="title2">مثال</li></ul>
+<nav class="contcode"><pre id="contx15" dir="ltr"></pre></nav>
+<ul><li class="title2">سنحصل على نتيجة تشبه النتيجة التالية عند التشغيل لأننا لا نعرف كيف سيتم ترتيب العناصر.</li></ul>
+<nav class="contcode"><p>newSet contains: {1, 2, 3}</p></nav>
+<ul><li class="title2">الدالة <b>intersection_update()</b></li></ul>
+<p class="title2">تعريفها:</p>
+<p>تستخدم هذه الدالة لحذف مجموعة عناصر من الـ<b>set</b> الذي قام باستدعائها.
+    فعلياً, عند إستدعائها نمرر لها مكان الباراميتر <b>*sets</b> كائن <b>set</b> أو أكثر يحتوون على مجموعة العناصر التي لا نريد أن يتم حذفها من الـ<b>set</b> الذي قام باستدعائها في حال كانت موجودة فيه.</p>
+    <p class="title2">بناؤها:</p>
+    <nav class="contcode"><p>set.intersection_update(anotherSet)</p></nav>
+    <p class="title2">باراميترات:</p>
+    <p>مكان الباراميتر <b>sets*</b> نمرر كائن أو أكثر من النوع <b>set</b> مع الإشارة إلى أنه يجب وضع فاصلة بينهم عند تمرير أكثر من كائن. </p>
+    <p class="title2">قيمة الإرجاع:</p>
+    <p>لا ترجع قيمة.</p>
+    <ul><li class="title2">مثال</li></ul>
+    <nav class="contcode"><pre id="contx16" dir="ltr"></pre></nav>
+    <ul><li class="title2">سنحصل على نتيجة تشبه النتيجة التالية عند التشغيل لأننا لا نعرف كيف سيتم ترتيب العناصر.</li></ul>
+    <nav class="contcode"><p>set1 contains: {1, 2, 3}</p></nav>
+    <ul><li class="title2">الدالة <b>symmetric_difference()</b></li></ul>
+    <p class="title2">تعريفها:</p>
+    <p>ترجع <b>set </b>جديد يحتوي على العناصر الغير موجودة في كل من الـ<b>set</b> الذي قام باستدعائها و في الـ<b>set</b> الذي نمرره لها مكان الباراميتر <b>anotherSet</b>.</p>
+    <p class="title2">  بناؤها:</p>
+    <nav class="contcode"><p>set.symmetric_difference(anotherSet)</p></nav>
+    <p class="title2">باراميترات:</p>
+    <p>مكان الباراميتر <b>anotherSet</b> نمرر الـ<b>set</b> الذي سيتم مقارنة عناصره مع عناصر الـ<b>set</b> الذي قام باستدعائها.</p>
+    <p class="title2">قيمة الإرجاع:</p>
+    <p>ترجع <b>set</b> جديد يحتوي على العناصر الغير موجودة في كل من الـ<b>set</b> الذي قام باستدعائها و في الـ<b>set</b> الذي نمرره لها مكان الباراميتر <b>anotherSet</b>.</p>
+    <ul><li class="title2">مثال</li></ul>
+    <nav class="contcode"><pre id="contx17" dir="ltr"></pre></nav>
+    <ul><li class="title2">سنحصل على نتيجة تشبه النتيجة التالية عند التشغيل لأننا لا نعرف كيف سيتم ترتيب العناصر.</li></ul>
+    <nav class="contcode"><p>newSet contains: {4, 5}</p></nav>
+    <ul><li class="title2">الدالة <b>symmetric_difference_update()</b></li></ul>
+    <p class="title2">تعريفها:</p>
+    <p>تقارن الـ<b>set</b> الذي قام باستدعائها مع الـ<b>set</b> الذي نمرره لها مكان الباراميتر <b>anotherSet</b>.
+        بعدها تضع في الـ<b>set</b> الذي قام باستدعائها العناصر المشتركة بينهما فقط و تمسح أي عناصر آخرى كانت موجودة فيه.</p>
+        <p class="title2">بناؤها:</p>
+        <nav class="contcode"><p>set.symmetric_difference_update(anotherSet)</p></nav>
+        <p class="title2">باراميترات:</p>
+        <p>مكان الباراميتر <b>anotherSet</b> نمرر الـ<b>set</b> الذي سيتم مقارنة عناصره مع عناصر الـ<b>set</b> الذي قام باستدعائها.</p>
+        <p class="title2">قيمة الإرجاع:</p>
+        <p>لا ترجع قيمة.</p>
+        <ul><li class="title2">مثال</li></ul>
+        <nav class="contcode"><pre id="contx18"></pre></nav>
+        <ul><li class="title2">سنحصل على نتيجة تشبه النتيجة التالية عند التشغيل لأننا لا نعرف كيف سيتم ترتيب العناصر.</li></ul>
+        <nav class="contcode"><p>set1 contains: {3, 4, 6, 7}</p></nav>
+        <ul><li class="title2">الدالة <b>union()</b></li></ul>
+        <p class="title2">تعريفها:</p>
+        <p>ترجع <b>set</b> جديد يحتوي على العناصر الموجودة في الـ<b>set</b> الذي قام باستدعائها و العناصر الموجودة في كل <b>set</b> نمرره لها مكان الباراميتر <b>sets*</b>.</p>
+        <p class="title2">بناؤها:</p>
+        <nav class="contcode"><p>set.union(sets*)</p></nav>
+        <p class="title2">باراميترات:</p>
+        <p>مكان الباراميتر <b>sets*</b> نمرر كائن أو أكثر من النوع <b>set</b> مع الإشارة إلى أنه يجب وضع فاصلة بينهم عند تمرير أكثر من كائن. </p>
+        <p class="title2">قيمة الإرجاع:</p>
+        <p>
+            ترجع <b>set</b> جديد يحتوي على العناصر الموجودة في الـ<b>set</b> الذي قام باستدعائها و العناصر الموجودة في كل الـ<b>set</b> الذي نمرره لها مكان الباراميتر <b>sets*</b>.</p>
+            <ul><li class="title2">مثال</li></ul>
+            <nav class="contcode"><pre id="contx19" dir="ltr"></pre></nav>
+            <ul><li class="title2">سنحصل على نتيجة تشبه النتيجة التالية عند التشغيل لأننا لا نعرف كيف سيتم ترتيب العناصر.</li></ul>
+            <nav class="title2"><p><b>newSet contains: {1, 2, 3, 4, 5}</b></p></nav>
+            <ul><li class="title2">الدالة <b>update()</b></li></ul>
+            <p class="title2">تعريفها:            </p>
+             <p>تقارن عناصر الـ<b>set</b> الذي قام باستدعائها مع العناصر الموجودة في كل <b>set</b> نمرره لها مكان الباراميتر <b>sets*</b>.
+                بعدها تضع في الـ<b>set</b> الذي قام باستدعائها العناصر المشتركة و الغير مشتركة بينهم.</p>
+                <p class="title2">بناؤها:</p>
+                <nav class="contcode"><p>set.update(*sets)</p></nav>
+                <p class="title2">باراميترات:</p>
+                <p>مكان الباراميتر <b>sets*</b> نمرر كائن أو أكثر من النوع <b>set </b>مع الإشارة إلى أنه يجب وضع فاصلة بينهم عند تمرير أكثر من كائن.</p>
+                <b class="title2">قيمة الإرجاع:</b>
+                <p>لا ترجع قيمة.</p>
+                <ul><li class="title2">مثال</li></ul>
+                <nav class="contcode"><pre id="contx20" dir="ltr"></pre></nav>
+                <ul><li class="title2">سنحصل على نتيجة تشبه النتيجة التالية عند التشغيل لأننا لا نعرف كيف سيتم ترتيب العناصر.</li></ul>
+                <nav class="contcode"><p>set1 contains: {1, 2, 3, 4, 5}</p></nav>
+            <ul><li class="title2">الدالة <b>isdisjoint()</b></li></ul>
+            <p class="title2">تعريفها:</p>
+            <p>تقارن عناصر الـ<b>set</b> الذي قام باستدعائها مع عناصر الـ<b>set</b> الذي نمرره لها مكان الباراميتر <b>anotherSet</b>.
+                ترجع <b>True</b> إذا كانا لا يحتوان على عناصر قيمها متساوية. و ترجع <b>False</b> إن لم يكونا كذلك.</p>
+                <p class="title2">بناؤها:</p>
+                <nav class="contcode"><p>set.isdisjoint(anotherSet)</p></nav>
+                <p class="title2">باراميترات:</p>
+                <p>مكان الباراميتر <b>anotherSet</b> نمرر الـ<b>set </b> الذي سيتم مقارنة عناصره مع عناصر الـ<b>set</b> الذي قام باستدعائها.</p>
+                <p class="title2">قيمة الإرجاع:</p>
+                <p>ترجع <b>True</b> إذا كان الـ<b>set</b> الذي قام باستدعائها و الـ<b>set</b> الذي مررناه لها لا يحتوان على عنصر واحد على الأقل قيمته متساوية.
+                    غير ذلك ترجع <b>False</b></p>
+                    <ul><li class="title2">مثال</li></ul>
+                    <nav class="contcode" ><pre id="contx21" dir="ltr"></pre></nav>
+                    <ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+                    <nav class="contcode"><p>set1 disjoint set2? False
+                        set1 disjoint set3? True</p></nav>
+                        <ul><li class="title2">الدالة <b>issuperset()</b></li></ul>
+                        <p class="title2">تعريفها:</p>
+                        <p>تقارن عناصر الـ<b>set</b> الذي قام باستدعائها مع عناصر الـ<b>set</b> الذي نمرره لها مكان الباراميتر <b>anotherSet</b>.
+
+                            ترجع <b>True</b> إذا كانت جميع عناصر الـ<b>set</b> الذي نمرره لها مكان الباراميتر <b>anotherSet</b> موجودة في الـ<b>set</b> الذي قام باستدعائها.
+                            غير ذلك ترجع <b>False</b>.</p>
+                            <p class="title2">بناؤها:</p>
+                            <nav class="contcode"><p>set.issuperset(anotherSet)</p></nav>
+                            <p class="title2">باراميترات:</p>
+                            <p>مكان الباراميتر <b>anotherSet</b> نمرر الـ<b>set</b> الذي سيتم مقارنة عناصره مع عناصر الـ<b>set</b> الذي قام باستدعائها.</p>
+                            <p class="title2">قيمة الإرجاع:</p>
+                            <p>ترجع <b>True</b> إذا كانت جميع عناصر الـ<b>set</b> الذي نمرره لها مكان الباراميتر <b>anotherSet</b> موجودة في الـ<b>set</b> الذي قام باستدعائها.
+                                غير ذلك ترجع <b>False</b>.</p>
+                                <ul><li class="title2">مثال</li></ul>
+                            <nav class="contcode"><pre id="contx22" dir="ltr"></pre></nav>
+                            <ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+                            <nav class="contcode"><p>True</p></nav>
+                            <ul><li><p class="title2">دوال جاهزة في بايثون للتعامل مع الـ <b>set</b></p></li></ul>
+                            <table border="5">
+                                <tr><td>إسم الدالة مع تعريفها</td></tr>
+                                <tr><td>1</td><td>len(set)
+                                    ترجع عدد صحيح يمثل عدد عناصر الـset الذي نمرره لها عند إستدعاءها.</td></tr>
+                                    <tr><td>2</td><td>min(set)
+                                        ترجع أصغر قيمة موجودة في الـset الذي نمرره لها عند إستدعاءها.</td></tr>
+                                        <tr><td>3</td><td>max(set)
+                                            ترجع أكبر قيمة في الـset الذي نمرره لها عند إستدعاءها.</td></tr>
+                                            <tr><td>4</td><td>set(sequence)
+                                                ترجع نسخة من أي كائن يحتوي مجموعة عناصر نمرره لها عند إستدعاءها ككائن من الكلاس الـset</td></tr>
+                            </table>
+    </div>
+    <script>
+        document.getElementById("contx22").appendChild(document.createTextNode("# وضعنا فيهما أرقام صحيحة set هنا قمنا بتعريف إثنين\nset1 = {1, 2, 3, 4, 5}\nset2 = {1, 2, 3}\n# set2 يحتوي على جميع عناصر set1 لأن True سترجع .set2 و set1 عند مقارنة عناصر الكائنين issuperset() هنا قمنا بعرض ما سترجعه الدالة\nprint(set1.issuperset(set2))"));
+        document.getElementById("contx21").appendChild(document.createTextNode("# وضعنا فيهم أرقام صحيحة set هنا قمنا بتعريف ثلاثة\nset1 = {1, 2, 3}\nset2 = {1, 7}\nset3 = {4, 5, 6}\n# لأنهما يحتويان على قيم متساوية False سترجع .set2 و set1 عند مقارنة عناصر الكائنين isdisjoint() هنا قمنا بعرض ما سترجعه الدالة\nprint('set1 disjoint set2?', set1.isdisjoint(set2))\n# لأنهم لا يحتويان على قيم متساوية True سترجع .set3 و set1 عند مقارنة عناصر الكائنين isdisjoint() هنا قمنا بعرض ما سترجعه الدالة\nprint('set1 disjoint set3?', set1.isdisjoint(set3))"));
+        document.getElementById("contx20").appendChild(document.createTextNode("# وضعنا فيهم أرقام صحيحة set هنا قمنا بتعريف إثنين\nset1 = {1, 2, 3}\nset2 = {1, 2, 3, 4, 5}\n# مع عدم تكرار أي عنصر طبعاً set1 في الكائن set2 و set1 هنا قمنا قمنا بوضع جميع العناصر الموجودة في الكائنين\nset1.update(set2)\n# set1 هنا قمنا بعرض ما يحتويه الكائن\nprint('set1 contains:', set1)"));
+        document.getElementById("contx19").appendChild(document.createTextNode("# وضعنا فيهم أرقام صحيحة عشوائية set هنا قمنا بتعريف إثنين\nset1 = {1, 2, 3}\nset2 = {1, 2, 3, 4, 5}\n# مع عدم تكرار أي عنصر طبعاً newSet و وضعناها في الكائن set2 و set1 هنا قمنا بإنشاء نسخة من جميع العناصر الموجودة في الكائنين\nnewSet = set1.union(set2)\n# newSet هنا قمنا بعرض ما يحتويه الكائن\nprint('newSet contains:', newSet)"));
+        document.getElementById("contx18").appendChild(document.createTextNode("# وضعنا فيهم أرقام صحيحة set هنا قمنا بتعريف إثنين\nset1 = {1, 2, 4, 5}\nset2 = {1, 2, 3, 5, 6, 7}\n# set1 في الكائن set2 و set1 هنا قمنا بوضع العناصر الغير مشتركة بين الكائنين\nset1.symmetric_difference_update(set2)\n# set1 هنا قمنا بعرض ما يحتويه الكائن\nprint('set1 contains:', set1)"));
+        document.getElementById("contx17").appendChild(document.createTextNode("# وضعنا فيهم أرقام صحيحة set هنا قمنا بتعريف إثنين\nset1 = {1, 2, 3, 4, 5}\nset2 = {1, 2, 3}\n# newSet و وضعناها في الكائن set2 و set1 هنا قمنا بإنشاء نسخة من العناصر الغير موجودة في كل من الكائنين\nnewSet = set1.symmetric_difference(set2)\n# newSet هنا قمنا بعرض ما يحتويه الكائن\nprint('newSet contains:', newSet)"));
+        document.getElementById("contx16").appendChild(document.createTextNode("# وضعنا فيهم أرقام صحيحة set هنا قمنا بتعريف إثنين\nset1 = {1, 2, 3, 4, 5}\nset2 = {1, 2, 3}\n# set1 من الكائن set2 و set1 هنا قمنا بحذف العناصر الغير موجودة في الكائنين\nset1.intersection_update(set2)\n# set1 هنا قمنا بعرض ما يحتويه الكائن\nprint('set1 contains:', set1)"));
+        document.getElementById("contx15").appendChild(document.createTextNode("# وضعنا فيهم أرقام صحيحة set هنا قمنا بتعريف إثنين\nset1 = {1, 2, 3, 4, 5}\nset2 = {1, 2, 3}\n# newSet و وضعناها في الكائن set2 و set1 هنا قمنا بإنشاء نسخة من العناصر الموجودة في الكائنين\nnewSet = set1.intersection(set2)\n# newSet هنا قمنا بعرض ما يحتويه الكائن\nprint('newSet contains:', newSet)"));
+        document.getElementById("contx14").appendChild(document.createTextNode("# وضعنا فيهم أرقام صحيحة set هنا قمنا بتعريف إثنين\nset1 = {1, 2, 3, 4, 5}\nset2 = {1, 2, 3}\n# set1 من الكائن set2 و set1 هنا قمنا بحذف العناصر الموجودة في الكائنين\nset1.difference_update(set2)\n# set1 هنا قمنا بعرض ما يحتويه الكائن\nprint('set1 contains:', set1)"));
+        document.getElementById("contx13").appendChild(document.createTextNode("# وضعنا فيهم أرقام صحيحة set هنا قمنا بتعريف إثنين\nset1 = {1, 2, 3, 4, 5}\nset2 = {1, 2, 3}\n# newSet و وضعناها في الكائن set2 و الغير موجودة في الكائن set1 هنا قمنا بإنشاء نسخة من العناصر الموجودة في الكائن\nnewSet = set1.difference(set2)# newSet هنا قمنا بعرض ما يحتويه الكائن\nprint('newSet contains:', newSet)"));
+        document.getElementById("contx12").appendChild(document.createTextNode("# وضعنا فيه 5 عناصر set1 إسمه set هنا قمنا بتعريف\nset1 = {10, 20, 30, 40, 50}\n# set2 في الكائن set1 هنا قمنا بنسخ عناصر الكائن\nset2 = set1.copy()\n# set2 و set1 هنا قمنا بعرض ما يحتويه الكائن\nprint('set1 contains:', set1)\nprint('set2 contains:', set2)"));
+        document.getElementById("contx11").appendChild(document.createTextNode("# وضعنا فيه 5 عناصر aSet إسمه set هنا قمنا بتعريف\naSet = {10, 20, 30, 40, 50}\n# و عرض قيمته aSet هنا قمنا باستخراج آخر عنصر موجود في الكائن\nprint('Returned element:', aSet.pop())\n# aSet هنا قمنا بعرض العناصر المتبقية في الكائن\nprint('Remaining elements:', aSet)"));
+        document.getElementById("contx10").appendChild(document.createTextNode("# وضعنا فيه 5 عناصر aSet إسمه set هنا قمنا بتعريف\naSet = {10, 20, 30, 40, 50}\n# aSet هنا قمنا بحذف جميع العناصر الموجودة في الكائن\naSet.clear()\n# فارغ set و الذي سيظهر كـ aSet هنا قمنا بعرض ما يحتويه الكائن\nprint('aSet contains:', aSet)"));
+        document.getElementById("contx9").appendChild(document.createTextNode("# وضعنا فيه مجموعة أعداد صحيحة aSet إسمه set هنا قمنا بتعريف\naSet = {1, 2, 3, 4, 5}\n# عند التشغيل ValueError و بما أنه لا يوجد أي عنصر يملك هذه القيمة سيظهر الخطأ aSet لحذف عنصر يملك قيمة 10 في الكائن remove() هنا قمنا باستدعاء الدالة\naSet.remove(10)\n# aSet هنا قمنا بعرض ما يحتويه الكائن\nprint(aSet)"));
+        document.getElementById("contx8").appendChild(document.createTextNode("# وضعنا فيه مجموعة أعداد صحيحة aSet إسمه set هنا قمنا بتعريف\naSet = {1, 2, 3, 4, 5}\n# aSet هنا قمنا بحذف العنصر الذي يملك القيمة 1 في الكائن\naSet.discard(1)\n# aSet هنا قمنا بعرض ما يحتويه الكائن\nprint(aSet)"));
+        document.getElementById("contx7").appendChild(document.createTextNode("aSet = {'Apple', 'Banana', 'Mango'}    # وضعنا فيه 3 عناصر aSet إسمه set هنا قمنا بتعريف\nprint('Before:', aSet)\n# aSet هنا قمنا بعرض ما يحتويه الكائن\naSet.add('Orange')\n# aSet هنا قمنا بإضافة نص كعنصر جديد في آخر الكائن\nprint('After: ', aSet)\n# من جديد aSet هنا قمنا بعرض ما يحتويه الكائن"));
+        document.getElementById("contx6").appendChild(document.createTextNode("# وضعنا فيه قيم نصية تمثل أسماء أشخاص names إسمه set هنا قمنا بتعريف\nnames = {'Rami', 'Sara', 'Nada', 'Mhamad', 'Salem'}\n# و من ثم سيتم طباعتها x في المتغير names في كل مرة سيتم وضع قيمة عنصر من عناصر الكائن\nfor x in names:\nprint(x)"));
+        document.getElementById("contx5").appendChild(document.createTextNode("# وضعنا فيه أعداد صحيحة arr إسمه set هنا قمنا بتعريف\narr = {10, 20, 30, 40, 50}\ndel arr\n# كما هو من الذاكرة arr هنا قمنا بحذف الكائن\nprint(arr)\n# و الذي في الأصل قمنا بحذفه من الذاكرة لذلك سيظهر خطأ عند التشغيل arr هنا حاولنا عرض ما يحتويه الكائن"));
+        document.getElementById("contx4").appendChild(document.createTextNode("# يحتوي على نصوص و لاحظ أننا قمنا بتكرار بعض القيم names إسمه set هنا قمنا بتعريف\nnames = {'Rami', 'Rami', 'Rami', 'Nada', 'Nada', 'Ahmad'}\n# ( أي كما قمنا بتعريفه ) كما هو. لاحظ أنه لا يحتوي على قيم مكررة names هنا قمنا بعرض ما يحتويه الكائن\nprint(names)"));
+        document.getElementById("contx3").appendChild(document.createTextNode("data = {1, 'Mhamad', 'Harmush', 1500}      # يحتوي على أعداد صحيحة و نصوص data إسمه set هنا قمنا بتعريف\nprint(data)\n# ( أي كما قمنا بتعريفه ) كما هو data هنا قمنا بعرض ما يحتويه الكائن"));
+        document.getElementById("contx2").appendChild(document.createTextNode("names = {'Rami', 'Sara', 'Nada'}      # يحتوي على نصوص فقط names إسمه set هنا قمنا بتعريف\nprint(names)\n# ( أي كما قمنا بتعريفه ) كما هو names هنا قمنا بعرض ما يحتويه الكائن"));
+document.getElementById("contx1").appendChild(document.createTextNode("numbers = {10, 20, 30, 40, 50}       # يحتوي على أعداد صحيحة فقط numbers إسمه set هنا قمنا بتعريف\nprint(numbers)\n# ( أي كما قمنا بتعريفه ) كما هو numbers هنا قمنا بعرض محتوى الكائن"));
+    </script>
+    <style>
+        .titleb{
+            color: #8d9399; font-size: 24px;
+        }
+        b{ color:darkred;}
+         .title1{
+             display: block;
+             text-align: center;
+           font-size:24px;
+           color:darkred;
+           font-weight: bold;
+           text-align: center;
+           /*العناوين الرئيسية*/
+        }
+        .title2{
+         font-weight: bold;
+         font-size:22px;
+         color:darkblue;
+         /*العناوين الفرعية*/
+        }
+        *{
+            font-size: 20px;
+        }
+        .bacp{
+            display: inline; background-color: rgb(137, 137, 245); padding:3px; 
+        }
+        .contcode pre{
+            direction: ltr;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+         .contcode{
+             text-align: left;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 20px;
+            border: 2px saddlebrown solid;
+        }
+        #code{
+            text-align: left;
+        }
+        #apage{
+            background-color: rgb(133, 129, 129) ;
+        }
+        body{  
+            margin-top: 0;
+        }
+        #titlecont{
+            display: block;
+            text-align: center;
+        }
+        #cont{
+            text-align: right;
+            position:absolute;
+            top: 11%;
+            left: 17%;
+            height: 197%;
+            width: 81%;
+        }
+        #list{
+            background-color:white;
+            z-index: 100;
+            position: fixed; 
+            width: 100%;
+        }
+        #out{
+            background-color: white;
+            width: 17.4%;
+            height: 380px;
+            border: 2px rgb(161, 160, 160) solid;
+            position: fixed;
+            left: 82%;
+            top: 44%;
+        }
+        #button:hover{
+            color: white;
+            background-color: #007bff; 
+        }
+        #button{
+            position: fixed;
+            bottom: 47.5%;
+            left: 82%;
+            width: 18%;
+            height: 30px;
+            top: 275px;   
+        }
+        #input::placeholder{
+            text-align: center;
+        }
+        #input{
+            width: 17.5%;
+            height: 200px;
+
+            position: fixed;
+            bottom: 52%;
+            left: 82%;
+            top: 10%;
+            display: block;
+        }
+        #titbox{
+            text-align: center;
+        }
+        #box a:hover{
+            background-color: rgb(133, 129, 129);
+        }
+        #box a{
+            margin-top: 1px;
+            padding: 3px;
+            text-decoration: none;
+            margin-left: 5px;
+            display: block;
+            color: #2f3f50;
+        }
+        #box{
+            background-color: white;
+            overflow-y:scroll;   
+            position: fixed;
+            margin-top: 5px;
+            margin-left: 4px;
+            text-align: left;
+            border: 2px #007bff solid;
+            width: 15%;
+            height: 89.5%;
+            top: 9%;
+            right: 84%;
+            float: left;
+        }
+        #but:hover{
+            color:  #007bff;
+            background-color:white;            
+        }
+        #but{
+            color: white;
+            background-color: #007bff;
+        }
+        #search{
+           width: 12.5%;
+        }
+        nav{
+            text-align: center;
+        }
+        .a:hover{
+            background-color: white;
+            color:   #007bff;
+        }
+        #title{
+            padding-right: 12%;
+            font-size: 22px;
+            text-align: left;
+            padding-left: 18px;
+        }
+        .aa{
+            line-height: 50px;
+           text-align: center;
+           text-decoration: none;
+          /* padding: 0.55% 7.9%;*/
+           padding: 7px 108px;
+           background-color:  #007bff; 
+           color: white;
+        }
+       .a{
+        line-height: 50px;
+           text-align: center;
+           text-decoration: none;
+           /*padding: 0.6% 7.7%;*/
+           padding: 8px 100px;
+           background-color:  #007bff; 
+           color: white;
+       }
+       @media screen and (min-width: 1285px) and (max-width:1365px){
+        .titleb{ font-size: 23.5px;}
+           *{font-size: 19.5px;}     
+        .a{padding: 7px 97px;}
+       .aa{padding: 6px 100px;}
+       #title{padding-right: 11%; font-size: 21.5px;}
+       .title1{font-size:23.5px;}
+        .title2{font-size:21.5px;}
+        .not{font-size: 21.5px;}
+       }
+       @media screen and (min-width: 1204px) and (max-width:1284px){
+        .titleb{ font-size: 23px;}
+        *{font-size: 19px;}
+        .a{padding: 6px 90px;}
+       .aa{padding: 6px 100px;}
+       #title{padding-right: 10%; font-size: 21px;}
+       .title1{font-size:23px;}
+        .title2{font-size:21px;}
+        .not{font-size: 21px;}
+      }
+       @media screen and (min-width: 1123px) and (max-width:1203px){
+        .titleb{ font-size: 23.5px;}
+        *{font-size: 18.5px;}
+        .a{padding: 6px 83px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 9%; font-size: 20.5px;}
+       .title1{font-size:22.5px;}
+        .title2{font-size:20.5px;}
+        .not{font-size: 20.5px;}
+       }
+       @media screen and (min-width: 1042px) and (max-width:1122px){
+        .titleb{ font-size: 23px;}
+        *{font-size: 18px;}
+        .a{padding: 6px 77px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 8%; font-size: 20px;}
+       .title1{font-size:22px;}
+        .title2{font-size:20px;}
+        .not{font-size: 20px;}
+       }
+       @media screen and (min-width: 961px) and (max-width:1041px){
+        .titleb{ font-size: 22.5px;}
+        *{font-size: 17.5px;}
+        .a{padding: 6px 69px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 7%; font-size: 19.5px;}
+       .title1{font-size:21.5px;}
+        .title2{font-size:19.5px;}
+        .not{font-size: 19.5px;}
+       }
+       @media screen and (min-width: 880px) and (max-width:960px){
+        .titleb{ font-size: 22px;}
+        *{font-size: 17px;}
+        .a{padding: 6px 61px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 6%; font-size: 19px;}
+       .title1{font-size:21px;}
+        .title2{font-size:19px;}
+        .not{font-size: 19px;}
+       }
+       @media screen and (min-width: 799px) and (max-width:879px){
+        .titleb{ font-size: 21.5px;}
+        *{font-size: 16.5px;}
+        .a{padding: 6px 53px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 5%; font-size: 18.5px;}
+       .title1{font-size:20.5px;}
+        .title2{font-size:18.5px;}
+        .not{font-size: 18.5px;}
+       }
+       @media screen and (min-width: 718px) and (max-width:798px){
+        .titleb{ font-size: 21px;}
+        *{font-size: 16px;}
+        .a{padding: 6px 43px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 4%; font-size: 18px;}
+       .title1{font-size:20px;}
+        .title2{font-size:18px;}
+        .not{font-size: 18px;}
+       }
+       @media screen and (min-width: 637px) and (max-width:717px){
+        .titleb{ font-size: 20.5px;}
+        *{font-size: 15.5px;}
+        .a{padding: 6px 35px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 3%; font-size: 17.5px;}
+       .title1{font-size:19.5px;}
+       .title2{font-size:17.5px;}
+        .not{font-size: 17.5px;}
+       /**/
+        }
+       @media screen and (min-width: 556px) and (max-width:636px){
+        .titleb{ font-size: 20px;}
+        *{font-size: 15px;}
+        .a{padding: 6px 25px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 3%; font-size: 17px;}
+       .title1{font-size:19px;}
+        .title2{font-size:17px;}
+        .not{font-size: 17px;}
+       }
+       @media screen and (min-width: 475px) and (max-width:555px){
+        .titleb{ font-size: 19.5px;}
+        *{font-size: 14.5px;}
+        .a{padding: 6px 18px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 2%; font-size: 16.5px;}
+       .title1{font-size:18.5px;}
+        .title2{font-size:16.5px;}
+        .not{font-size: 16.5px;}
+       }
+       @media screen and (min-width: 394px) and (max-width:474px){
+        .titleb{ font-size: 19px;}
+        *{font-size: 14px;}
+        .a{padding: 6px 9px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 1%; font-size: 16px;}
+       .title1{font-size:18px;}
+        .title2{font-size:16px;}
+        .not{font-size: 16px;}
+       }
+       @media screen and (min-width: 313px) and (max-width:393px){
+        .titleb{ font-size: 18.5px;}
+        *{font-size: 13.5px;}
+        .a{padding: 6px 1px;}
+       .aa{padding:6px 1px;}
+       #title{padding-right: 0.5%; font-size: 15.5px;}
+       .title1{font-size:17.5px;}
+        .title2{font-size:15.5px;}
+        .not{font-size: 15.5px;}
+       }
+</style>
+</body>
+</html>

@@ -1,0 +1,606 @@
+<!DOCTYPE html >
+<html lang="ar" dir="rtl">
+<head>
+    <link rel="icon" href="https://g.top4top.io/p_1951l48qy1.png" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>area</title>
+    <style>
+        .rtl{direction:rtl}
+        .right{text-align:right}
+        .ar{font-family:droid_arabic_naskh_regular;line-height:32px}
+        .left{text-align:left}
+        .inline{display:inline-block}
+        .responsive-table{overflow-x:auto}
+        .responsive-table .en{font-family:Helvetica,Arial,Sans-Serif;line-height:24px}
+        .responsive-table .ar{font-family:droid_arabic_naskh_regular;line-height:32px}
+        .responsive-table table{border-collapse:collapse;border-spacing:0;width:100%}
+        .responsive-table table th{background-color:#ccc;padding:10px;border:1px solid #bbb;vertical-align:middle}
+        .responsive-table table td{padding:10px;border:1px solid #bbb}
+        .responsive-table table tr:nth-child(even){background-color:#fff}
+        .responsive-table table tr:nth-child(odd){background-color:#f1f1f1}
+          .border{
+border:5px solid black;
+background-color:lightblue; 
+text-align:center; 
+}
+b{ color:darkred;}
+strong{ color:darkblue;}
+.titleb{
+            color: #8d9399; font-size: 24px;
+        }
+        .not{
+            border:4px solid black; 
+            background-color:lightblue; 
+            text-align:center;            
+            font-size: 22px;
+            /*الملاحضات والمعلومات*/
+        }
+         .title1{
+           font-size:24px;
+           color:darkred;
+           font-weight: bold;
+           text-align: center;
+           /*العناوين الرئيسية*/
+        }
+        .title2{
+         font-weight: bold;
+         font-size:22px;
+         color:darkblue;
+         /*العناوين الفرعية*/
+        }
+        *{
+            font-size: 20px;
+        }
+        .bacp{
+            display: inline; background-color: rgb(137, 137, 245); padding:3px; 
+        }
+        .contcode pre{
+            direction: ltr;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+         .contcode{
+             text-align: left;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 20px;
+            border: 2px saddlebrown solid;
+        }
+        #code{
+            text-align: left;
+        }
+        #apage{
+            background-color: rgb(133, 129, 129) ;
+        }
+        body{  
+            margin-top: 0;
+        }
+        #titlecont{
+            display: block;
+            text-align: center;
+        }
+        #cont{
+            text-align: right;
+            position:absolute;
+            top: 11%;
+            left: 17%;
+            width: 64.7%;
+        }
+        #list{
+            background-color:white;
+            z-index: 100;
+            position: fixed; 
+            width: 100%;
+        }
+        #out{
+            background-color: white;
+            width: 17.4%;
+            height: 380px;
+            border: 2px rgb(161, 160, 160) solid;
+            position: fixed;
+            left: 82%;
+            top: 44%;
+        }
+        #button:hover{
+            color: white;
+            background-color: #007bff; 
+        }
+        #button{
+            position: fixed;
+            bottom: 47.5%;
+            left: 82%;
+            width: 18%;
+            height: 30px;
+            top: 275px;   
+        }
+        #input::placeholder{
+            text-align: center;
+        }
+        #input{
+            width: 17.5%;
+            height: 200px;
+
+            position: fixed;
+            bottom: 52%;
+            left: 82%;
+            top: 10%;
+            display: block;
+        }
+        #titbox{
+            text-align: center;
+        }
+        #boxh{
+            background-color: rgb(133, 129, 129);
+        }
+        #box a:hover{
+            background-color: rgb(133, 129, 129);
+        }
+        #box a{
+            margin-top: 1px;
+            padding: 3px;
+            text-decoration: none;
+            margin-left: 5px;
+            display: block;
+            color: #2f3f50;
+        }
+        #box{
+            background-color: white;
+            overflow-y:scroll;   
+            position: fixed;
+            margin-top: 5px;
+            margin-left: 4px;
+            text-align: left;
+            border: 2px #007bff solid;
+            width: 15%;
+            height: 89.5%;
+            top: 9%;
+            right: 84%;
+            float: left;
+        }
+        #but:hover{
+            color:  #007bff;
+            background-color:white;            
+        }
+        #but{
+            color: white;
+            background-color: #007bff;
+        }
+        #search{
+           width: 11%;
+        }
+        nav{
+            text-align: center;
+        }
+        .a:hover{
+            background-color: white;
+            color:   #007bff;
+        }
+        #title{
+            padding-right: 12%;
+            font-size: 22px;
+        }
+        .aa{
+            line-height: 50px;
+           text-align: center;
+           text-decoration: none;
+           padding: 0.6% 4.8%;
+           background-color:  #007bff; 
+           color: white;
+        }
+       .a{
+        line-height: 50px;
+           text-align: center;
+           text-decoration: none;
+           padding: 0.6% 4.6%;
+           background-color:  #007bff; 
+           color: white;
+       }
+       @media screen and (min-width: 1265px) and (max-width:1365px){
+        .titleb{ font-size: 23.5px;}
+           *{font-size: 19.5px;}     
+        .a{padding: 0.55% 4.5%;}
+       .aa{padding: 0.55% 4.7%;}
+       #title{padding-right: 11%; font-size: 21.5px;}
+       .title1{font-size:23.5px;}
+        .title2{font-size:21.5px;}
+        .not{font-size: 21.5px;}
+       }
+       @media screen and (min-width: 1165px) and (max-width:1265px){
+        .titleb{ font-size: 23px;}
+        *{font-size: 19px;}
+        .a{padding: 0.5% 4.2%;}
+       .aa{padding: 0.5% 4.4%;}
+       #title{padding-right: 10%; font-size: 21px;}
+       .title1{font-size:23px;}
+        .title2{font-size:21px;}
+        .not{font-size: 21px;}
+      }
+       @media screen and (min-width: 1065px) and (max-width:1165px){
+        .titleb{ font-size: 23.5px;}
+        *{font-size: 18.5px;}
+        .a{padding: 0.45% 4.2%;}
+       .aa{padding: 0.45% 4.4%;}
+       #title{padding-right: 9%; font-size: 20.5px;}
+       .title1{font-size:22.5px;}
+        .title2{font-size:20.5px;}
+        .not{font-size: 20.5px;}
+       }
+       @media screen and (min-width: 965px) and (max-width:1065px){
+        .titleb{ font-size: 23px;}
+        *{font-size: 18px;}
+        .a{padding: 0.4% 3.8%;}
+       .aa{padding: 0.4% 4%;}
+       #title{padding-right: 8%; font-size: 20px;}
+       .title1{font-size:22px;}
+        .title2{font-size:20px;}
+        .not{font-size: 20px;}
+       }
+       @media screen and (min-width: 865px) and (max-width:965px){
+        .titleb{ font-size: 22.5px;}
+        *{font-size: 17.5px;}
+        .a{padding: 0.35% 3.6%;}
+       .aa{padding: 0.35% 3.5%;}
+       #title{padding-right: 7%; font-size: 19.5px;}
+       .title1{font-size:21.5px;}
+        .title2{font-size:19.5px;}
+        .not{font-size: 19.5px;}
+       }
+       @media screen and (min-width: 765px) and (max-width:865px){
+        .titleb{ font-size: 22px;}
+        *{font-size: 17px;}
+        .a{padding: 0.3% 3%;}
+       .aa{padding: 0.3% 2.9%;}
+       #title{padding-right: 6%; font-size: 19px;}
+       .title1{font-size:21px;}
+        .title2{font-size:19px;}
+        .not{font-size: 19px;}
+       }
+       @media screen and (min-width: 665px) and (max-width:765px){
+        .titleb{ font-size: 21.5px;}
+        *{font-size: 16.5px;}
+        .a{padding: 0.25% 2.5%;}
+       .aa{padding: 0.25% 2.4%;}
+       #title{padding-right: 5%; font-size: 18.5px;}
+       .title1{font-size:20.5px;}
+        .title2{font-size:18.5px;}
+        .not{font-size: 18.5px;}
+       }
+       @media screen and (min-width: 565px) and (max-width:665px){
+        .titleb{ font-size: 21px;}
+        *{font-size: 16px;}
+        .a{padding: 0.2% 1.6%;}
+       .aa{padding: 0.2% 1.5%;}
+       #title{padding-right: 4%; font-size: 18px;}
+       .title1{font-size:20px;}
+        .title2{font-size:18px;}
+        .not{font-size: 18px;}
+       }
+       @media screen and (min-width: 465px) and (max-width:565px){
+        .titleb{ font-size: 20.5px;}
+        *{font-size: 15.5px;}
+        .a{padding: 0.15% 0.7%;}
+       .aa{padding: 0.15% 0.8%;}
+       #title{padding-right: 3%; font-size: 17.5px;}
+       .title1{font-size:19.5px;}
+       .title2{font-size:17.5px;}
+        .not{font-size: 17.5px;}
+       /**/
+        }
+       @media screen and (min-width: 365px) and (max-width:465px){
+        .titleb{ font-size: 20px;}
+        *{font-size: 15px;}
+        .a{padding: 0.1% 0.5%;}
+       .aa{padding: 0.1% 3.6%;}
+       #title{padding-right: 3%; font-size: 17px;}
+       .title1{font-size:19px;}
+        .title2{font-size:17px;}
+        .not{font-size: 17px;}
+       }
+       @media screen and (min-width: 265px) and (max-width:365px){
+        .titleb{ font-size: 19.5px;}
+        *{font-size: 14.5px;}
+        .a{padding: 0.05% 0.3%;}
+       .aa{padding: 0.05% 0.4%;}
+       #title{padding-right: 2%; font-size: 16.5px;}
+       .title1{font-size:18.5px;}
+        .title2{font-size:16.5px;}
+        .not{font-size: 16.5px;}
+       }
+       @media screen and (min-width: 165px) and (max-width:265px){
+        .titleb{ font-size: 19px;}
+        *{font-size: 14px;}
+        .a{padding: 0.05% 0.1%;}
+       .aa{padding: 0.05% 0.2%;}
+       #title{padding-right: 1%; font-size: 16px;}
+       .title1{font-size:18px;}
+        .title2{font-size:16px;}
+        .not{font-size: 16px;}
+       }
+       @media screen and (min-width: 65px) and (max-width:165px){
+        .titleb{ font-size: 18.5px;}
+        *{font-size: 13.5px;}
+        .a{padding: 0.05% 0.05%;}
+       .aa{padding: 0.05% 0.1%;}
+       #title{padding-right: 0.5%; font-size: 15.5px;}
+       .title1{font-size:17.5px;}
+        .title2{font-size:15.5px;}
+        .not{font-size: 15.5px;}
+       }
+</style>
+</head>
+<body>
+    <nav id="list" dir="ltr">
+        <a href="https://stutcc.blogspot.com" class="aa" id="title"><b class="titleb">S</b>tu<b class="titleb">T</b>cc</a>
+        <a href="https://stutcc-html-editor.blogspot.com" class="a">محرر الاكواد</a>
+        <a href="https://stutcc-Shortcuts.blogspot.com" class="a">موقع الاختصارات</a>
+        <a href="https://stutcc-html-test.blogspot.com" class="a">اختبار</a>       
+        <a href="https://stutcc-python.blogspot.com" class="a">بايثون</a>
+        <input type="text" placeholder="search" id="search">
+        <button type="submit" id="but">search</button> 
+    </nav >
+    <nav id="box" dir="ltr">
+        <p id="titbox">Tags</p>
+        <a href="https://stutcc-html-introduction.blogspot.com" class="abox">introduction</a>
+        <a href="https://stutcc-html-html.blogspot.com" class="abox">html</a>
+        <a href="https://stutcc-html-head.blogspot.com" class="abox">head</a>
+        <a href="https://stutcc-html-body.blogspot.com" class="abox">body</a>
+        <a href="https://stutcc-html-link.blogspot.com" class="abox" >link</a>
+        <a href="https://stutcc-html-textFormatting.blogspot.com" class="abox" >text formatting</a>
+        <a href="https://stutcc-html-p.blogspot.com" class="abox" >paragraph(p)</a>
+        <a href="https://stutcc-html-titles.blogspot.com" class="abox" >titles</a>
+        <a href="https://stutcc-html-abbr.blogspot.com" class="abox" >abbr</a>
+        <a href="https://stutcc-html-a.blogspot.com" class="abox" >a</a>
+        <a href="https://stutcc-html-img.blogspot.com" class="abox" >img</a>
+        <a href="https://stutcc-html-picture.blogspot.com" class="abox" >picture</a>
+        <a href="https://stutcc-html-video.blogspot.com" class="abox" >video</a>
+        <a href="https://stutcc-html-style.blogspot.com" class="abox" >style</a>
+        <a href="https://stutcc-html-script.blogspot.com" class="abox" >script</a>
+        <a href="https://stutcc-html-forms.blogspot.com" class="abox" >forms</a>
+        <a href="https://stutcc-html-button.blogspot.com" class="abox" >button</a>
+        <a href="https://stutcc-html-ol.blogspot.com" class="abox" >ordered list(ol)</a>
+        <a href="https://stutcc-html-ul.blogspot.com" class="abox" >unordered list(ul)</a>
+        <a href="https://stutcc-html-tables.blogspot.com" class="abox" >tables</a>
+        <a href="https://stutcc-html-colgroup.blogspot.com" class="abox" >colgroup</a>
+        <a href="https://stutcc-html-div.blogspot.com" class="abox" >div</a>
+        <a href="https://stutcc-html-nav.blogspot.com" class="abox" >nav</a>
+        <a href="https://stutcc-html-article.blogspot.com" class="abox" >article</a>
+        <a href="https://stutcc-html-header.blogspot.com" class="abox" >header</a>
+        <a href="https://stutcc-html-thead.blogspot.com" class="abox" >thead</a>
+        <a href="https://stutcc-html-tfoot.blogspot.com" class="abox" >tfoot</a>
+        <a href="https://stutcc-html-aside.blogspot.com" class="abox" >aside</a>
+        <a href="https://stutcc-html-cite.blogspot.com" class="abox" >cite</a>
+        <a href="https://stutcc-html-address.blogspot.com" class="abox" >address</a>
+        <a href="https://stutcc-html-area.blogspot.com" class="abox" id="boxh">area</a>
+        <a href="https://stutcc-html-label.blogspot.com" class="abox" >label</a>
+        <a href="https://stutcc-html-param.blogspot.com" class="abox" >param</a>
+        <a href="https://stutcc-html-iframe.blogspot.com" class="abox" >iframe</a>
+        <a href="https://stutcc-html-data.blogspot.com" class="abox" >data</a>
+        <a href="https://stutcc-html-main.blogspot.com" class="abox" >main</a>
+        <a href="https://stutcc-html-output.blogspot.com" class="abox" >output</a>
+        <a href="https://stutcc-html-kbd.blogspot.com" class="abox" >kbd</a>
+        <a href="https://stutcc-html-bdi.blogspot.com" class="abox" >bdi</a>
+        <a href="https://stutcc-html-bdo.blogspot.com" class="abox" >bdo</a>
+        <a href="https://stutcc-html-object.blogspot.com" class="abox" >object</a>
+    </nav>
+    <textarea id="input" placeholder="اكتب الكود هنا ضمن وسم ال <body>" dir="ltr"></textarea>
+    <button type="submit" id="button" onclick="input();">النتيجة</button>
+    <div id="out"></div>
+    <div id ="cont">
+        <p class="title1" id="contx1"></p>
+        <p class="title2">تعريفه:</p>
+        <p id="contx2"></p>
+        <p id="contx3"></p>
+        <p id="contx4"></p>
+        <p class="title2">خصائصه:</p>
+        <p>نود الإشارة إلى أننا سنذكر الخصائص المهمة و المستخدمة فعلياً و نتجاهل أي خصائص لا يوصى باستخدامها.</p>
+        <strong>الخاصية </strong> <b> alt </b>:
+        <p>نضيفها للوسم لوضع نص بديل يظهر مكانه في حال لم يستطع المتصفح فتح الصورة نفسها.</p>
+        <strong> الخاصية </strong> <b> coords </b>:
+        <p>نضيفها للوسم لتحديد موقع المساحة المشار إليها في الصورة و كم هو حجمها على النحو التالي:</p>
+        <ul><li>إذا كان شكل المساحة المشار إليه في الصورة محدد كمستطيل <b> (shape="rect") </b> يجب تمرير 4 أعداد لها مع وضع فاصلة بين كل عددين هكذا <b> x1 </b>,<b> y1 </b> ,<b> x2 </b>,<b> y2 </b> لأن أول عددين يمثلان مكان أول نقطة و ثاني عددين يمثلاً مكان ثاني نقطة و على أساس هاتين النقطتين سيقوم المتصفح بإنشاء خطوط متعامدة في مكان إلتقائها مما ينتج شكل المستطيل.</li></ul>
+        <ul><li>إذا كان شكل المساحة المشار إليه في الصورة محدد كدائرة <b> (shape="circle") </b>  يجب تمرير 3 أعداد لها مع وضع فاصلة بين كل عددين هكذا <b> x </b> ,<b> y </b> ,<b> radius </b> لأن أول عددين سيمثلان مركز الدائرة و العدد الثالث يمثل كم طول الشعاع (أي حجمها).</li></ul>
+        <ul><li>إذا كان شكل المساحة المشار إليه في الصورة محدد كمُضَلَّع <b> (shape="poly") </b>  يمكنك تمرير العدد الذي تريده من النقاط هكذا <b> x1 </b> ,<b> y1 </b> , <b> x2 </b> ,<b> y2 </b> ,<b> .. </b>, <b> xn </b> ,<b> yn </b> حيث كل عددين تمررهما وراء بعض يشيران لمكان نقطة واحدة في الشكل الذي سيتم تكوينه من النقاط. و في حال كانت آخر نقطة وضعتها لا تساوي أول نقطة وضعتها سيقوم المتصفح بفعل ذلك عنك حتى يقوم بإغلاق الشكل الذي حددته.</li></ul>
+        <p class="border"> <b>ملاحظة: </b>جميع الأرقام التي تمررها للخاصية <b> coords </b> تمثل أرقام موضوعة بالبكسل <b> ( Pixel ) </b> لهذا حجم الصورة الأساسية يجب أن يكون ثابت و محدد بالبكسل أيضاً حتى تتطابق الأجزاء المحددة في الصورة مع حجم الصورة نفسها.  </p>
+        <strong> الخاصية </strong> <b> download </b>:
+        <p>يمكن إضافتها للوسم لإعلام المتصفح أنه عند النقر على المكان الذي يشير له الوسم في الصورة سيتم تحميل ملف ما.</p>
+        <strong> الخاصية </strong> <b> href </b>:
+        <p id="contx5"></p>
+        <strong> الخاصية </strong> <b> referrerpolicy </b>:
+        <p>يمكن إضافتها للوسم بهدف تحديد معلومات المرسل التي سيتم إرسالها مع طلب المستخدم إلى الموقع الذي سيتلقى طلبه.</p>
+        <p>يجب تمرير إحدى القيم التالية المهيئة مسبقاً كقيمة للخاصية <b> rel </b> لتحديد ما هي المعلومات التي سيتم إرسالها مع الطلب.</p>
+        <div class="responsive-table">
+            <table class="rtl right ar">
+                <tr>
+                    <th style="width:225px;">القيمة</th>
+                    <th>معناها</th>
+                </tr>
+                <tr>
+                    <td class="left"><code>no-referrer</code></td>
+                    <td>لعدم إرسال أي معلومة مع طلب المستخدم.</td>
+                </tr>
+                <tr>
+                    <td class="left"><code>no-referrer-when-downgrade</code></td>
+                    <td>لعدم إرسال أي معلومة في <span class="word">Header</span> طلب المستخدم <span class="inline">( أي</span> المعلومات التي يرسلها المستخدم للموقع و لا تظهر في <span class="inline">الرابط )</span> إذا كان الموقع الذي سيتلقى الطلب لا يستخدم البروتوكل <code>https</code> و هذا هو الحال الإفتراضي.</td>
+                </tr>
+                <tr>
+                    <td class="left"><code>origin</code></td>
+                    <td>لإرسال المعلومات التالية فقط مع طلب المستخدم <span class="inline">( <code>scheme</code></span> - <code>host</code> - <span class="inline"><code>port</code> ).</span></td>
+                </tr>
+                <tr>
+                    <td class="left"><code>origin-when-cross-origin</code></td>
+                    <td>لإرسال المعلومات التالية مع طلب المستخدم <span class="inline">( <code>scheme</code></span> - <code>host</code> - <span class="inline"><code>port</code> )</span> بالإضافة إلى المسار <span class="inline">( <code>path</code> )</span> في حال كان الرابط موجود في نفس الموقع.</td>
+                </tr>
+                <tr>
+                    <td class="left"><code>unsafe-url</code></td>
+                    <td>لإرسال المعلومات التالية فقط مع طلب المستخدم <span class="inline">( <code>origin</code></span> - <code>path</code> )</span> أي بدون أي معلومة حساسة مثل إسم المستخدم و كلمة مروره.</td>
+                </tr>
+            </table>
+        </div>
+        <strong> الخاصية </strong> <b> rel </b>:
+        <p>يمكن إضافتها للوسم بهدف تحديد ما هي طبيعة العلاقة بين الرابط الحالي و الرابط الذي يتم توجيه المستخدم إليه و هذا الأمر مهم جداً بالنسبة لمحركات البحث.</p>
+        <p>يجب تمرير إحدى القيم التالية المهيئة مسبقاً كقيمة للخاصية <b> rel </b> لتحدد ما هي طبيعة العلاقة بين الرابط الحالي و الرابط الذي يتم توجيه المستخدم إليه.</p>
+        <div class="responsive-table">
+            <table class="rtl right ar">
+                <tr>
+                    <th style="width:65px;">القيمة</th>
+                    <th>معناها</th>
+                </tr>
+                <tr>
+                    <td class="left"><code>alternate</code></td>
+                    <td>للإشارة إلى أن الرابط الموضوع هو رابط بديل للرابط الحالي في حال كان هذا البديل أفضل و يلائم باقي الخصائص الموضوعة.</td>
+                </tr>
+                <tr>
+                    <td class="left"><code>author</code></td>
+                    <td>للإشارة إلى أن الرابط الموضوع هو لصفحة تصف مؤلف المحتوى أو توفر طريقة للتواصل معه.</td>
+                </tr>
+                <tr>
+                    <td class="left"><code>bookmark</code></td>
+                    <td>للإشارة إلى أن الرابط الموضوع دائم و يمكن الرجوع له.</td>
+                </tr>
+                <tr>
+                    <td class="left"><code>external</code></td>
+                    <td>للإشارة إلى أن الرابط الموضوع ليس تابعاً للموقع الموجودة فيه الصفحة.</td>
+                </tr>
+                <tr>
+                    <td class="left"><code>help</code></td>
+                    <td>للإشارة إلى أن الرابط الموضوع يقدم مساعدة.</td>
+                </tr>
+                <tr>
+                    <td class="left"><code>license</code></td>
+                    <td>للإشارة إلى أن الرابط الموضوع يوضح رخصة المحتوى المعروض في الصفحة.</td>
+                </tr>
+                <tr>
+                    <td class="left"><code>next</code></td>
+                    <td>للإشارة إلى أن الرابط الموضوع هو الرابط التالي الذي يجب الإنتقال إليه لمتابعة أمر ما.</td>
+                </tr>
+                <tr>
+                    <td class="left"><code>nofollow</code></td>
+                    <td>للإشارة إلى أن الرابط الموضوع ليس مكملاً للموقع و بالتالي لا يعتبر جزء منه, و بشكل عام إذا كنت تستخدم إعلانات أدسينس فشركة جوجل تفرض إضافة هذا القيمة لكل رابط دعائي موضوع في الموقع حتى لا يتعارض مع سياسة الإعلانات الموضوعة من قبل أدسينس.</td>
+                </tr>
+                <tr>
+                    <td class="left"><code>noreferrer</code></td>
+                    <td>لمنع المتصفح من إرسال أي معلومات مع طلب المستخدم مما يعني أن المستخدم سيكون مجهول بالنسبة للموقع الذي يتم نقله إليه حين ينقر على الرابط.</td>
+                </tr>
+                <tr>
+                    <td class="left"><code>noopener</code></td>
+                    <td>لمنع النافذة التي تم فتحها في المتصفح بواسطة الكود <code data-enlighter-language="js">window.open()</code> عند النقر على الرابط من إمكانية تنفيذ أي كود جافا سكربت ضار من شأنه الوصول لمعلومات المستخدم الحساسة التي كان قد أدخلها في الصفحة السابقة.</td>
+                </tr>
+                <tr>
+                    <td class="left"><code>prev</code></td>
+                    <td>للإشارة إلى أن الرابط الموضوع هو الرابط التالي الذي يجب الإنتقال إليه لمتابعة أمر ما.</td>
+                </tr>
+                <tr>
+                    <td class="left"><code>search</code></td>
+                    <td>لإظهار زر للبحث مبني على نتائج بحث سابقة تم إجراؤها بواسطة المتصفح.<br>
+                    لا ننصح بهذا الأمر لأنه يتطلب ذكر معلومات خاصة تساعد في البحث في كل صفحة يتم إنشاؤها في الموقع حتى ينجح ذلك بالإضافة إلى أن المستخدم في العادة يفضل أن يستخدم مربع بحث عادي موجود في الموقع أو يستخدم بحث جوجل.</td>
+                </tr>
+                <tr>
+                    <td class="left"><code>tag</code></td>
+                    <td>يستخدم للإشارة إلى أن محتوى الرابط الموضوع ينتمي لنفس نوع المحتوى الموجود في الصفحة.</td>
+                </tr>
+            </table>
+        </div>
+        <strong> الخاصية </strong> <b> shape </b>:
+        <p>يمكن إضافتها للوسم بهدف تحديد شكل المساحة التي سيمثلها على الصورة و جعلها قابلة للنقر.</p>
+        <p>يجب تمرير إحدى القيم التالية المهيئة مسبقاً كقيمة للخاصية <b> shape </b> لتحدد كيف سيكون شكل المساحة التي يمكن النقر عليها على خريطة الصورة.</p>
+        <div class="responsive-table">
+            <table class="rtl right ar">
+                <tr>
+                    <th style="width:65px;">القيمة</th>
+                    <th>معناها</th>
+                </tr>
+                <tr>
+                    <td class="left"><code>rect</code></td>
+                    <td>لتحديد أن المساحة المشار إليها في الصورة مستطيلة الشكل.<br>
+                    عند اعتماد هذا الشكل سيكون عليك تحديد مكان النقاط الأربعة.</td>
+                </tr>
+                <tr>
+                    <td class="left"><code>circle</code></td>
+                    <td>لتحديد أن المساحة المشار إليها في الصورة متسديرة الشكل.<br>
+                    عند اعتماد هذا الشكل سيكون عليك تحديد مكان مركز الدائرة و طول شعاعها.</td>
+                </tr>
+                <tr>
+                    <td class="left"><code>poly</code></td>
+                    <td>لتحديد أن المساحة المشار إليها في الصورة ليس لها شكل محدد.<br>
+                    هنا سيكون عليك تحديد مكان كل نقطة في هذا الشكل.</td>
+                </tr>
+                <tr>
+                    <td class="left"><code>default</code></td>
+                    <td>بعد تحديد جميع أجزاء الصورة يمكنك إنشاء وسم و إعطاؤه هذه القيمة للإشارة إلى كل الأجزاء المتبقية من الصورة.</td>
+                </tr>
+            </table>
+        </div>
+        <strong> الخاصية </strong> <b> target </b>:
+        <p>نضيفها للوسم لتحديد أين سيتم فتح الرابط.</p>
+        <p>يجب تمرير إحدى القيم التالية المهيئة مسبقاً كقيمة للخاصية <b> target </b> لتحدد أين سيتم فتح الرابط الذي يتم توجيه المستخدم إليه.</p>
+        <div class="responsive-table">
+            <table class="rtl right ar">
+                <tr>
+                    <th style="width:65px;">القيمة</th>
+                    <th>معناها</th>
+                </tr>
+                <tr>
+                    <td class="left"><code>_self</code></td>
+                    <td>في حال أردت أن يتم فتح محتوى الرابط في نفس الصفحة المفتوحة حالياً (هذا الخيار الإفتراضي).</td>
+                </tr>
+                <tr>
+                    <td class="left"><code>_blank</code></td>
+                    <td>في حال أردت أن يتم فتح تبويب جديد في المتصفح و إظهار محتوى الرابط فيه.</td>
+                </tr>
+                <tr>
+                    <td class="left"><code>_top</code></td>
+                    <td>في حال أردت يتم فتح محتوى الرابط في نفس الصفحة مع إزالة أي صفحات متداخلة موضوعة في الصفحة الحالية.</td>
+                </tr>
+                <tr>
+                    <td class="left"><code>_parent</code></td>
+                    <td>في حال أردت يتم فتح محتوى الرابط مكان الصفحة الموجودة فيها الصفحة الحالية.</td>
+                </tr>
+            </table>
+            </div>
+            <p class="title2">إستخدامه:</p>
+           
+            <p>في المثال التالي قمنا بإضافة مساحة لكل شكل ظاهر في الصورة بالإضافة إلى جعل الخلفية نفسها قابلة للنقر.</p>
+            <p class="border"><b>ملاحظة: </b>هنا الصورة كلها يمكن النقر عليها و لكن على حسب المساحة التي تنقر عليها يتم فتح الرابط المناسب. </p>
+           <nav class="contcode"><img src="https://harmash.com/html/html-tags/area-resources/shapes-map.PNG" alt="" style="max-width: 100%;"></nav>
+           <ul><li class="title2">الكود</li></ul>
+            <nav class="contcode"><pre id="contx7"></pre></nav>
+            <ul><li class="title2">فتكون النتيجة كالتالي</li></ul>
+            <div class="contcode" dir="ltr">
+                <h2>Map with all type of shapes</h2>
+		<p>You can click on any area in the image!</p>
+		
+		<!-- "demomap" مع تحديد أنها تستخدم خريطة إسمها <img> هنا قمنا بإضافة صورة بواسطة الوسم -->
+        <img src="https://h.top4top.io/p_1954v73hh1.png"
+			width="247" height="88" alt="Shapes" usemap="#demomap">
+		
+		<!-- التي تستخدمها الصورة "demomap" هنا قمنا بتعريف الخريطة -->
+		<map name="demomap">
+			<!-- الوسم التالي يشير لمكان المربع في الصورة -->
+			<area shape="rect" coords="16,20,65,70" alt="Rectangle" href="https://raw.githack.com/stutcc/html/main/area/rect.html">
+			<!-- الوسم التالي يشير لمكان المثلث في الصورة -->
+			<area shape="poly" coords="97,72,151,72,123,19" alt="Triangle" href="https://raw.githack.com/stutcc/html/main/area/triangle.html">
+			<!-- الوسم التالي يشير لمكان الدائرة في الصورة -->
+			<area shape="circle" coords="204,46,28" alt="Circle" href="https://raw.githack.com/stutcc/html/main/area/circle.html">
+			<!-- الوسم التالي يشير لمكان الأجزاء المتبقية في الصورة -->
+			<area shape="default" href="https://raw.githack.com/stutcc/html/main/area/background.html">
+		</map>
+    </div>
+    <p class="title2">تصميمه الإفتراضي:</p>
+    <p>بشكل عام جميع المتصفحات تعرضه بالتنسيق التالي.</p>
+    <nav class="contcode"><pre id="contx8"></pre></nav>
+    </div>
+    <script>
+        document.getElementById("contx8").appendChild(document.createTextNode("area {\ndisplay: none;\n}"));
+        document.getElementById("contx7").appendChild(document.createTextNode('<h2>Map with all type of shapes</h2>\n<p>You can click on any area in the image!</p>\n<!-- "demomap" مع تحديد أنها تستخدم خريطة إسمها <img>\n هنا قمنا بإضافة صورة بواسطة الوسم -->\n<img src="https://h.top4top.io/p_1954v73hh1.png"\nwidth="247" height="88" \nalt="Shapes" usemap="#demomap">\n<!-- التي تستخدمها الصورة "demomap"\n هنا قمنا بتعريف الخريطة -->\n<map name="demomap">\n<!-- الوسم التالي يشير لمكان المربع في الصورة -->\n<area shape="rect" \ncoords="16,20,65,70" alt="Rectangle" \nhref="https://raw.githack.com/stutcc/\nhtml/main/area/rect.html">\n<!-- الوسم التالي يشير لمكان المثلث في الصورة -->\n<area shape="poly" \ncoords="97,72,151,72,123,19" alt="Triangle" \nhref="https://raw.githack.com/stutcc/html/\nmain/area/triangle.html">\n<!-- الوسم التالي يشير لمكان الدائرة في الصورة -->\n<area shape="circle" coords="204,46,28" alt="Circle" \nhref="https://raw.githack.com/stutcc/html/\nmain/area/circle.html">\n<!-- الوسم التالي يشير لمكان الأجزاء المتبقية في الصورة -->\n<area shape="default" \nhref="https://raw.githack.com/stutcc/html/\nmain/area/background.html">\n</map>'));
+        document.getElementById("contx5").appendChild(document.createTextNode("نضيفها للوسم لتحديد الرابط الذي سيتم توجيه المستخدم إليه عند النقر على الرابط الموضوع في المساحة, و بشكل عام يجب وضع هذه الخاصية في كل وسم <area> لكي يعتبر المتصفح أن المساحة المشار إليها في الصورة يمكن النقر عليها كأي رابط و لكي تعمل الخصائص الأخرى التي يمكن إضافتها في الوسوم."));
+        document.getElementById("contx4").appendChild(document.createTextNode("طبعاً تستطيع وضع عدة وسوم <area> في الخريطة و غالباً ما ستفعل ذلك لتحديد عدة أجزاء في الصورة."));
+        document.getElementById("contx3").appendChild(document.createTextNode("نستخدم الوسم <area> بداخل خريطة الصورة لتحديد شكل و مكان جزء فيها نريد جعله قابل للنقرة و كأنه رابط."));
+        document.getElementById("contx2").appendChild(document.createTextNode("الصورة التي نعرضها في الصفحة بواسطة الوسم <img> يمكن إضافة خريطة لها بواسطة الوسم <map> بهدف جعل المستخدم قادر على النقر على أجزاء الصورة و كأنها روابط عادية. فمثلاً إذا كانت الصورة تعرض خريطة العالم يمكنك جعل كل بلد في الصورة يمكن النقر عليه للتوجه لصفحة تعرض مزيد من المعلومات عنه."));
+        document.getElementById("contx1").appendChild(document.createTextNode("الوسم <area>"));
+    function input(){
+    var x=document.getElementById("input").value;
+    var y= document.getElementById("out").innerHTML=x;
+    }
+    cookieChoices={};
+    </script>
+</body>
+</html>

@@ -1,0 +1,435 @@
+<!--https://stutcc-paython-loop-for.blogspot.com-->
+<!DOCTYPE html >
+<html lang="ar" dir="rtl">
+<head>
+    <link rel="icon" href="https://g.top4top.io/p_1951l48qy1.png" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحلقة for</title>
+    <style>
+        .titleb{
+            color: #8d9399; font-size: 24px;
+        }
+b{ color:darkred;}
+strong{color:darkblue;}
+                .border{
+border:5px solid black;
+background-color:lightblue; 
+text-align:center; 
+font-size:25px;
+                  }
+                  .title1{
+           font-size:24px;
+           color:darkred;
+           font-weight: bold;
+           text-align: center;
+           /*العناوين الرئيسية*/
+        }
+        .title2{
+         font-weight: bold;
+         font-size:22px;
+         color:darkblue;
+         /*العناوين الفرعية*/
+        }
+        *{
+            font-size: 20px;
+        }
+        .bacp{
+            display: inline; background-color: rgb(137, 137, 245); padding:3px; 
+        }
+        .contcode pre{
+            direction: ltr;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+         .contcode{
+             text-align: left;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 20px;
+            border: 2px saddlebrown solid;
+        }
+        #code{
+            text-align: left;
+        }
+        #apage{
+            background-color: rgb(133, 129, 129) ;
+        }
+        body{  
+            margin-top: 0;
+        }
+        #titlecont{
+            display: block;
+            text-align: center;
+        }
+        #cont{
+            text-align: right;
+            position:absolute;
+            top: 11%;
+            left: 17%;
+            height: 197%;
+            width: 81%;
+        }
+        #list{
+            background-color:white;
+            z-index: 100;
+            position: fixed; 
+            width: 100%;
+        }
+        #out{
+            background-color: white;
+            width: 17.4%;
+            height: 380px;
+            border: 2px rgb(161, 160, 160) solid;
+            position: fixed;
+            left: 82%;
+            top: 44%;
+        }
+        #button:hover{
+            color: white;
+            background-color: #007bff; 
+        }
+        #button{
+            position: fixed;
+            bottom: 47.5%;
+            left: 82%;
+            width: 18%;
+            height: 30px;
+            top: 275px;   
+        }
+        #input::placeholder{
+            text-align: center;
+        }
+        #input{
+            width: 17.5%;
+            height: 200px;
+            position: fixed;
+            bottom: 52%;
+            left: 82%;
+            top: 10%;
+            display: block;
+        }
+        #titbox{
+            text-align: center;
+        }
+        #boxh{
+        background-color: rgb(133, 129, 129);
+    }   
+        #box a:hover{
+            background-color: rgb(133, 129, 129);
+        }
+        #box a{
+            margin-top: 1px;
+            padding: 3px;
+            text-decoration: none;
+            margin-right: 5px;
+            display: block;
+            color: #2f3f50;
+        }
+        #box{
+            background-color: white;  
+            position: fixed;
+            margin-top: 5px;
+            margin-left: 4px;
+            text-align: right;
+            border: 2px #007bff solid;
+            width: 15%;
+            height: 89.5%;
+            top: 9%;
+            right: 84%;
+            float: left;
+        }
+        #but:hover{
+            color:  #007bff;
+            background-color:white;            
+        }
+        #but{
+            color: white;
+            background-color: #007bff;
+        }
+        #search{
+           width: 12.5%;
+        }
+        nav{
+            text-align: center;
+        }
+        .a:hover{
+            background-color: white;
+            color:   #007bff;
+        }
+        #title{
+            padding-right: 12%;
+            font-size: 22px;
+            text-align: left;
+            padding-left: 18px;
+        }
+        .aa{
+            line-height: 50px;
+           text-align: center;
+           text-decoration: none;
+          /* padding: 0.55% 7.9%;*/
+           padding: 7px 108px;
+           background-color:  #007bff; 
+           color: white;
+        }
+       .a{
+        line-height: 50px;
+           text-align: center;
+           text-decoration: none;
+           /*padding: 0.6% 7.7%;*/
+           padding: 8px 100px;
+           background-color:  #007bff; 
+           color: white;
+       }
+       @media screen and (min-width: 1285px) and (max-width:1365px){
+        .titleb{ font-size: 23.5px;}
+           *{font-size: 19.5px;}     
+        .a{padding: 7px 97px;}
+       .aa{padding: 6px 100px;}
+       #title{padding-right: 11%; font-size: 21.5px;}
+       .title1{font-size:23.5px;}
+        .title2{font-size:21.5px;}
+        .not{font-size: 21.5px;}
+       }
+       @media screen and (min-width: 1204px) and (max-width:1284px){
+        .titleb{ font-size: 23px;}
+        *{font-size: 19px;}
+        .a{padding: 6px 90px;}
+       .aa{padding: 6px 100px;}
+       #title{padding-right: 10%; font-size: 21px;}
+       .title1{font-size:23px;}
+        .title2{font-size:21px;}
+        .not{font-size: 21px;}
+      }
+       @media screen and (min-width: 1123px) and (max-width:1203px){
+        .titleb{ font-size: 23.5px;}
+        *{font-size: 18.5px;}
+        .a{padding: 6px 83px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 9%; font-size: 20.5px;}
+       .title1{font-size:22.5px;}
+        .title2{font-size:20.5px;}
+        .not{font-size: 20.5px;}
+       }
+       @media screen and (min-width: 1042px) and (max-width:1122px){
+        .titleb{ font-size: 23px;}
+        *{font-size: 18px;}
+        .a{padding: 6px 77px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 8%; font-size: 20px;}
+       .title1{font-size:22px;}
+        .title2{font-size:20px;}
+        .not{font-size: 20px;}
+       }
+       @media screen and (min-width: 961px) and (max-width:1041px){
+        .titleb{ font-size: 22.5px;}
+        *{font-size: 17.5px;}
+        .a{padding: 6px 69px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 7%; font-size: 19.5px;}
+       .title1{font-size:21.5px;}
+        .title2{font-size:19.5px;}
+        .not{font-size: 19.5px;}
+       }
+       @media screen and (min-width: 880px) and (max-width:960px){
+        .titleb{ font-size: 22px;}
+        *{font-size: 17px;}
+        .a{padding: 6px 61px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 6%; font-size: 19px;}
+       .title1{font-size:21px;}
+        .title2{font-size:19px;}
+        .not{font-size: 19px;}
+       }
+       @media screen and (min-width: 799px) and (max-width:879px){
+        .titleb{ font-size: 21.5px;}
+        *{font-size: 16.5px;}
+        .a{padding: 6px 53px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 5%; font-size: 18.5px;}
+       .title1{font-size:20.5px;}
+        .title2{font-size:18.5px;}
+        .not{font-size: 18.5px;}
+       }
+       @media screen and (min-width: 718px) and (max-width:798px){
+        .titleb{ font-size: 21px;}
+        *{font-size: 16px;}
+        .a{padding: 6px 43px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 4%; font-size: 18px;}
+       .title1{font-size:20px;}
+        .title2{font-size:18px;}
+        .not{font-size: 18px;}
+       }
+       @media screen and (min-width: 637px) and (max-width:717px){
+        .titleb{ font-size: 20.5px;}
+        *{font-size: 15.5px;}
+        .a{padding: 6px 35px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 3%; font-size: 17.5px;}
+       .title1{font-size:19.5px;}
+       .title2{font-size:17.5px;}
+        .not{font-size: 17.5px;}
+       /**/
+        }
+       @media screen and (min-width: 556px) and (max-width:636px){
+        .titleb{ font-size: 20px;}
+        *{font-size: 15px;}
+        .a{padding: 6px 25px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 3%; font-size: 17px;}
+       .title1{font-size:19px;}
+        .title2{font-size:17px;}
+        .not{font-size: 17px;}
+       }
+       @media screen and (min-width: 475px) and (max-width:555px){
+        .titleb{ font-size: 19.5px;}
+        *{font-size: 14.5px;}
+        .a{padding: 6px 18px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 2%; font-size: 16.5px;}
+       .title1{font-size:18.5px;}
+        .title2{font-size:16.5px;}
+        .not{font-size: 16.5px;}
+       }
+       @media screen and (min-width: 394px) and (max-width:474px){
+        .titleb{ font-size: 19px;}
+        *{font-size: 14px;}
+        .a{padding: 6px 9px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 1%; font-size: 16px;}
+       .title1{font-size:18px;}
+        .title2{font-size:16px;}
+        .not{font-size: 16px;}
+       }
+       @media screen and (min-width: 313px) and (max-width:393px){
+        .titleb{ font-size: 18.5px;}
+        *{font-size: 13.5px;}
+        .a{padding: 6px 1px;}
+       .aa{padding:6px 1px;}
+       #title{padding-right: 0.5%; font-size: 15.5px;}
+       .title1{font-size:17.5px;}
+        .title2{font-size:15.5px;}
+        .not{font-size: 15.5px;}
+       }
+</style>
+</head>
+<body>
+    <nav id="list" dir="ltr">
+        <a href="https://stutcc.blogspot.com" class="aa" id="title"><b class="titleb">S</b>tu<b class="titleb">T</b>cc</a>
+        <a href="https://stutcc-html-introduction.blogspot.com" class="a">html</a>
+        <a href="https://stutcc-Shortcuts.blogspot.com" class="a">موقع الاختصارات</a>
+        <a href="https://stutcc-python-test.blogspot.com" class="a">اختبار</a>       
+        <input type="text" placeholder="search" id="search">
+        <button type="submit" id="but">search</button> 
+    </nav >
+    <nav id="box" dir="rtl">
+        <p id="titbox">بايثون</p>
+        <a href="https://stutcc-python.blogspot.com">نظرة عامة</a>
+        <a href="https://stutcc-python-syntaxs.blogspot.com">أسلوب كتابة الكود</a>
+        <a href="https://stutcc-python-variablesTypes.blogspot.com">أنواع المتغيرات</a>
+        <a href="https://stutcc-python-operators.blogspot.com">العوامل</a>
+        <a href="https://stutcc-python-conditions.blogspot.com">الشروط</a>
+        <a href="https://stutcc-python-loops.blogspot.com" id="boxh">الحلقات</a>
+        <a href="https://stutcc-python-numbers.blogspot.com">التعامل مع الأعداد</a>
+        <a href="https://stutcc-python-strings.blogspot.com">التعامل مع النصوص</a>
+        <a href="https://stutcc-python-lists.blogspot.com">الكلاس list </a>
+        <a href="https://stutcc-python-tuples.blogspot.com">الكلاس tuple</a>
+    </nav>
+    <div id="cont">
+        <p id="titlecont" class="title1"> الحلقة for في بايثون</p>
+        <b class="title2">تعريف الحلقة <b> for </b> في بايثون</b>
+        <p>نستخدم الحلقة <b> for </b> للمرور على جميع عناصر السلسلة أو المصفوفة بسهولة بدون الحاجة لتعريف عداد و تحديد أين يبدأ و أين ينتهي.
+            تستخدم لتنفيذ الكود عدة مرات محددة.</p>
+            <b class="title2">طريقة إستخدامها</b>
+   
+            <nav  class="contcode" id="contout" style="text-align:left;"> <pre><b> for element in sequence: </b>
+               <strong> statements </strong> </pre></nav>
+       <ul>
+           <li><b> element: </b> هو متغير عادي نقوم بتعريفه بداخل الحلقة. في كل دورة سيتم جلب قيمة من قيم السلسلة الموضوعة بعده و وضعها فيه.</li>
+           <li><b> sequence: </b> هي السلسلة أو المصفوفة التي نريد الوصول لجميع عناصرها.</li>
+           <li><b> statements: </b> هي جميع الأوامر الموضوعة في الحلقة و هي تتنفذ في كل دورة.</li>
+       </ul>
+   <p>إذاً هنا تقوم الحلقة بالمرور على جميع عناصر المصفوفة بالترتيب من العنصر الأول إلى العنصر الأخير, و في كل دورة تقوم بتخزين قيمة العنصر في المتغير الذي قمنا بتعريفه.</p>
+    <p class="border"><b> معلومة تقنية:</b>
+    لحلقة <b> for </b> في بايثون تعمل كما تعمل الحلقة <b> ForEach </b> في لغات البرمجة الأخرى.</p>
+    <p class="title2">أمثلة حول الحلقة <b> for </b> في بايثون</p>
+    <p>سنقوم الآن بكتابة برنامج بسيط يعرض قيم جميع عناصر مصفوفة باستخدام الحلقة <b> for</b>.</p>
+    <nav  class="contcode" id="contout" style="text-align:left;"> <pre><b> # </b> تحتوي على 7 عناصر <b> days </b> هنا قمنا بتعريف مصفوفة إسمها
+        <strong> days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'] </strong>
+       <b> #</b> بعدها سيتم عرض قيمته ,<b> day </b> في المتغير <b> days </b> هنا في كل دورة سيتم تخزين قيمة عنصر جديد من عناصر المصفوفة
+       <strong> for day in days:
+            print(day) </strong> </pre></nav>
+            <p>سنحصل على النتيجة التالية عند التشغيل</p>
+            <nav class="contcode" id="contout" style="text-align: left;" ><pre>
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday
+Sunday
+</pre></nav>
+<p>سنقوم الآن بكتابة برنامج يمر على أحرف النص و يعرضهم حرفاً حرفاً باستخدام الحلقة <b> for </b>.</p>
+<p class="border"><b>معلومة:</b> النص بطبيعته يمثل سلسلة من الأحرف لذلك بايثون تتيح لك فعل هذا بسهولة.</p>
+<nav class="contcode" id="contout" style="text-align: left;" > <pre><b> # </b> هنا منا بتعريف متغير يحتوي على نص, أي يحتوي على سلسلة من الأحرف
+    <strong> sentence = 'Python is amazing' </strong>
+   <b> # </b> بعدها سيتم عرضه <b> .letter </b> في كل دورة في الحلقة سيتم جلب حرف من هذا النص و تخزينه في المتغير
+  <strong>  for letter in sentence:
+        print(letter) </strong></pre></nav>
+        <p>سنحصل على النتيجة التالية عند التشغيل</p>
+        <nav class="contcode" id="contout" style="text-align: left;" > <pre>
+P
+y
+t
+h
+o
+n
+i
+s
+a
+m
+a
+z
+i
+n
+g
+</pre></nav>
+<b class="title2">الدالة <b> range() </b> في بايثون</b>
+<p>سنستخدم الدالة <b> range() </b> في الأمثلة التالية لأنها ترجع سلسلة من الأرقام.</p>
+<p>عند إستدعاء هذه الدالة يجب تمرير قيمة, أو قيمتين, أو ثلاث قيم لها كـ <b> Arguments </b>.</p>
+<p>ي حال مررت لها قيمة واحدة مثل <b> range(5) </b> فإنها سترجع سلسلة من الأرقام تبدأ من 0 إلى 4.
+    إذاً سترجع 0 ثم 1 ثم 2 ثم 3 ثم 4.</p>
+<p>في حال مررت لها قيمتين مثل <b> range(1, 5) </b> فإنها سترجع سلسلة من الأرقام تبدأ من 1 إلى 4.
+    إذاً سترجع 1 ثم 2 ثم 3 ثم 4.</p>
+<p>في حال مررت لها ثلاث قيم مثل <b> range(1, 5, 2) </b> فإنها سترجع سلسلة من الأرقام تبدأ من 1 إلى 4 و تزيد إثنين كل مرة.
+    إذاً سترجع 1 ثم 3.</p>
+    <p class="tilte2">طريقة إستخدام الدالة <b dir="ltr"> () range</b> مع الحلقة <b> for </b> في بايثون</p>
+    <p>المثال التالي يشرح طريقة إستخدام الدالة <b dir="ltr"> ()range </b> لجعل الحلقة <b> for </b> كأنها تعدّ.</p>
+    <nav class="contcode" id="contout" style="text-align:right;">
+        <b id="titlecont" style="text-align:right;"> مثال </b>
+        <p style="text-align: left;" id="1">
+
+        <pre  style="text-align: left;"></pre></nav>
+      <p>  سنحصل على النتيجة التالية عند التشغيل.</p>
+      <nav class="contcode" id="contout" style="text-align:left;"><pre>  </pre></nav>
+<p class="border"><b>ملاحظة:</b> هنا كان يمكننا كتابة <b> range(1, 6) </b> بدلاً من كتابة <b> range(1, 6, 1) </b> و الحصول على نفس النتيجة.</p> 
+<p>المثال التالي يشرح طريقة إستخدام الدالة <b dir="ltr"> range() </b> لجعل الحلقة <b> for </b> كأنها تعدّ بشكل عكسي, أي تبدأ من أكبر عدد فيها إلى أصغر عدد فيها.</p>
+<nav class="contcode" id="contout" style="text-align:right;">
+    <b id="titlecont" style="text-align:right;">المثال الثاني: </b>
+    <pre style="text-align: left;">
+        <b> # </b> بعدها سيتم عرضه <b> .n </b> هنا قمنا بإنشاء سلسلة من الأرقام الموجودة بين 5 إلى 1. في كل دورة في الحلقة سيتم جلب رقم من هذه السلسلة و تخزينه في المتغير
+        <strong> for n in range(5, 0, -1):
+            print(n) </strong> </pre></nav>
+  <p>  سنحصل على النتيجة التالية عند التشغيل.</p>
+  <nav class="contcode" id="contout" style="text-align:left;"><pre>  
+5
+4
+3
+2
+1
+</pre>
+</nav>
+<p>الـ <b> (1-) </b>الموضوعة في الدالة <b> ()range </b> تعني أن سلسلة الأرقام تقل واحداً في كل مرة.</p>
+<p>لهذا السبب وجدنا أن الدالة <b> ()range </b> أرجعت سلسلة الأرقام التالية: 5, 4, 3, 2, 1.</p>
+        </div>
+</body>
+</html>

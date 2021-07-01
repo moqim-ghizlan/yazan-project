@@ -1,0 +1,515 @@
+<!DOCTYPE html >
+<html lang="ar" dir="rtl">
+<head>
+    <link rel="icon" href="https://g.top4top.io/p_1951l48qy1.png" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الشروط</title>
+    <style>
+        .titleb{
+            color: #8d9399; font-size: 24px;
+        }
+      b{ color:darkred;}
+   .border{
+border:5px solid black;
+background-color:lightblue; 
+text-align:center; 
+font-size:25px;
+                  }
+                  .title1{
+           font-size:24px;
+           color:darkred;
+           font-weight: bold;
+           text-align: center;
+           /*العناوين الرئيسية*/
+        }
+        .title2{
+         font-weight: bold;
+         font-size:22px;
+         color:darkblue;
+         /*العناوين الفرعية*/
+        }
+        *{
+            font-size: 20px;
+        }
+        .bacp{
+            display: inline; background-color: rgb(137, 137, 245); padding:3px; 
+        }
+        .contcode pre{
+            direction: ltr;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+         .contcode{
+             text-align: left;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 20px;
+            border: 2px saddlebrown solid;
+        }
+        #code{
+            text-align: left;
+        }
+        #apage{
+            background-color: rgb(133, 129, 129) ;
+        }
+        body{  
+            margin-top: 0;
+        }
+        #titlecont{
+            display: block;
+            text-align: center;
+        }
+        #cont{
+            text-align: right;
+            position:absolute;
+            top: 11%;
+            left: 17%;
+            height: 197%;
+            width: 81%;
+        }
+        #list{
+            background-color:white;
+            z-index: 100;
+            position: fixed; 
+            width: 100%;
+        }
+        #out{
+            background-color: white;
+            width: 17.4%;
+            height: 380px;
+            border: 2px rgb(161, 160, 160) solid;
+            position: fixed;
+            left: 82%;
+            top: 44%;
+        }
+        #button:hover{
+            color: white;
+            background-color: #007bff; 
+        }
+        #button{
+            position: fixed;
+            bottom: 47.5%;
+            left: 82%;
+            width: 18%;
+            height: 30px;
+            top: 275px;   
+        }
+        #input::placeholder{
+            text-align: center;
+        }
+        #input{
+            width: 17.5%;
+            height: 200px;
+            position: fixed;
+            bottom: 52%;
+            left: 82%;
+            top: 10%;
+            display: block;
+        }
+        #titbox{
+            text-align: center;
+        }
+        #boxh{
+        background-color: rgb(133, 129, 129);
+    }   
+        #box a:hover{
+            background-color: rgb(133, 129, 129);
+        }
+        #box a{
+            margin-top: 1px;
+            padding: 3px;
+            text-decoration: none;
+            margin-right: 5px;
+            display: block;
+            color: #2f3f50;
+        }
+        #box{
+            background-color: white;  
+            position: fixed;
+            margin-top: 5px;
+            margin-left: 4px;
+            text-align: right;
+            border: 2px #007bff solid;
+            width: 15%;
+            height: 89.5%;
+            top: 9%;
+            right: 84%;
+            float: left;
+        }
+        #but:hover{
+            color:  #007bff;
+            background-color:white;            
+        }
+        #but{
+            color: white;
+            background-color: #007bff;
+        }
+        #search{
+           width: 12.5%;
+        }
+        nav{
+            text-align: center;
+        }
+        .a:hover{
+            background-color: white;
+            color:   #007bff;
+        }
+        #title{
+            padding-right: 12%;
+            font-size: 22px;
+            text-align: left;
+            padding-left: 18px;
+        }
+        .aa{
+            line-height: 50px;
+           text-align: center;
+           text-decoration: none;
+          /* padding: 0.55% 7.9%;*/
+           padding: 7px 108px;
+           background-color:  #007bff; 
+           color: white;
+        }
+       .a{
+        line-height: 50px;
+           text-align: center;
+           text-decoration: none;
+           /*padding: 0.6% 7.7%;*/
+           padding: 8px 100px;
+           background-color:  #007bff; 
+           color: white;
+       }
+       @media screen and (min-width: 1285px) and (max-width:1365px){
+        .titleb{ font-size: 23.5px;}
+           *{font-size: 19.5px;}     
+        .a{padding: 7px 97px;}
+       .aa{padding: 6px 100px;}
+       #title{padding-right: 11%; font-size: 21.5px;}
+       .title1{font-size:23.5px;}
+        .title2{font-size:21.5px;}
+        .not{font-size: 21.5px;}
+       }
+       @media screen and (min-width: 1204px) and (max-width:1284px){
+        .titleb{ font-size: 23px;}
+        *{font-size: 19px;}
+        .a{padding: 6px 90px;}
+       .aa{padding: 6px 100px;}
+       #title{padding-right: 10%; font-size: 21px;}
+       .title1{font-size:23px;}
+        .title2{font-size:21px;}
+        .not{font-size: 21px;}
+      }
+       @media screen and (min-width: 1123px) and (max-width:1203px){
+        .titleb{ font-size: 23.5px;}
+        *{font-size: 18.5px;}
+        .a{padding: 6px 83px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 9%; font-size: 20.5px;}
+       .title1{font-size:22.5px;}
+        .title2{font-size:20.5px;}
+        .not{font-size: 20.5px;}
+       }
+       @media screen and (min-width: 1042px) and (max-width:1122px){
+        .titleb{ font-size: 23px;}
+        *{font-size: 18px;}
+        .a{padding: 6px 77px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 8%; font-size: 20px;}
+       .title1{font-size:22px;}
+        .title2{font-size:20px;}
+        .not{font-size: 20px;}
+       }
+       @media screen and (min-width: 961px) and (max-width:1041px){
+        .titleb{ font-size: 22.5px;}
+        *{font-size: 17.5px;}
+        .a{padding: 6px 69px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 7%; font-size: 19.5px;}
+       .title1{font-size:21.5px;}
+        .title2{font-size:19.5px;}
+        .not{font-size: 19.5px;}
+       }
+       @media screen and (min-width: 880px) and (max-width:960px){
+        .titleb{ font-size: 22px;}
+        *{font-size: 17px;}
+        .a{padding: 6px 61px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 6%; font-size: 19px;}
+       .title1{font-size:21px;}
+        .title2{font-size:19px;}
+        .not{font-size: 19px;}
+       }
+       @media screen and (min-width: 799px) and (max-width:879px){
+        .titleb{ font-size: 21.5px;}
+        *{font-size: 16.5px;}
+        .a{padding: 6px 53px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 5%; font-size: 18.5px;}
+       .title1{font-size:20.5px;}
+        .title2{font-size:18.5px;}
+        .not{font-size: 18.5px;}
+       }
+       @media screen and (min-width: 718px) and (max-width:798px){
+        .titleb{ font-size: 21px;}
+        *{font-size: 16px;}
+        .a{padding: 6px 43px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 4%; font-size: 18px;}
+       .title1{font-size:20px;}
+        .title2{font-size:18px;}
+        .not{font-size: 18px;}
+       }
+       @media screen and (min-width: 637px) and (max-width:717px){
+        .titleb{ font-size: 20.5px;}
+        *{font-size: 15.5px;}
+        .a{padding: 6px 35px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 3%; font-size: 17.5px;}
+       .title1{font-size:19.5px;}
+       .title2{font-size:17.5px;}
+        .not{font-size: 17.5px;}
+       /**/
+        }
+       @media screen and (min-width: 556px) and (max-width:636px){
+        .titleb{ font-size: 20px;}
+        *{font-size: 15px;}
+        .a{padding: 6px 25px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 3%; font-size: 17px;}
+       .title1{font-size:19px;}
+        .title2{font-size:17px;}
+        .not{font-size: 17px;}
+       }
+       @media screen and (min-width: 475px) and (max-width:555px){
+        .titleb{ font-size: 19.5px;}
+        *{font-size: 14.5px;}
+        .a{padding: 6px 18px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 2%; font-size: 16.5px;}
+       .title1{font-size:18.5px;}
+        .title2{font-size:16.5px;}
+        .not{font-size: 16.5px;}
+       }
+       @media screen and (min-width: 394px) and (max-width:474px){
+        .titleb{ font-size: 19px;}
+        *{font-size: 14px;}
+        .a{padding: 6px 9px;}
+       .aa{padding:6px 100px;}
+       #title{padding-right: 1%; font-size: 16px;}
+       .title1{font-size:18px;}
+        .title2{font-size:16px;}
+        .not{font-size: 16px;}
+       }
+       @media screen and (min-width: 313px) and (max-width:393px){
+        .titleb{ font-size: 18.5px;}
+        *{font-size: 13.5px;}
+        .a{padding: 6px 1px;}
+       .aa{padding:6px 1px;}
+       #title{padding-right: 0.5%; font-size: 15.5px;}
+       .title1{font-size:17.5px;}
+        .title2{font-size:15.5px;}
+        .not{font-size: 15.5px;}
+       }
+</style>
+</head>
+<body>
+    <nav id="list" dir="ltr">
+        <a href="https://stutcc.blogspot.com" class="aa" id="title"><b class="titleb">S</b>tu<b class="titleb">T</b>cc</a>
+        <a href="https://stutcc-html-introduction.blogspot.com" class="a">html</a>
+        <a href="https://stutcc-Shortcuts.blogspot.com" class="a">موقع الاختصارات</a>
+        <a href="https://stutcc-python-test.blogspot.com" class="a">اختبار</a>       
+        <input type="text" placeholder="search" id="search">
+        <button type="submit" id="but">search</button> 
+    </nav >
+    <nav id="box" dir="rtl">
+        <p id="titbox">بايثون</p>
+        <a href="https://stutcc-python.blogspot.com">نظرة عامة</a>
+        <a href="https://stutcc-python-syntaxs.blogspot.com">أسلوب كتابة الكود</a>
+        <a href="https://stutcc-python-variablesTypes.blogspot.com">أنواع المتغيرات</a>
+        <a href="https://stutcc-python-operators.blogspot.com">العوامل</a>
+        <a href="https://stutcc-python-conditions.blogspot.com" id="boxh">الشروط</a>
+        <a href="https://stutcc-python-loops.blogspot.com">الحلقات</a>
+        <a href="https://stutcc-python-numbers.blogspot.com">التعامل مع الأعداد</a>
+        <a href="https://stutcc-python-strings.blogspot.com">التعامل مع النصوص</a>
+        <a href="https://stutcc-python-lists.blogspot.com">الكلاس list </a>
+        <a href="https://stutcc-python-tuples.blogspot.com">الكلاس tuple</a>
+    </nav>
+    <div id="cont">
+        <p class="title1">الشروط في بايثون</p>
+            <ul><li><p class="title2">مفهوم الشروط في بايثون</p></li></ul>
+            <p>شروط: تعني <b> conditions </b> في اللغة الإنجليزية. و نستخدم الشروط لتحديد طريقة عمل البرنامج.
+                كما أنه يمكنك وضع العدد الذي تريده من الشروط في البرنامج الواحد, تستطيع وضع الشروط بداخل بعضها البعض أيضاً.
+                
+                لا تقلق ستفهم كل شيء من الأمثلة.</p>
+                <ul><li><p class="title2">جمل الشرط في بايثون</p></li></ul>
+                <p>طريقة وضع الشروط <b> (Syntax) </b> :</p>
+                <nav class="contcode"><pre id="contx1" dir="ltr"></pre></nav>
+                <p class="border"> <b> ملاحظة :</b>
+            لست بحاجة إلى إستخدام الجمل الثلاثة في كل شرط تضعه في البرنامج, و لكنك مجبر على إستخدام جملة الشرط <b> if </b> مع أي شرط.
+                تابع كل الدرس حتى تتعرف على جميع طرق وضع الشروط.</p>
+                <ul><li><p class="title2">أمثلة على جمل الشرط في بايثون</p></li></ul>
+                <table class="list">
+                    <tr>
+                        <th>إسم الجملة</th>
+                        <th>دواعي الإستخدام</th>
+                    </tr>
+                    <tr>
+                        <td class="center"><span class="word">IF Statement</span></td>
+                        <td><code data-enlighter-language="python">if</code> في اللغة العربية تعني " إذا ".<br>
+                        و هي تستخدم فقط في حال كنت تريد تنفيذ كود معين حسب شرط معين.</td>
+                    </tr>
+                    <tr>
+                        <td class="center"><span class="word">Else Statement</span></td>
+                        <td><code data-enlighter-language="python">else</code> في اللغة العربية تعني " أي شيء آخر ".<br>
+                        و هي تستخدم فقط في حال كنا نريد تنفيذ كود معين في حال كانت نتيجة جميع الشروط التي قبلها تساوي <code data-enlighter-language="python">false</code>.<br>
+                        يجب وضعها دائماً في الأخير, لأنها تستخدم في حال لم يتم تنفيذ أي جملة شرطية قبلها.</td>
+                    </tr>
+                    <tr>
+                        <td class="center"><span class="word">Else IF Statement</span></td>
+                        <td><code data-enlighter-language="python">elif</code> تستخدم إذا كنت تريد وضع أكثر من إحتمال ( أي أكثر من شرط ).<br>
+                        جملة أو جمل الـ <code data-enlighter-language="python">elif</code> يوضعون في الوسط, أي بين الجملتين <code data-enlighter-language="python">if</code> و <code data-enlighter-language="python">else</code>.</td>
+                    </tr>
+                </table>
+                <p>هنا وضعنا أمثلة شاملة حول جمل الشرط المذكورة في الجدول</p>
+                <p>الجملة الشرطية <b> if </b> </p>
+                <p>الجملة <b> if </b> في اللغة العربية تعني " إذا ".
+                    <br>
+                    و هي تستخدم فقط في حال كنت تريد تنفيذ كود معين حسب شرط معين.</p>
+<ul><li class="title2">المثال الأول</li></ul>
+<ul><li><p>إذا كانت قيمة المتغير <b> S </b> أكبر من 5 سيتم طباعة الجملة:   <b> S is bigger than 5 </b>.</p></li></ul>
+<nav class="contcode"><pre id="contx2" dir="ltr"></pre></nav>
+<ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+<nav class="contcode"><p>S is bigger than 5</p>
+</nav>
+<p>هنا سأل نفسه التالي: هل قيمة المتغير <b> S </b> أكبر من 5؟
+    فكان جواب الشرط كلا <b> ( false ) </b> , لذلك لم ينفذ أمر الطباعة الموجود في الجملة الشرطية.</p>
+    <ul><li class="title2">المثال الثاني</li></ul>
+    <p>إذا كانت قيمة المتغير <b> S </b> أكبر من 5 سيتم طباعة الجملة:  <b> S is bigger than 5 </b>.</p>
+    <nav class="contcode"><pre id="contx3" dir="ltr"></pre></nav>
+    <ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+    <nav class="contcode"><p>S is bigger than 5</p></nav>
+    <p>هنا سأل نفسه التالي: هل قيمة المتغير <b> S </b> أكبر من 5؟
+        فكان جواب الشرط نعم <b> (true) </b> , لذلك نفذ أمر الطباعة الموجود في الجملة الشرطية.</p>
+        <p class="title2">الجملة الشرطية <b> else</b> </p>
+        <p>الجملة <b> else </b> في اللغة العربية تعني " أي شيء آخر ".
+            و هي تستخدم فقط في حال كنا نريد تنفيذ كود معين في حال كانت نتيجة جميع الشروط التي قبلها تساوي <b> false </b>.
+            
+            يجب وضعها دائماً في الأخير, لأنها تستخدم في حال لم يتم تنفيذ أي جملة شرطية قبلها.
+            
+            إذاً, إذا نفذ البرنامج الجملة <b> if </b> أو <b> else if </b> فإنه سيتجاهل الجملة <b> else </b>.
+            و إذا لم ينفذ أي جملة من الجمل <b> if </b> و <b> else if </b> فإنه سينفذ الجملة <b> else </b>.</p>
+            <ul><li class="title2">المثال الأول</li></ul>
+            <p>إذا كانت قيمة المتغير <b> S </b> تساوي 5 سيتم طباعة الجملة:   <b> S is equal 5 </b>.
+<br>
+                •إذا كانت قيمة المتغير <b> S </b> لا تساوي 5 سيتم طباعة الجملة:   <b> S is not equal 5 </b>.</p>
+            <nav class="contcode"><pre id="contx4" dir="ltr"></pre></nav>
+<ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+<nav class="contcode"><p>S is equal 5</p></nav>
+<p>هنا سأل نفسه التالي: هل قيمة المتغير <b> S </b> تساوي 5؟
+    فكان جواب الشرط نعم <b> ( true ) </b> , لذلك نفذ أمر الطباعة الموجود في الجملة <b> if </b>.</p>
+    <ul><li class="title2">المثال الثاني</li></ul>
+    <p>إذا كانت قيمة المتغير <b> S  </b> تساوي 5 سيتم طباعة الجملة:   <b> S is equal 5 </b>.
+
+        •إذا كانت قيمة المتغير <b> S </b> لا تساوي 5 سيتم طباعة الجملة:   <b> S is not equal 5 </b>.</p>
+    <nav class="contcode"><pre id="contx5" dir="ltr"></pre></nav>
+    <ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+    <nav class="contcode"><p>S is not equal 5</p></nav>
+    <p>هنا سأل نفسه التالي: هل قيمة المتغير <b> S </b> تساوي 5؟
+        فكان جواب الشرط كلا <b> ( false ) </b> , لذلك نفذ أمر الطباعة الموجود في الجملة <b> else </b>.</p>
+        <p class="title2">الجملة الشرطية <b> elif </b> </p>
+        <p>الجملة <b> elif </b> تستخدم إذا كنت تريد وضع أكثر من إحتمال ( أي أكثر من شرط ).
+<br>
+            جملة أو جمل الـ <b> elif </b> يوضعون في الوسط, أي بين الجملتين <b> if </b> و <b> else </b>.</p>
+            <ul><li class="title2">مثال</li></ul>
+            <ul><li>إذا كانت قيمة المتغير <b> number </b> تساوي 1 سيتم طباعة الكلمة:   <b> one </b>.</li></ul>
+            <ul><li>إذا كانت قيمة المتغير <b> number </b> تساوي 2 سيتم طباعة الكلمة:  <b>  two </b>.</li></ul>
+            <ul><li>إذا كانت قيمة المتغير <b> number </b> تساوي 3 سيتم طباعة الكلمة:   <b> three </b></li></ul>
+            <ul><li>إذا كانت قيمة المتغير <b> number </b> أكبر أو تساوي 4 سيتم طباعة الجملة:   <b> four or greater </b>.</li></ul>
+            <ul><li>إذا كانت قيمة المتغير <b> number </b> أصغر من 0 سيتم طباعة الجملة:   <b> negative number </b>.</li></ul>
+            <nav class="contcode"><pre id="contx6" dir="ltr"></pre></nav>
+            <ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+            <nav class="contcode"><p>three</p></nav>
+            <ul><li>هنا سأل نفسه التالي: هل قيمة المتغير <b> number </b> تساوي 1؟</li></ul>
+            <p>فكان جواب الشرط كلا <b> ( false ) </b> , فانتقل إلى الشرط الذي يليه.</p>
+            <ul><li>ثم سأل نفسه التالي: هل قيمة المتغير <b> number </b> تساوي 2؟</li></ul>
+            <p>فكان جواب الشرط كلا <b> ( false ) </b> , فانتقل إلى الشرط الذي يليه.</p>
+            <ul><li>ثم سأل نفسه التالي: هل قيمة المتغير <b> number </b> تساوي 3؟</li></ul>
+            <p>فكان جواب الشرط هذه المرة نعم <b> ( true ) </b>, فقام بتنفيذ أمر الطباعة الموجود في الجملة الشرطية الثالثة, ثم تجاوز جميع جمل الشرط التي أتت بعده</p>
+
+            <ul><li><p class="title2">أفكار و أساليب أخرى لوضع الشروط في بايثون</p></li></ul>
+            <p>طرق وضع الشروط عديدة و متنوعة, و يمكننا وضع شروط بداخل بعضها و يسمى ذلك <b> Nested Conditional </b>.
+                كما يمكننا وضع أكثر من شرط بداخل جمل الشرط <b> if </b> أو <b> else if </b> باستخدام العوامل المنطقية.</p>
+                <p>هنا وضعنا أمثلة تعلمك طريقة وضع أكثر من شرط في الجملة <b> if </b> أو <b> elif </b> باستخدام الـ <b> Relational Operators </b>.</p>
+                <p  class="title2">وضع أكثر من شرط في الجملة <b> if </b> في بايثون</p>
+                <p>بإمكانك أن تضع أكثر من شرط بداخل جملة الشرط باستخدام العامل <b> and </b>  أو <b> or </b>.
+<br>
+                    العامل <b> and </b> يستخدم في حال كنت تريد تنفيذ كود معين إذا كان جواب جميع الشروط الموضوعة يساوي <b> true </b>.
+                    <br>
+                    العامل <b> or </b> يستخدم في حال كنت تريد تنفيذ كود معين إذا كان جواب شرط واحد على الأقل يساوي <b> true </b> </p>
+                    <ul><li class="title2">المثال الأول</li></ul>
+                    <p>إذا كانت قيمة المتغير <b> a</b> بين 0 و 20 إطبع الجملة:   <b> acceptable number </b>.</p>
+                    <nav class="contcode"><pre id="contx7" dir="ltr"></pre></nav> 
+                    <ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+                    <nav class="contcode"><p>acceptable number</p></nav>
+                    <ul><li>نلاحظ أنه قد تم تنفيذ أمر الطباعة لأن قيمة المتغير <b> a </b> بين 0 و 20</li></ul>
+<ul><li>هنا سأل نفسه سؤالين.</li></ul>
+<ul><li>السؤال الأول: هل قيمة المتغير <b> a  </b> أكبر أو تساوي 0؟</li></ul>
+<p>فكان جواب الشرط الأول <b> true </b>.</p>
+<ul><li>السؤال الثاني: هل قيمة المتغير <b> a </b> أصغر أو تساوي 20؟</li></ul>
+<p>فكان جواب الشرط الثاني أيضاً <b> true </b>.</p>
+<ul><li>بما أن كلا الجوابين كانا <b> true </b> قام بتنفيذ أمر الطباعة.</li></ul>
+<ul><li class="title2">المثال الثاني</li></ul>
+<p>إذا كانت قيمة المتغير <b> a </b> بين 0 و 20 إطبع الجملة:   <b> acceptable number</b>.</p>
+<nav class="contcode"><pre id="contx8" dir="ltr"></pre></nav>
+<ul><li class="title8">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+<nav class="contcode"><p>acceptable number</p></nav>
+<ul><li>نلاحظ أنه لم يتم تنفيذ أمر الطباعة لأن قيمة المتغير <b> a </b> ليست بين 0 و 20</li></ul>
+<ul><li>هنا سأل نفسه سؤالين.</li></ul>
+<ul><li>السؤال الأول: هل قيمة المتغير <b> a </b> أكبر أو تساوي 0؟</li></ul>
+<p>فكان جواب الشرط الأول <b> true </b>.</p>
+<ul><li>السؤال الثاني: هل قيمة المتغير <b> a </b> أصغر أو تساوي 20؟</li></ul>
+<p>فكان جواب الشرط الثاني <b> false </b>.</p>
+<ul><li>بما أن واحداً من الجوابين لم يكن <b> true</b> لم ينفذ دالة الطباعة.</li></ul>
+<ul><li class="title2">المثال الثالث</li></ul>
+<p>إذا كانت قيمة المتغير <b> a </b> تساوي 1 أو 2 أو 3 إطبع الجملة:   <b> you choose a valid number </b>.</p>
+<nav class="contcode"><pre id="contx9" dir="ltr"></pre></nav>
+<ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+<nav class="contcode"><p>you choose a valid number</p></nav>
+<ul><li>نلاحظ أنه قام بتنفيذ أمر الطباعة لأن قيمة المتغير a تساوي 2</li></ul>
+<ul><li>هنا سأل كان سيسأسل نفسه ثلاثة أسئلة لأنه يوجد ثلاث شروط, لكنه سأل نفسه سؤالين فقط.</li></ul>
+<ul><li>السؤال الأول: هل قيمة المتغير <b> a </b> تساوي 1؟</li></ul>
+<p>فكان جواب الشرط الأول false فانتقل للشرط الذي يليه.</p>
+<ul><li>السؤال الثاني: هل قيمة المتغير <b> a</b> تساوي 2؟</li></ul>
+<p>فكان جواب الشرط الثاني <b> true </b>.</p>
+<ul><li>بما أن واحداً من الأجوبة كان <b> true </b> نفذ مباشرةً أمر الطباعة و لم ينظر حتى للشرط الأخير.</li></ul>
+<ul><li><p class="title2">وضع شرط بداخل شرط آخر في بايثون</p></li></ul>
+<p>نستطيع وضع الشروط بداخل بعضها, و يمكننا وضع العدد الذي نريده من الشروط.
+    في البرامج الفعلية يقوم المبرمج بوضع العديد من الشروط بداخل بعضها, و ذلك حسب الفكرة التي يريد تنفيذها في برنامجه, و سنعطيك مثال بسيط يعلمك كيف تفكر و تحلل.</p>
+    <p>الآن لنفترض أننا نريد تحويل هذه الصورة إلى برنامج</p>
+ <img src="https://j.top4top.io/p_200457jw21.png" style="width: 30%;"> <br>
+ <ul><li class="title2">مثال</li></ul>
+ <p>في البداية عندنا متغير يمثل الجنس إسمه <b> sex </b> و متغير يمثل العمر إسمه <b> age </b>.</p>
+ <nav class="contcode"><pre id="contx10" dir="ltr"></pre></nav>
+ <ul><li class="title2">سنحصل على النتيجة التالية عند التشغيل.</li></ul>
+ <nav class="contcode"><p>Gender: female
+     <br>
+    she is a young girl</p></nav>
+    <ul><li>هنا سأل نفسه التالي: هل قيمة المتغير <b> sex </b> تساوي <b> male </b>؟</li></ul>
+    <p>فكان جواب الشرط <b> false </b> , فانتقل إلى جملة الشرط الثانية <b> elif </b>.</p>
+    <ul><li>هنا سأل نفسه التالي: هل قيمة المتغير <b> sex </b> تساوي <b> female </b>؟</li></ul>
+    <p>فكان جواب الشرط <b> true</b> , فقام بتنفيذ دالة الطباعة الموجودة فيها, فطبع الجملة   <b> Gender: female</b>.</p>
+    <ul><li>ثم وجد شرطاً آخر بداخل الشرط السابق, فسأل نفسه التالي: هل قيمة المتغير <b> age</b> أصغر أو تساوي 21؟</li></ul>
+    <p>فكان جواب الشرط <b> true </b> , فقام بتنفيذ دالة الطباعة الموجودة فيها, فطبع الجملة   <b> she is a young girl </b>.</p>
+    </div>
+    <script>
+        document.getElementById("contx10").appendChild(document.createTextNode("sex = 'female'\nage = 14\nif sex == 'male':\nprint('Gender: male')\nif age <= 21:\nprint('he is a young boy');\nelif sex == 'female':\nprint('Gender: female')\nif age <= 21:\nprint('she is a young girl')"));
+        document.getElementById("contx9").appendChild(document.createTextNode("a = 2\nif a == 1 or a == 2 or a == 3:\nprint('you choose a valid number')"));
+        document.getElementById("contx8").appendChild(document.createTextNode("a = 26;\nif a >= 0 and a <= 20:\nprint('acceptable number')"));
+        document.getElementById("contx7").appendChild(document.createTextNode("a = 14;\nif a >= 0 and a <= 20:\nprint('acceptable number')"));
+        document.getElementById("contx6").appendChild(document.createTextNode("number = 3\nif number == 1:\nprint('one')\nelif number == 2:\nprint('two')\nelif number == 3:\nprint('three')\nelif number >= 4:\nprint('four or greater')\nelse:\nprint('negative number')"));
+        document.getElementById("contx5").appendChild(document.createTextNode("S = 20\nif S == 5:\nprint('S is equal 5')\nelse:\nprint('S is not equal 5')"));
+        document.getElementById("contx4").appendChild(document.createTextNode("S = 5\nif S == 5:\nprint('S is equal 5')\nelse:\nprint('S is not equal 5')"));
+        document.getElementById("contx3").appendChild(document.createTextNode("S = 30\nif S > 5:\nprint('S is bigger than 5')"));
+        document.getElementById("contx2").appendChild(document.createTextNode("S = 0\nif S > 5:\nprint('S is bigger than 5')"));
+        document.getElementById("contx1").appendChild(document.createTextNode("if condition:\n# إذا كان الشرط صحيحاً نفذ هذا الكود\nelif condition:\n# إذا كان الشرط صحيحاً نفذ هذا الكود\nelse:\n# إذا لم يتحقق أي شرط نفذ هذا الكود"));
+    </script>
+</body>
+</html>

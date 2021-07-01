@@ -1,0 +1,570 @@
+<!DOCTYPE html >
+<html lang="ar" dir="rtl">
+<head>
+    <link rel="icon" href="https://g.top4top.io/p_1951l48qy1.png" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+</head>
+<body>
+    <nav id="list" dir="ltr">
+        <a href="https://stutcc.blogspot.com" class="aa" id="title"><b class="titleb">S</b>tu<b class="titleb">T</b>cc</a>
+        <a href="https://stutcc-html-editor.blogspot.com" class="a">محرر الاكواد</a>
+        <a href="https://stutcc-Shortcuts.blogspot.com" class="a">موقع الاختصارات</a>
+        <a href="https://stutcc-html-test.blogspot.com" class="a">اختبار</a>       
+        <a href="https://stutcc-python.blogspot.com" class="a">بايثون</a>
+        <input type="text" placeholder="search" id="search">
+        <button type="submit" id="but">search</button> 
+    </nav >
+    <nav id="box" dir="ltr">
+        <p id="titbox">Tags</p>
+        <a href="https://stutcc-html-introduction.blogspot.com" class="abox">introduction</a>
+        <a href="https://stutcc-html-html.blogspot.com" class="abox">html</a>
+        <a href="https://stutcc-html-head.blogspot.com" class="abox">head</a>
+        <a href="https://stutcc-html-body.blogspot.com" class="abox">body</a>
+        <a href="https://stutcc-html-link.blogspot.com" class="abox" >link</a>
+        <a href="https://stutcc-html-textFormatting.blogspot.com" class="abox" >text formatting</a>
+        <a href="https://stutcc-html-p.blogspot.com" class="abox" >paragraph(p)</a>
+        <a href="https://stutcc-html-titles.blogspot.com" class="abox" >titles</a>
+        <a href="https://stutcc-html-abbr.blogspot.com" class="abox" >abbr</a>
+        <a href="https://stutcc-html-a.blogspot.com" class="abox" >a</a>
+        <a href="https://stutcc-html-img.blogspot.com" class="abox" >img</a>
+        <a href="https://stutcc-html-picture.blogspot.com" class="abox" >picture</a>
+        <a href="https://stutcc-html-video.blogspot.com" class="abox" >video</a>
+        <a href="https://stutcc-html-style.blogspot.com" class="abox" >style</a>
+        <a href="https://stutcc-html-script.blogspot.com" class="abox" >script</a>
+        <a href="https://stutcc-html-forms.blogspot.com" class="abox" >forms</a>
+        <a href="https://stutcc-html-button.blogspot.com" class="abox" >button</a>
+        <a href="https://stutcc-html-ol.blogspot.com" class="abox" >ordered list(ol)</a>
+        <a href="https://stutcc-html-ul.blogspot.com" class="abox" >unordered list(ul)</a>
+        <a href="https://stutcc-html-tables.blogspot.com" class="abox" >tables</a>
+        <a href="https://stutcc-html-colgroup.blogspot.com" class="abox" >colgroup</a>
+        <a href="https://stutcc-html-div.blogspot.com" class="abox" >div</a>
+        <a href="https://stutcc-html-nav.blogspot.com" class="abox" >nav</a>
+        <a href="https://stutcc-html-article.blogspot.com" class="abox" >article</a>
+        <a href="https://stutcc-html-header.blogspot.com" class="abox" >header</a>
+        <a href="https://stutcc-html-thead.blogspot.com" class="abox" >thead</a>
+        <a href="https://stutcc-html-tfoot.blogspot.com" class="abox" >tfoot</a>
+        <a href="https://stutcc-html-aside.blogspot.com" class="abox" >aside</a>
+        <a href="https://stutcc-html-cite.blogspot.com" class="abox" >cite</a>
+        <a href="https://stutcc-html-address.blogspot.com" class="abox" >address</a>
+        <a href="https://stutcc-html-area.blogspot.com" class="abox" >area</a>
+        <a href="https://stutcc-html-label.blogspot.com" class="abox" >label</a>
+        <a href="https://stutcc-html-param.blogspot.com" class="abox" >param</a>
+        <a href="https://stutcc-html-iframe.blogspot.com" class="abox" id="boxh">iframe</a>
+        <a href="https://stutcc-html-data.blogspot.com" class="abox" >data</a>
+        <a href="https://stutcc-html-main.blogspot.com" class="abox" >main</a>
+        <a href="https://stutcc-html-output.blogspot.com" class="abox" >output</a>
+        <a href="https://stutcc-html-kbd.blogspot.com" class="abox" >kbd</a>
+        <a href="https://stutcc-html-bdi.blogspot.com" class="abox" >bdi</a>
+        <a href="https://stutcc-html-bdo.blogspot.com" class="abox" >bdo</a>
+        <a href="https://stutcc-html-object.blogspot.com" class="abox" >object</a>
+    </nav>
+    <textarea id="input" placeholder="اكتب الكود هنا ضمن وسم ال <body>" dir="ltr"></textarea>
+    <button type="submit" id="button" onclick="input();">النتيجة</button>
+    <div id="out"></div>
+        <div id ="cont">
+        <p class="title1" id="titlei"></p>
+        <p class="title2">تعريفه:</p>
+        <p id="contx1"></p>
+        <p>عند عرض المحتوى بواسطة هذا الوسم يجب تحديد بعض الخصائص الأساسية له كمساره, نوعه, طوله و عرضه في الصفحة كالتالي.</p>
+        <nav class="contcode"><pre id="contx2"></pre></nav>
+        <ul><li>مكان الكلمة <b> page-title </b> نمرر عنوان مناسب للصفحة التي سيتم عرضها أو عنوان الصفحة نفسها.</li></ul>
+        <ul><li>مكان الكلمة <b> source-path </b> نمرر مسار المحتوى الذي سيتم عرضه.</li></ul>
+        <ul><li>مكان الكلمة <b> width-value </b> نمرر عرض المساحة التي سيتم تخصيصها لعرض المحتوى في الصفحة.</li></ul>
+        <ul><li>مكان الكلمة <b> height-value </b>  نمرر طول المساحة التي سيتم تخصيصها لعرض المحتوى في الصفحة.</li></ul>
+       <p class="border"> <b>معلومة تقنية:</b>
+      أهم خاصية يجب وضعها لهذا الوسم هي الخاصية <b> src </b> لأنه لا بد من تحديد محتوى الصفحة المراد عرضها. بالنسبة للخاصية <b> title </b> يفضل إضافتها له لأنه في حال كان المستخدم يستخدم قارئ الشاشة <b> ( Screen Reader ) </b> فإنه سيقرأ سيقوم بقراءة العنوان الموضوع كقيمة لها.
+
+            بالنسبة لتحديد حجم الإطار الذي سيتم عرضه مكان هذا الوسم فيمكنك تحديده بشكل مباشر من خلال تمرير قيم للخاصيتين <b> width </b> و <b> height </b>, و يمكنك تحديده بشكل أدق بواسطة <b> CSS </b> و بواسطة جافا سكربت أيضاً.</p>
+            <p class="title2">خصائصه:</p>
+            <p>نود الإشارة إلى أننا سنذكر الخصائص المهمة و المستخدمة فعلياً و نتجاهل أي خصائص لا يوصى باستخدامها.</p>
+            <strong> الخاصية </strong> <b> allow </b>:
+            <p>نضيفها للوسم لتحديد ما هي الميزات (كالسماح باستخدام المايكروفون, الكاميرا, الوسائط, حالة بطارية الجهاز, مشاركة محتوى إلخ..) التي نريدها أن تعمل في الصفحة المراد عرضها بداخل الإطار و هذه الميزات تكون معدة مسبقاً من قبل <b> API </b> الموقع الذي يحتوي الصفحة.</p>
+            <p class="border"> <b> معلومة: </b>
+           كل الميزات المراد تحديدها أن الصفحة يمكن تستخدمها يكون <b> API </b> الموقع قد جهّز مسبقاً الكلمات التي يجب تمريرها كقيم لهذه الخاصية.
+
+                الجدول التالي يظهر المتصفحات التي تدعم هذه الخاصية.</p>
+                <strong> الخاصية </strong> <b> allowfullscreen </b>:
+                <p>نضيفها للوسم لتحديد ما إذا كان يمكن جعل الإطار قابل للعرض على كامل حجم الصفحة أم لا.
+                    في حال تم تمرير القيمة <b> true </b> فهذا يعني أن الإطار سيكون قابل للتكبير, و في حال تم تمرير القيمة <b> false </b> فهذا يعني أنه لن قابل للتكبير.</p>
+                    <nav class="border"> <b> معلومة: </b>
+                    <p>يمكن استدعاء هذه الخاصية بهذا الأسلوب <b> allow="fullscreen" </b> أيضاً و تقنياً تكبير الإطار يتم عن طريق استدعاء الدالة <b> requestFullscreen() </b> .</p> </nav>
+                    <strong> الخاصية </strong> <b> height </b>:
+                    <p>نضيفها للوسم لتحديد كم سيكون طول الإطار الذي سيتم فيه عرض محتوى الصفحة.</p>
+                    <p class="border"> <b>ملاحظة: </b> الطول الإفتراضي للإطار هو 150 بكسل.</p>
+                    <strong> الخاصية </strong> <b> name </b>:
+                    <p>يمكن إضافتها للوسم بهدف إعطائه إسم مما يجعلك قادراً على توجيه المستخدم بشكل مباشر للمكان الموجود فيه.</p>
+                    <strong> الخاصية </strong> <b> referrerpolicy </b>:
+                    <p>يمكن إضافتها للوسم بهدف تحديد معلومات المرسل التي سيتم إرسالها مع طلب المستخدم إلى الموقع الذي سيتلقى طلبه.</p>
+                    <p>يجب تمرير إحدى القيم التالية المهيئة مسبقاً كقيمة للخاصية <b> rel </b> لتحديد ما هي المعلومات التي سيتم إرسالها مع الطلب. </p>
+                    <div class="responsive-table">
+                        <table class="rtl right ar">
+                            <tr>
+                                <th style="width:265px;">القيمة</th>
+                                <th>معناها</th>
+                            </tr>
+                            <tr>
+                                <td class="left"><code>no-referrer</code></td>
+                                <td>لعدم إرسال أي معلومة مع طلب الإطار للصفحة التي سيتم عرضها بداخله.</td>
+                            </tr>
+                            <tr>
+                                <td class="left"><code>no-referrer-when-downgrade</code></td>
+                                <td>لعدم إرسال أي معلومة في <span class="word">Header</span> طلب الإطار <span class="inline">( أي</span> المعلومات التي يرسلها الإطار للموقع الذي يحتوي <span class="inline">الصفحة )</span> إذا كان الموقع الذي سيتلقى الطلب لا يستخدم البروتوكل <code>https</code> و هذا هو الحال الإفتراضي.</td>
+                            </tr>
+                            <tr>
+                                <td class="left"><code>origin</code></td>
+                                <td>لإرسال المعلومات التالية مع طلب الإطار <span class="inline">( <code>scheme</code></span> - <code>host</code> - <span class="inline"><code>port</code> )</span> في حال كانت الصفحة المطلوبة موجودة في الموقع نفسه.</td>
+                            </tr>
+                            <tr>
+                                <td class="left"><code>origin-when-cross-origin</code></td>
+                                <td>لإرسال المعلومات التالية مع طلب الإطار <span class="inline">( <code>scheme</code></span> - <code>host</code> - <span class="inline"><code>port</code> )</span> بالإضافة إلى المسار <span class="inline">( <code>path</code> )</span> في حال كانت الصفحة المطلوبة موجودة في نفس الموقع.</td>
+                            </tr>
+                            <tr>
+                                <td class="left"><code>same-origin</code></td>
+                                <td>لإرسال كل المعلومات المتاحة مع طلب الإطار في حال كانت الصفحة المطلوبة موجودة في نفس الموقع مع عدم إرسال أي معلومة مع الطلب في حال كانت الصفحة موجودة في موقع آخر.</td>
+                            </tr>
+                            <tr>
+                                <td class="left"><code>strict-origin</code></td>
+                                <td>لإرسال رابط الصفحة التي فيها الإطار مع الطلب في حال كانت الصفحة المطلوبة تستخدم نفس درجة الأمان. نقصد بذلك أنه في حال كان الصفحة التي تطلب عرض محتوى صفحة أخرى بداخل الإطار تستخدم البروتوكل <code>https</code> فلا بد من أن تكون الصفحة الأخرى تستخدم نفس البروتوكل.</td>
+                            </tr>
+                            <tr>
+                                <td class="left"><code>strict-origin-when-cross-origin</code></td>
+                                <td>لإرسال كل المعلومات المتاحة مع طلب الإطار في حال كانت الصفحة المطلوبة تستخدم نفس درجة الأمان. نقصد بذلك أنه في حال كان الصفحة التي تطلب عرض محتوى صفحة أخرى بداخل الإطار تستخدم البروتوكل <code>https</code> فلا بد من أن تكون الصفحة الأخرى تستخدم نفس البروتوكل.</td>
+                            </tr>
+                            <tr>
+                                <td class="left"><code>unsafe-url</code></td>
+                                <td>لإرسال المعلومات التالية فقط مع طلب الإطار <span class="inline">( <code>origin</code></span> - <code>path</code> )</span> أي بدون أي معلومة حساسة كإسم المستخدم و كلمة مروره.</td>
+                            </tr>
+                        </table></div>
+                        <strong> الخاصية </strong> <b> src </b>:
+                        <p>نضيفها للوسم لتحديد مسار الصفحة المراد عرضها في الإطار مع الإشارة إلى أنه يجب وضع <b> about:blank </b> لها كقيمة في حال أردت عرض صفحة فارغة بداخل الإطار.</p>
+                        <p class="border"> <b>معلومة:</b>في حال إزالة الصفحة من داخل الإطار بواسطة جافا سكربت هكذا <b> Element.removeAttribute() </b> فإن أغلب المتصفحات - و ليس جميعها - تقوم بوضع <b> about:blank </b> كقيمة لها عند فعل ذلك.</p>
+                        <strong> الخاصية </strong> <b> sandbox </b>:
+                        <p>نضيفها للوسم للسماح للصفحة المعروضة في الإطار بتجاوز القيود التي يتم وضعها عليها بشكل إفتراضي.</p>
+                        <p>يجب تمرير إحدى القيم التالية المهيئة مسبقاً كقيمة للخاصية <b> sandbox </b> لتحديد ما هي القيود التي يسمح للصفحة المعروضة في الإطار بأن تتجاوزها مع الإشارة إلى أنه يمكنك تمرير أكثر من قيمة إذا أردت و يجب وضع مسافة فارغة بين كل قيمتين.</p>
+                        <div class="responsive-table">
+                            <table class="rtl right ar">
+                                <tr>
+                                    <th style="width:255px;">القيمة</th>
+                                    <th>معناها</th>
+                                </tr>
+                                <tr>
+                                    <td class="left"><code>allow-downloads</code></td>
+                                    <td>للمساح للمستخدم بتحميل محتوى من الصفحة الموضوعة في الإطار.</td>
+                                </tr>
+                                <tr>
+                                    <td class="left"><code>allow-forms</code></td>
+                                    <td>للمساح للمستخدم بإرسال البيانات التي يملؤها في نموذج موضوع في الصفحة المعروضة في الإطار.</td>
+                                </tr>
+                                <tr>
+                                    <td class="left"><code>allow-modals</code></td>
+                                    <td>للمساح للصفحة الموضوعة في الإطار أن تظهر نافذة منبثقة.</td>
+                                </tr>
+                                <tr>
+                                    <td class="left"><code>allow-pointer-lock</code></td>
+                                    <td>للمساح للصفحة الموضوعة بالإستحواذ على مؤشر الماوس. نقصد بذلك أن حركة الماوس يمكن جعله على سبيل المثال تبقى ضمن الصفحة الموضوعة في الإطار.</td>
+                                </tr>
+                                <tr>
+                                    <td class="left"><code>allow-popups</code></td>
+                                    <td>للمساح للصفحة الموضوعة في الإطار أن تفتح تبويب <span class="inline">( <span class="word">Tab</span> )</span> في المتصفح.</td>
+                                </tr>
+                                <tr>
+                                    <td class="left"><code>allow-popups-to-escape-sandbox</code></td>
+                                    <td>للمساح للصفحة الموضوعة في الإطار أن تظهر تبويب <span class="inline">( <span class="word">Tab</span> )</span> في المتصفح لا علاقة له بالصفحة نفسها كالإعلانات على سبيل المثال.</td>
+                                </tr>
+                                <tr>
+                                    <td class="left"><code>allow-same-origin</code></td>
+                                    <td>للسماح لسكربتات الصفحة الصفحة الموضوعة في الإطار بأن تعمل حتى لو كانت من مواقع أخرى.</td>
+                                </tr>
+                                <tr>
+                                    <td class="left"><code>allow-scripts</code></td>
+                                    <td>للسماح لسكربتات الصفحة الصفحة الموضوعة في الإطار بأن تعمل مع عدم السماح لها بإظهار تبويبات <span class="inline">( <span class="word">Tabs</span> )</span> في المتصفح.</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <strong> الخاصية </strong> <b> srcdoc </b>:
+                        <p>في حال أردت عرض تمرير كود <b> HTML </b>  بشكل مباشر بداخل الإطار فيمكنك إضافة هذه الخاصية للوسم و وضع الكود كقيمة لها.</p>
+                        <p>في حال إضافة الخاصيتين <b> src </b> و <b> srcdoc </b> في وقت واحد للوسم فإنه يتم وضع محتوى الخاصية <b> srcdoc </b> فقط في الإطار. و في حال كان المتصفح لا يدعم الخاصية <b> srcdoc </b> فإنه يعرض محتوى الصفحة التي تشير إليها الخاصية <b> src </b> بداخل الإطار.</p>
+                        <strong> الخاصية </strong> <b> width </b>:
+                        <p>نضيفها للوسم لتحديد كم سيكون عرض الإطار الذي سيتم فيه عرض محتوى الصفحة.</p>
+                        <p class="border"><b>ملاحظة: </b>العرض الإفتراضي للإطار هو 300 بكسل. </p>
+                        <p class="title2">إستخدامه:</p>
+                        <p>في المثال التالي قمنا بتضمين الصفحة الرئيسية في موقعنا بداخل الصفحة.</p>
+                    <ul><li class="title2">الكود:</li></ul>
+                    <nav class="contcode"><pre id="contx5" dir="ltr"></pre></nav>
+                    <ul><li class="title2">فتكون النتيجة كالتالي:</li></ul>
+                    <nav class="contcode">
+                                <!-- هنا قمنا بعرض الصفحة الرئيسية في موقعنا -->
+                                <object
+                                    width="60%"
+                                    height="680"
+                                data="https://stutcc.blogspot.com"
+                                type="text/html">
+                                </object>
+                           </nav>
+                           <p>في المثال التالي قمنا بتضمين فيديو موجود في يوتيوب بداخل الصفحة. </p>
+                           <p class="border"> <b>ملاحظة:</b>الخصائص <b> frameborder </b>  و <b> allow </b>  و <b> allowfullscreen </b> هي خصائص من إعداد يوتيوب و ليست من خصائص لغة <b> HTML </b>.</p>
+                           <u><li class="title2">الكود:</li></u>
+                           <nav class="contcode"><pre id="contx6" dir="ltr"></pre></nav>
+                           <ul><li class="title2">فتكون النتيجة كالتالي:</li></ul>
+                           <nav class="contcode">
+                               <object
+   style="padding:5px; padding-top: 5px;"
+   width="99%"
+   height="510px"
+   data="https://www.youtube.com/embed/6y7sF0z6yQ4"
+    frameborder="0"
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+   </object>
+                           </nav>
+            <p class="border"> <b> معلومة:</b>          
+            أي فيديو تجده في يوتيوب يمكنك عرضه بكل سهولة بداخل الصفحة بدون الحاجة لكتابة أي كود بنفسك حيث أن يوتيوب يوفر لك خيار إسمه تضمين <b> ( embed ) </b> بمجرد النقر عليه يعطيك كود إطار يعرض الفيديو.
+            لتجد خيار التضمين <b> ( embed ) </b> أنقر على زر المشاركة <b> ( Share ) </b> الذي تجده تحت الفيديو و سيظهر لك.
+                بعدها أنقر عليه حتى يعطيك الكود الذي يمكنك نسخه و وضعه في الصفحة.</p>
+                <p class="title2">تصميمه الإفتراضي:</p>
+                <p>بشكل عام جميع المتصفحات تعرضه بالتنسيق التالي.</p>
+                <nav class="contcode"><pre id="contx7"></pre></nav>
+                <nav class="border"> <b>نصائح و ملاحظات:</b>
+                <p id="contx8"></p> </nav>
+            </div>
+    <script>
+        document.getElementById("contx8").appendChild(document.createTextNode("القيود التي يضعها الوسم <iframe> على الصفحات التي عرضها بداخله أمر مهم جداً لأنه يمنع المخترقين الذين يقوموا بإعداد صفحات قد تسبب أذى للمستخدم من إمكانية فعل أي شيء له."));
+        document.getElementById("contx7").appendChild(document.createTextNode('iframe:focus {\noutline: none;\n}\niframe[seamless] {\ndisplay: block;\n}'));
+        document.getElementById("contx6").appendChild(document.createTextNode('<object\nwidth="99%"\nheight="510px"\ndata="https://www.youtube.com/embed\n/6y7sF0z6yQ4"\nframeborder="0"\nallow="accelerometer; autoplay; clipboard-write; \nencrypted-media; gyroscope; picture-in-picture"\nallowfullscreen>\n</object'));
+          document.getElementById("contx5").appendChild(document.createTextNode('<!DOCTYPE html>\n<html>\n<body>\n<!-- هنا قمنا بعرض الصفحة الرئيسية في موقعنا -->\n<object\nwidth="490"\nheight="680"\ndata="https://stutcc.blogspot.com"\ntype="text/html">\n</object>\n</body>\n</html>'));
+        document.getElementById("contx2").appendChild(document.createTextNode('<iframe title="page-title"\nsrc="source-path"\nwidth="width-value"\nheight="height-value">\n</iframe>'));
+        document.getElementById("contx1").appendChild(document.createTextNode("بشكل عام نستخدم الوسم <iframe> لوضع إطار في الصفحة بهدف عرض محتوى صفحة أخرى بداخله."));
+        document.getElementById("titlei").appendChild(document.createTextNode("الوسم <iframe>"));
+    function input(){
+    var x=document.getElementById("input").value;
+    var y= document.getElementById("out").innerHTML=x;
+    }
+    cookieChoices={};
+//Learn from home
+    </script>
+    <style>
+        .rtl{direction:rtl}
+        .right{text-align:right}
+        .ar{font-size:14px;font-family:droid_arabic_naskh_regular;line-height:32px}
+        .left{text-align:left}
+        .inline{display:inline-block}
+        .responsive-table{overflow-x:auto}
+        .responsive-table .en{font-family:Helvetica,Arial,Sans-Serif;line-height:24px}
+        .responsive-table .ar{font-family:droid_arabic_naskh_regular;line-height:32px}
+        .responsive-table table{border-collapse:collapse;border-spacing:0;width:100%}
+        .responsive-table table th{background-color:#ccc;padding:10px;border:1px solid #bbb;vertical-align:middle}
+        .responsive-table table td{padding:10px;border:1px solid #bbb}
+        .responsive-table table tr:nth-child(even){background-color:#fff}
+        .responsive-table table tr:nth-child(odd){background-color:#f1f1f1}
+        .border{
+border:5px solid black;
+background-color:lightblue; 
+text-align:center; 
+font-size:25px;
+}
+b{ color:darkred; }
+strong{ color:darkblue; }
+.titleb{
+            color: #8d9399; font-size: 24px;
+        }
+        .not{
+            border:4px solid black; 
+            background-color:lightblue; 
+            text-align:center;            
+            font-size: 22px;
+            /*الملاحضات والمعلومات*/
+        }
+         .title1{
+           font-size:24px;
+           color:darkred;
+           font-weight: bold;
+           text-align: center;
+           /*العناوين الرئيسية*/
+        }
+        .title2{
+         font-weight: bold;
+         font-size:22px;
+         color:darkblue;
+         /*العناوين الفرعية*/
+        }
+        *{
+            font-size: 20px;
+        }
+        .bacp{
+            display: inline; background-color: rgb(137, 137, 245); padding:3px; 
+        }
+        .contcode pre{
+            direction: ltr;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+         .contcode{
+             text-align: left;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 20px;
+            border: 2px saddlebrown solid;
+        }
+        #code{
+            text-align: left;
+        }
+        #apage{
+            background-color: rgb(133, 129, 129) ;
+        }
+        body{  
+            margin-top: 0;
+        }
+        #titlecont{
+            display: block;
+            text-align: center;
+        }
+        #cont{
+            text-align: right;
+            position:absolute;
+            top: 11%;
+            left: 17%;
+            width: 64.7%;
+        }
+        #list{
+            background-color:white;
+            z-index: 100;
+            position: fixed; 
+            width: 100%;
+        }
+        #out{
+            background-color: white;
+            width: 17.4%;
+            height: 380px;
+            border: 2px rgb(161, 160, 160) solid;
+            position: fixed;
+            left: 82%;
+            top: 44%;
+        }
+        #button:hover{
+            color: white;
+            background-color: #007bff; 
+        }
+        #button{
+            position: fixed;
+            bottom: 47.5%;
+            left: 82%;
+            width: 18%;
+            height: 30px;
+            top: 275px;   
+        }
+        #input::placeholder{
+            text-align: center;
+        }
+        #input{
+            width: 17.5%;
+            height: 200px;
+
+            position: fixed;
+            bottom: 52%;
+            left: 82%;
+            top: 10%;
+            display: block;
+        }
+        #titbox{
+            text-align: center;
+        }
+        #boxh{
+            background-color: rgb(133, 129, 129);
+        }
+        #box a:hover{
+            background-color: rgb(133, 129, 129);
+        }
+        #box a{
+            margin-top: 1px;
+            padding: 3px;
+            text-decoration: none;
+            margin-left: 5px;
+            display: block;
+            color: #2f3f50;
+        }
+        #box{
+            background-color: white;
+            overflow-y:scroll;   
+            position: fixed;
+            margin-top: 5px;
+            margin-left: 4px;
+            text-align: left;
+            border: 2px #007bff solid;
+            width: 15%;
+            height: 89.5%;
+            top: 9%;
+            right: 84%;
+            float: left;
+        }
+        #but:hover{
+            color:  #007bff;
+            background-color:white;            
+        }
+        #but{
+            color: white;
+            background-color: #007bff;
+        }
+        #search{
+           width: 11%;
+        }
+        nav{
+            text-align: center;
+        }
+        .a:hover{
+            background-color: white;
+            color:   #007bff;
+        }
+        #title{
+            padding-right: 12%;
+            font-size: 22px;
+        }
+        .aa{
+            line-height: 50px;
+           text-align: center;
+           text-decoration: none;
+           padding: 0.6% 4.8%;
+           background-color:  #007bff; 
+           color: white;
+        }
+       .a{
+        line-height: 50px;
+           text-align: center;
+           text-decoration: none;
+           padding: 0.6% 4.6%;
+           background-color:  #007bff; 
+           color: white;
+       }
+       @media screen and (min-width: 1265px) and (max-width:1365px){
+        .titleb{ font-size: 23.5px;}
+           *{font-size: 19.5px;}     
+        .a{padding: 0.55% 4.5%;}
+       .aa{padding: 0.55% 4.7%;}
+       #title{padding-right: 11%; font-size: 21.5px;}
+       .title1{font-size:23.5px;}
+        .title2{font-size:21.5px;}
+        .not{font-size: 21.5px;}
+       }
+       @media screen and (min-width: 1165px) and (max-width:1265px){
+        .titleb{ font-size: 23px;}
+        *{font-size: 19px;}
+        .a{padding: 0.5% 4.2%;}
+       .aa{padding: 0.5% 4.4%;}
+       #title{padding-right: 10%; font-size: 21px;}
+       .title1{font-size:23px;}
+        .title2{font-size:21px;}
+        .not{font-size: 21px;}
+      }
+       @media screen and (min-width: 1065px) and (max-width:1165px){
+        .titleb{ font-size: 23.5px;}
+        *{font-size: 18.5px;}
+        .a{padding: 0.45% 4.2%;}
+       .aa{padding: 0.45% 4.4%;}
+       #title{padding-right: 9%; font-size: 20.5px;}
+       .title1{font-size:22.5px;}
+        .title2{font-size:20.5px;}
+        .not{font-size: 20.5px;}
+       }
+       @media screen and (min-width: 965px) and (max-width:1065px){
+        .titleb{ font-size: 23px;}
+        *{font-size: 18px;}
+        .a{padding: 0.4% 3.8%;}
+       .aa{padding: 0.4% 4%;}
+       #title{padding-right: 8%; font-size: 20px;}
+       .title1{font-size:22px;}
+        .title2{font-size:20px;}
+        .not{font-size: 20px;}
+       }
+       @media screen and (min-width: 865px) and (max-width:965px){
+        .titleb{ font-size: 22.5px;}
+        *{font-size: 17.5px;}
+        .a{padding: 0.35% 3.6%;}
+       .aa{padding: 0.35% 3.5%;}
+       #title{padding-right: 7%; font-size: 19.5px;}
+       .title1{font-size:21.5px;}
+        .title2{font-size:19.5px;}
+        .not{font-size: 19.5px;}
+       }
+       @media screen and (min-width: 765px) and (max-width:865px){
+        .titleb{ font-size: 22px;}
+        *{font-size: 17px;}
+        .a{padding: 0.3% 3%;}
+       .aa{padding: 0.3% 2.9%;}
+       #title{padding-right: 6%; font-size: 19px;}
+       .title1{font-size:21px;}
+        .title2{font-size:19px;}
+        .not{font-size: 19px;}
+       }
+       @media screen and (min-width: 665px) and (max-width:765px){
+        .titleb{ font-size: 21.5px;}
+        *{font-size: 16.5px;}
+        .a{padding: 0.25% 2.5%;}
+       .aa{padding: 0.25% 2.4%;}
+       #title{padding-right: 5%; font-size: 18.5px;}
+       .title1{font-size:20.5px;}
+        .title2{font-size:18.5px;}
+        .not{font-size: 18.5px;}
+       }
+       @media screen and (min-width: 565px) and (max-width:665px){
+        .titleb{ font-size: 21px;}
+        *{font-size: 16px;}
+        .a{padding: 0.2% 1.6%;}
+       .aa{padding: 0.2% 1.5%;}
+       #title{padding-right: 4%; font-size: 18px;}
+       .title1{font-size:20px;}
+        .title2{font-size:18px;}
+        .not{font-size: 18px;}
+       }
+       @media screen and (min-width: 465px) and (max-width:565px){
+        .titleb{ font-size: 20.5px;}
+        *{font-size: 15.5px;}
+        .a{padding: 0.15% 0.7%;}
+       .aa{padding: 0.15% 0.8%;}
+       #title{padding-right: 3%; font-size: 17.5px;}
+       .title1{font-size:19.5px;}
+       .title2{font-size:17.5px;}
+        .not{font-size: 17.5px;}
+       /**/
+        }
+       @media screen and (min-width: 365px) and (max-width:465px){
+        .titleb{ font-size: 20px;}
+        *{font-size: 15px;}
+        .a{padding: 0.1% 0.5%;}
+       .aa{padding: 0.1% 3.6%;}
+       #title{padding-right: 3%; font-size: 17px;}
+       .title1{font-size:19px;}
+        .title2{font-size:17px;}
+        .not{font-size: 17px;}
+       }
+       @media screen and (min-width: 265px) and (max-width:365px){
+        .titleb{ font-size: 19.5px;}
+        *{font-size: 14.5px;}
+        .a{padding: 0.05% 0.3%;}
+       .aa{padding: 0.05% 0.4%;}
+       #title{padding-right: 2%; font-size: 16.5px;}
+       .title1{font-size:18.5px;}
+        .title2{font-size:16.5px;}
+        .not{font-size: 16.5px;}
+       }
+       @media screen and (min-width: 165px) and (max-width:265px){
+        .titleb{ font-size: 19px;}
+        *{font-size: 14px;}
+        .a{padding: 0.05% 0.1%;}
+       .aa{padding: 0.05% 0.2%;}
+       #title{padding-right: 1%; font-size: 16px;}
+       .title1{font-size:18px;}
+        .title2{font-size:16px;}
+        .not{font-size: 16px;}
+       }
+       @media screen and (min-width: 65px) and (max-width:165px){
+        .titleb{ font-size: 18.5px;}
+        *{font-size: 13.5px;}
+        .a{padding: 0.05% 0.05%;}
+       .aa{padding: 0.05% 0.1%;}
+       #title{padding-right: 0.5%; font-size: 15.5px;}
+       .title1{font-size:17.5px;}
+        .title2{font-size:15.5px;}
+        .not{font-size: 15.5px;}
+       }
+</style>
+</body>
+</html>
